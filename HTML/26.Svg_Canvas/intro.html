@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <table border="1" width="100%">
+        <thead>
+            <tr>
+                <th>SVG</th>
+                <th>Canvas</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Vector based (composed of shapes)</td>
+                <td>Raster based (composed of pixel)</td>
+            </tr>
+            <tr>
+                <td>SVG has better scalability. So it can be printed with high quality at any resolution.</td>
+                <td>Canvas has poor scalability. Hence it is not suitable for printing on higher resolution.</td>
+            </tr>
+            <tr>
+                <td>SVG gives better performance with smaller number of objects or larger surface.</td>
+                <td>Canvas gives better performance with smaller surface or larger number of objects.</td>
+            </tr>
+            <tr>
+                <td>SVG can be modified through script and CSS.</td>
+                <td>Canvas can be modified through script only.</td>
+            </tr>
+            <tr>
+                <td>Multiple graphical elements, which become the part of the page’s DOM tree.</td>
+                <td>Single element similar to &lt;img&gt; in behavior. Canvas diagram can be saved to PNG or JPG format.
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <img src="../images/vector_raster.png" alt="">
+</body>
+
+</html>
