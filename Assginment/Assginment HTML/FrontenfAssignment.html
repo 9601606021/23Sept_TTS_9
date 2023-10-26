@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+</head>
+<body>
+    <h1>HTML Assignment</h1>
+    <h2>Module 1 - Foundation</h2>
+    <ul>
+    <p> <b>Do search for web-site, http, URL etc given topics in lecture.</b></p>
+        <li>WEB  :- The part of the internet the is accessed through a special program and that is made up of many documents which are linked together.</li>
+        <li>HTTP  :- HTTP is the protocol used to transfer data over the web. It is part of the Internet protocol suite and defines commands and services used for transmitting webpage data.</li>
+        <li>URL  :-  This article discusses Uniform Resource Locators (URLs), explaining what they are and how they're structured.</li>
+    </ul>
+<p>===============================================================================================================================================================================================================================================</p>
+    <h2>Module 2 - Fundamentals of IT</h2>
+    <ul>
+    <p> <b>Do search for domain, hosting, SEO etc. </b></p>
+    <li>DOMAIN  :-  The domain is a website address. The domain is the unique route to access a certain website.</li>
+    <li>HOSTING  :-  A hosting is a place where files are stored. Normally a company offers its web hosting services by renting its servers to store the web, making it easier for other users to access it.</li>
+    <li>SEO  :-  SEO practitioners optimize websites, web pages and content for the purposes of ranking higher in search engines, like Google.</li>
+    </ul>
+<p>===============================================================================================================================================================================================================================================</p>
+    <h2>Module 3 - HTML</h2>
+    <h3> <b>1. Are the HTML tags and elements the same thing? </b></h3>
+    <p>No HTML tages and elements the not same thing. </p>
+        
+    <p>HTML tag is just opening or closing entity.</p> For Example:
+        
+       <p> &lt;p&gt; and &lt;/p&gt; are called HTML tags </p>
+        
+       <p> HTML element encompasses opening tag, closing tag, content (optional for content-less tags) </p> For Example:
+        
+       <p>  &lt;p&gt;This is the content &lt;/p&gt; : This complete thing is called a HTML element</p>
+       <hr>
+    <h3> <b>2.What are tags and attributes in HTML? </b></h3>
+    <p>HTML Tags: Tags are the starting and ending parts of an HTML element. They begin with &lt; symbol and end with &gt; symbol. Whatever written inside &lt; and &gt; are called tags.</p>
+    <p>HTML Attributes: It is used to define the character of an HTML element. It always placed in the opening tag of an element. It generally provides additional styling (attribute) to the element.</p>
+    <hr>
+    <h3><b> 3. What are void elements in HTML? With Example.</b></h3>
+    <p>There is a special group of elements that only have start tags and does not contain any content within it, these elements are called void elements. Void elements doesn’t have ending tags and can only have attributes but do not contain any kind of content. These elements can have backslash before ending of start tag but that is completely optional. Example of such elements are &lt;br&gt;, &lt;hr&gt;, &lt;img&gt;, &lt;input&gt;, &lt;link&gt;, &lt;base&gt;, &lt;meta&gt; , &lt;param&gt;, &lt;area&gt; , &lt;embed&gt;, &lt;col&gt;, &lt;track&gt;, &lt;source&gt; etc.</p>
+    <hr>
+    <h3><b> 4.What are HTML Entities? With Example.</b></h3>
+    <p>The HTML entities are used to display reserved characters (characters that are used in HTML code), special characters, or invisible characters. For example,</p>
+    <p>This is a &lt;p&gt; tag.</p> 
+    <hr>
+    <h3><b> 5.What are different types of lists in HTML? With Example.</b></h3>
+    <p>HTML lists allow the content to follow a proper semantic structure. All the tags in the list require opening and closing tags</p>
+    <h4>Unordered list</h4>
+    <p>An Unordered list is used to create a list of related items, in bulleted or unordered format. It starts with the &lt;ul&gt; tag, followed by the &lt;li&gt; tag to show list items inside &lt;/ul&gt; tag.</p>
+    <ul>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+      </ul>
+      <h4>Order List</h4>
+      <p>The Ordered lists have an order which is either numerical or alphabetical. The &lt;ol&gt; tag is used to create ordered lists in HTML and just like unordered list, we use &li tag to define or show lists inside &lt;/ol&gt; tag</p>
+      <ol>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+      </ol>
+      <h4>Description List</h4>
+      <p>A description list is a type of list where each item has a description. It is also known as a definition list. The &lt;dl&gt; tag is used to create description list, the &lt;dt&gt; tag defines the item, and the &lt;dd&gt; tag describes each item in list.</p>
+      <dl>
+        <dt>Coffee</dt>
+        <dd>- black hot drink</dd>
+        <dt>Milk</dt>
+        <dd>- white cold drink</dd>
+      </dl>
+      <hr>
+      <h3>6.What is the class attribute in HTML? With Example.</h3>
+      <p>The class is an attribute that specifies one or more class names for an HTML element.The class attribute can be used on any HTML element.</p>
+      <p>Example:</p>
+      
+    <h4 class="country">CHINA</h4>
+ 
+    <p>
+          China has the largest population
+        in the world.
+      </p>
+ 
+    <h4 class="country">INDIA</h4>
+ 
+    <p>
+          India has the second largest
+        population in the world.
+      </p>
+ 
+    <h4 class="country">UNITED STATES</h4>
+ 
+    <p>
+          United States has the third largest
+        population in the world.
+      </p>
+      <hr>
+<h3>7.What is the difference between the id attribute and the class attribute of HTML elements? With Example.</h3>
+    <p>Difference between id and class attribute: The only difference between them is that “id” is unique in a page and can only apply to at most one element, while “class” selector can apply to multiple elements.</p>
+    <h4>Difference Between Class and ID</h4>
+    <p>A class name can be used by multiple HTML elements, while an id name must only be used by one HTML element within the page.</p>
+    <!-- An element with a unique id -->
+    <h4 id="myHeader">My Cities</h4>
+    <!-- Multiple elements with same class -->
+    <h5 class="city">London</h5>
+    <p>London is the capital of England.</p>
+    <h5 class="city">Paris</h5>
+    <p>Paris is the capital of France.</p>
+    <h5 class="city">Tokyo</h5>
+    <p>Tokyo is the capital of Japan.</p>
+<h3>8.What are the various formatting tags in HTML?</h3>
+    <hr>
+    <p>Formatting tags were designed to display special types of text.</p>
+    <ul>
+    <li>&lt;b&gt;:Bold text</li>
+    <li>&lt;strong&gt;:Important text</li>
+    <li>&lt;i&gt;: Italic text</li>
+    <li>&lt;em&gt;:Emphasized text</li>
+    <li>&lt;mark&gt;:Marked text</li>
+    <li>&lt;small&gt;:Smaller text</li>
+    <li>&lt;del&gt;:Deleted text</li>
+    <li>&lt;ins&gt;:Inserted text</li>
+    <li>&lt;sub&gt;:Subscript text</li>
+    <li>&lt;sup&gt;:Superscript text</li>
+    </ul>
+    <hr>
+<h3>9.How is Cell Padding different from Cell Spacing? With Example.</h3>
+    <h4>Cell padding:</h4>
+    <p>Cellpadding specifies the space between the border of a table cell and its contents (i.e) it defines the whitespace between the cell edge and the content of the cell.</p>
+    <h4>Cellspacing:</h4>
+    <p>Cellspacing specifies the space between cells (i.e) it defines the whitespace between the edges of the adjacent cells.</p>
+    <P><b>Cell Atributes Example:</b></P>
+  
+    <style> 
+        span{ 
+          text-decoration-style: solid; 
+          width: 25px; 
+          font-size: x-large; 
+          color: blueviolet; 
+        } 
+      </style> 
+ 
+<table border="1" 
+       cellpadding="4"
+       cellspacing="5"> 
+  <thead> 
+  <td><span>Name</span></td> 
+  <td><span>Age</span></td> 
+  </thead> 
+  <tbody> 
+  <tr> 
+    <td>Rani</td> 
+    <td>30</td> 
+  </tr> 
+   <tr> 
+    <td>Rajan</td> 
+    <td>35</td> 
+  </tr> 
+  <tr> 
+    <td>Akshaya</td> 
+    <td>17</td> 
+  </tr> 
+  <tr> 
+    <td>Ashick</td> 
+    <td>13</td> 
+  </tr> 
+  </tbody> 
+</table> 
+<hr>
+<h3>10.How can we club two or more rows or columns into a single row or column in an HTML table? With Example.</h3>
+<p>It can be done by using the rowspan and colspan attribute in HTML. The rowspan is used to merge or combine the number of cells in a row whereas the colspan is used to merge column cells in a table.</p>
+<p>Example:</p>
+<table border="1">
+    <tbody><tr>
+        <td colspan="4" align="centre">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;New Employees Record</td>
+    </tr>
+        <tr>
+        <th align="centre"><b>&nbsp;&nbsp; Name &nbsp;&nbsp;</b></th>
+        <th align="centre" colspan="2"><b>Jobs</b></th>
+        <th align="centre"><b>&nbsp;&nbsp; Working Experience &nbsp;&nbsp;</b></th>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>Software Engineer</td>
+            <td>Data Analyst</td>
+            <td rowspan="2">5 Years</td>
+        </tr>
+        <tr>
+            <td>Ale</td>
+            <td colspan="2">Senior Web Developer</td>
+        </tr>
+        <tr>
+            <td>Jack</td>
+            <td>Junior Web Writter</td>
+            <td>Blogger</td>
+            <td>6 Months</td>
+        </tr>
+        </tbody>
+      </table>
+      <hr>
+<h3>11.What is the difference between a block-level element and an inline element?</h3>
+<p>Inline elements don't start in a new line. Block elements always start in a line. Inline elements allow other inline elements to sit behind. Block elements have top and bottom margin.</p>
+<p>Inline elements occupy only sufficient width required and Block Elements occupy the full width irrespective of their sufficiency.</p>
+<p>&lt;div&gt;,&lt;table&gt;,&lt;address&gt;...etc are block level elements.</p>
+<p>Example:</p>
+<div>block</div>
+<div>block</div>
+<div>block</div>
+<p>&lt;abbr&gt;,&lt;b&gt;,&lt;dfn&gt;...etc are inline elements.</p>
+<p>like under the example.</p>
+<label for>inline</label>
+<label for>inline</label>
+<label for>inline</label>
+<hr>
+<h3>12.How to create a Hyperlink in HTML? With Example.</h3>
+<p>The HTML &lt;a&gt; tag defines a hyperlink.</p>
+<p>he most important attribute of the &lt;a&gt; element is the href attribute, which indicates the link's destination.</p>
+<p>The link text is the part that will be visible to the reader.Clicking on the link text, will send the reader to the specified URL address.</p>
+<p>Example:</p>
+<a href="https://html.com/">HTML Intro.</a>
+<hr>
+<h3>13.What is the use of an iframe tag? With Example.</h3>
+<p>The HTML &lt;iframe&gt; tag specifies an inline frame.</p>
+<p>An inline frame is used to embed another document within the current HTML document.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/kUQ0SPVfVUE?si=OkYCLj8ubYbFktCU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+<hr>
+<h3>14.What is the use of a span tag? Explain with example?</h3>
+<p>The &lt;span&gt; tag is an inline container used to mark up a part of a text, or a part of a document. The &lt;span&gt; tag 
+  is easily styled by CSS or manipulated with JavaScript using the class or id attribute.</p>
+<p>The &lt;span&gt; tag is much like the &lt;div&gt; element, but &lt;div&gt; is a block-level element and &lt;span&gt; is an 
+    inline element.</p>
+<p>Example:</p>
+<p>My sister has <span style="color:blue;font-weight:bold">blue</span> eyes and my brother has 
+  <span style="color:rgb(109, 66, 2);font-weight:bold">light brown</span> eyes.</p>  
+<p style="background-image: url(bg-5.jfif);"><b><h3>15.How to insert a picture into a background image of a web page? With Example.</h3></b><br>
+    In the body tag, specify a background image in the background attribute by passing the URL of the image or location path.
+   <br>Like this Example.</p>
+   <hr>
+<h3>16.How are active links different from normal links?</h3>
+<p>Normal links are links which are there on the page and have not been clicked yet. Active links are those links, which have just been clicked at that instant.</p>
+<p>Typically a Link is displayed in three different colors based on the usage.</p>
+<ul>
+  <li>Normal links (Unvisited links)</li>
+  <li>Visited links</li>
+  <li>Active links</li>
+</ul>
+<p><b>Normal links (Unvisited links)</b></p>
+<p>you can get the normal link through this code. The default color is blue color and underlined but you can apply your own 
+  custom styling according to the application’s need.</p>
+<p><b>Visited links</b></p>
+<p>If you click on the link shown above and again go back to the link page, you can now see the link is in purple color and 
+  underlined. It shows that the user has visited this link before. You can do your own custom styling using CSS :visited 
+  selector.</p>
+<p><b>Active links</b></p>
+<p>If you left or right-click any one of the links Visited or Unvisited, it will turn into Red and Underline. Active Links 
+    shows that the browser is in the process to load a new resource.</p> 
+    <hr>
+<p><b>17.What are the different tags to separate sections of text?</b></p>     
+<p>We separate a section of texts in HTML using the below tags:</p>
+<p> &lt;br&gt; tag:It is used to separate the line of text. It breaks the current line and shifts the flow of the text to a new line.</p>
+<p> &lt;p&gt;tag:This tag is used to write a paragraph of text.</p>
+<hr>
+<h3>18.What is SVG?</h3>
+<p>SVG stands for Scalable Vector Graphics.SVG is used to define vector-based graphics for the Web.</p>
+<p>An SVG image begins with an &lt;svg&gt; element.The width and height attributes of the &lt;svg&gt;  element define the width and height of the SVG image.</p>
+<p>The &lt;circle&gt; element is used to draw a circle.The cx and cy attributes define the x and y coordinates of the center of the circle. If cx and cy are not set, the circle's center is set to (0, 0).The r attribute defines the radius of the circle</p>
+<p>The stroke and stroke-width attributes control how the outline of a shape appears. We set the outline of the circle to a 4px green "border"</p>
+<p>The fill attribute refers to the color inside the circle. We set the fill color to yellow.The closing &lt;svg&gt; tag closes the SVG image</p>
+<hr>
+<h3>19.What is difference between HTML and XHTML?</h3>
+<p><b>Difference between HTML and XHTML : </b></p>
+<table border="1">
+  <tbody><tr>
+     <th>Sr No.</th>
+     <th>HTML</th>
+     <th>XHTML</th>
+  </tr>
+  <tr>
+     <td>1</td>
+     <td>HTML stands for Hypertext Markup Language.</td>
+     <td>XHTML stands for Extensible Hypertext Markup Language.</td>
+  </tr>
+  <tr>
+     <td>2</td>
+     <td>It was developed by Tim Berners-Lee.</td>
+     <td>It was developed by W3C i.e World Wide Web Consortium.</td>
+  </tr>
+  <tr>
+     <td>3</td>
+     <td>t was developed in 1991.</td>
+     <td>t was released in 2000.</td>
+  </tr>
+  <tr>
+     <td>4</td>
+     <td>It is extended from SGML.</td>
+     <td>It is extended from XML and HTML.</td>
+  </tr>
+  <tr>
+     <td>5</td>
+     <td>The format is a document file format.</td>
+     <td>The format is a markup language.</td>
+  </tr>
+  <tr>
+     <td>6</td>
+     <td>All tags and attributes are not necessarily to be in lower or upper case.</td>
+     <td>In this, every tag and attribute should be in lower case.</td>
+  </tr>
+  <tr>
+     <td>7</td>
+     <td>Doctype is not necessary to write at the top.</td>
+     <td>Doctype is very necessary to write at the top of the file.</td>
+  </tr>
+  <tr>
+     <td>8</td>
+     <td>It is not necessary to close the tags in the order they are opened.</td>
+     <td>It is necessary to close the tags in the order they are opened.</td>
+  </tr>
+  <tr>
+     <td>9</td>
+     <td>While using the attributes it is not necessary to mention quotes.</td>
+     <td>While using the attributes it is mandatory to mention quotes.</td>
+  </tr>
+  <tr>
+     <td>10</td>
+     <td>Filename extension used are .html,.htm.</td>
+     <td>Filename extension are .xhtml,.xht,.xml.</td>
+  </tr>
+</tbody></table>
+<hr>
+<h3>20.What are logical and physical tags in HTML?</h3>
+<p>Physical and Logical tags are used in HTML for better visibility and understanding of the text by the user on the web page.</p>
+<p>Logical Tags : Logical Tags are used in HTML to display the text according to the logical styles.</p>
+<p> Examples: &lt;abbr&gt;, &lt;cite&gt;, &lt;code&gt;...</p>
+<p>Physical Tag:Physical Tags are used in HTML to provide actual physical formatting to the text.</p>
+<p>Examples: &lt;b&gt;, &lt;big&gt;, &lt;sup&gt;...</p>
+<h3>Create below example using only HTML tags without CSS.</h3>
+<table width="100%" border="1">
+  <tbody><tr>
+     <td rowspan="2" align="center"><a href="">Home</a></td>
+     <td rowspan="2" align="center"><a href="">About</a></td>
+     <td rowspan="2" align="center"><a href="">Contact</a></td>
+     <td rowspan="2" align="center"><a href="">Help</a></td>
+     <td rowspan="2" align="center"><a href="">Store</a></td>
+     <td style="background-color: chocolate;" align="center"><a href="">Download</a></td>
+     
+  </tr>
+  <tr>
+    <td style="background-color: chocolate;" align="center"><a href="">App</a></td>
+  </tr>
+  <tr>
+      <td colspan="6"><img src="two-doors.jpg" width="100%" height="400px"></td>
+  </tr>
+  <tr>
+      <td style="background-color:peru;" colspan="6" align="center">Contact Us-Page</td>
+  </tr>
+  <tr>
+      <td colspan="6"><img src="contact-banner.jpg" width="100%" height="400px"></td>
+  </tr>
+  <tr>
+      <td colspan="3" align="center">  
+          <label for="firstname"> First-name:</label>
+          <input type="text" name="firstname" placeholder="Enter your Name" id="name">
+      </td>
+      <td colspan="3" align="center">
+          <label for="lastname"> Last-name:</label>
+          <input type="text" name="lastname" placeholder="Enter your Name" id="name">
+      </td>
+      </tr>
+      <tr>
+      <td colspan="3" align="center">
+          <label for="email id">Email-id:</label>
+          <input type="text" name="email id" placeholder="Enter your Email id" id="email id">
+      </td>
+      <td colspan="3" align="center">
+          <label for="phone-no">Phone-no:</label>
+          <input type="phone" name="Phone" placeholder=" Enter your Phone no.">
+      </td>
+      </tr>
+      <tr>
+      <td colspan="3" align="center">
+          <label for="city">City:</label>
+          <input list="city" name="city">
+              <datalist id="city">
+                  <option value="Ahmedabad">
+                  </option><option value="Rajkot">
+                  </option><option value="Surat">
+                  </option><option value="Vadodara">
+              </option></datalist>
+      </td>
+      <td colspan="3" align="center">
+          <label for="gender">Gender:</label>
+          <input type="radio" name="gender">Male
+          <input type="radio" name="gender">Female
+          <input type="radio" name="gender">Other
+      </td>
+  </tr>
+  <tr>
+      <td colspan="3">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.855924066958!2d72.50617217531405!3d23.029061679169253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e9b767b0a48ed%3A0x713f82e619ac7868!2sTOPS%20Technologies!5e0!3m2!1sen!2sin!4v1697697345747!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </td>
+      <td colspan="3">
+          <iframe width="850" height="390" src="https://www.youtube.com/embed/KldQFoXseZk?si=ruNYwWo7VjcmRbWd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+      </td>
+  </tr>
+</tbody></table>
+</body>
+</html>
