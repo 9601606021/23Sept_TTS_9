@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <h2>Form</h2>
+    <p>Form will helps to send client data to the server</p>
+    <p>name attribute will helps to send form elements to the server</p>
+
+    <input type="text" name="" id="">
+    <input type="submit" name="" id="">
+    
+    <form action="">
+        <input type="text" name="username" id="">
+        <input type="submit" name="btn" id="">
+    </form>
+    <p>There are tow methods for sending client data to the server</p>
+    <p>There are tow methods for submitting form data</p>
+    <ol>
+        <li>GET (default)</li>
+        <li>POST</li>
+    </ol>
+    <h2>GET</h2>
+
+    <p>Get is the default method of form </p>
+    <p>Get use URL for sending data to the server</p>
+    <p>Get less secure</p>
+    <p>Get limitation 2048 char</p>
+    <p>Get not support file uploading</p>
+    <p>Get faster then post</p>
+    <p>Get we can bookmark with data</p>
+    <p>Get query string ?var=val&var1=val1</p>
+    <p>ex:file:///c%3A/xampp/htdocs/FrontEnd/23Sept_TTS_8/HTML/24Form/01Intro.html?username=asdfasdf&btn=Submit</p>
+
+    <h2>POST</h2>
+    <p>not use URL for sending client data to the server</p>
+    <p>secure</p>
+    <p>not limitation</p>
+    <p>support file uploading</p>
+    <p>slower than get</p>
+    <p>cant bookmark</p>
+
+    <h2>Form Attr</h2>
+    <img src="formAttr (1).png" alt="">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+
+    <form action="" enctype="multipart/form-data" method="post">
+        <input type="file" accept="image/*" name="" id="">
+    </form>
+    <form action="serverpage.php" method="post" name="myform" id="myform">
+        <input type="text" name="data" id="">
+        <input type="submit" name="data" id="">
+    </form>
+    <form action="serverpage.php" method="post" name="myform" novalidate id="myform">
+        <input type="text" name="data" id="" required>
+        <input type="submit" name="data" id="">
+    </form>
+</body>
+</html>
