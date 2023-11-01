@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{S
+            color: blue; background-color: rgb(234, 194, 36);
+        }
+        a:link {
+            color: rgb(73, 73, 250);
+        }
+        a:visited {
+  color: rgb(233, 69, 44);}
+  a:hover {
+  background: yellow;}
+  form:active {
+  color: rgb(233, 238, 239); }
+  form button {
+  color: white; background: rgb(251, 33, 33);}
+  p:active {
+  background: #eee;}
+    </style>
+</head>
+<body>
+    <h1>Name Of Course</h1>
+    <h2>front end devloper</h2>
+    <p>
+        This paragraph contains a link:
+        <a href="#">This link will turn red while you click on it.</a>
+        The paragraph will get a gray background while you click on it or the link.
+      </p>
+      <form>
+        <label for="my-button">My button: </label>
+        <button id="my-button" type="button">Try Clicking Me or My Label!</button>
+      </form>  
+</body>
+</html>
+<hr><hr>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            font-size: 1.2rem;
+            padding: 5px 15px;
+        }
+
+        dialog::backdrop {
+            background-color: salmon;
+        }
+    </style>
+</head>
+
+<body>
+
+    <button id="showDialogBtn">Show a dialog</button>
+
+    <dialog id="favDialog">
+        <form method="dialog">
+            <p>The background shown outside of this dialog is a backdrop.</p>
+            <button id="confirmBtn">Close the dialog</button>
+        </form>
+    </dialog>
+    <script>
+        const showDialogBtn = document.getElementById('showDialogBtn');
+        const favDialog = document.getElementById('favDialog');
+
+        showDialogBtn.addEventListener('click', () => favDialog.showModal());
+
+    </script>
+
+</body>
+
+</html>
+
+<hr><hr>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{ color: teal; }
+        #tagline{ color: blue; }
+        span{ color: red; }
+    </style>
+</head>
+<body>
+    
+    <h1>Site Title</h1>
+    <span id="tagline">tag line</span>
+    <h2>Sub title</h2>
+    <!-- <span id="tagline">tag line</span> never repeat ID -->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum nostrum unde soluta molestiae, sunt nemo voluptates omnis, quibusdam voluptas numquam ut consectetur nobis magni ullam cupiditate! Est rem laborum veritatis.</p>
+    <h2>Sub title</h2>
+    <!-- <span id="tagline">tag line</span>  never repeat ID -->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum nostrum unde soluta molestiae, sunt nemo voluptates omnis, quibusdam voluptas numquam ut consectetur nobis magni ullam cupiditate! Est rem laborum veritatis.</p>
+    <h2>Sub title</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum nostrum unde soluta molestiae, sunt nemo voluptates omnis, quibusdam voluptas numquam ut consectetur nobis magni ullam cupiditate! Est rem laborum veritatis.</p>
+    <h2>Sub title</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum nostrum unde soluta molestiae, sunt nemo voluptates omnis, quibusdam voluptas numquam ut consectetur nobis magni ullam cupiditate! Est rem laborum veritatis.</p>
+    <h2>Sub title</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum nostrum unde soluta molestiae, sunt nemo voluptates omnis, quibusdam voluptas numquam ut consectetur nobis magni ullam cupiditate! Est rem laborum veritatis.</p>
+    <form action="">
+        <input type="text" name="" id=""> <span>*</span>
+    </form>
+</body>
+</html>
+<hr><hr>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .custom-p{
+            color: orangered;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Site Title</h1>
+    <span id="tagline">tag line</span>
+    <h2>Sub title</h2>
+    <p class="custom-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum nostrum unde soluta molestiae, sunt nemo voluptates omnis, quibusdam voluptas numquam ut consectetur nobis magni ullam cupiditate! Est rem laborum veritatis.</p>
+    <h2>Sub title</h2>
+    <p class="custom-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum nostrum unde soluta molestiae, sunt nemo voluptates omnis, quibusdam voluptas numquam ut consectetur nobis magni ullam cupiditate! Est rem laborum veritatis.</p>
+    <h2>Sub title</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum nostrum unde soluta molestiae, sunt nemo voluptates omnis, quibusdam voluptas numquam ut consectetur nobis magni ullam cupiditate! Est rem laborum veritatis.</p>
+    <h2>Sub title</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum nostrum unde soluta molestiae, sunt nemo voluptates omnis, quibusdam voluptas numquam ut consectetur nobis magni ullam cupiditate! Est rem laborum veritatis.</p>
+    <h2>Sub title</h2>
+    <p class="custom-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum nostrum unde soluta molestiae, sunt nemo voluptates omnis, quibusdam voluptas numquam ut consectetur nobis magni ullam cupiditate! Est rem laborum veritatis.</p>
+    <form action="">
+        <input type="text" name="" id=""> <span>*</span>
+    </form>
+</body>
+</html>
+<hr><hr>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            color: rgb(5, 148, 96);   background-color: antiquewhite; 
+        }
+    </style>
+</head>
+<body>
+    
+    <p>Test</p>
+    <h1>Universal Selector * &#123; &#125;</h1>
+    <label for="">Label</label>
+    <p>The universal selector in CSS is the asterisk (*). It's used to select <b>all elements</b> on an HTML page, including elements inside other elements. </p>
+    <p> The universal selector is usually written as an asterisk followed by a selector. For example, you can use the universal selector to change the color of all the text on a page to red</p>
+</body>
+</html>
+<hr><hr>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* this will remove all anchor underline 
+        a{
+            text-decoration: none;
+        } */
+
+
+        /* ul.test>li>a { */
+        ul.test a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="test">
+                <li><a href="#">facebook</a></li>
+                <li><a href="#">Insta</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+
+    <div class="test">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non repellendus eligendi possimus quae? Consequatur, porro omnis <a href="#">Something</a> consequuntur natus animi debitis molestiae iure beatae deserunt cupiditate libero incidunt voluptatibus commodi id?
+    </div>
+
+
+    <aside>
+        <ul>
+            <li><a href="#">Data</a></li>
+            <li><a href="#">Data</a></li>
+            <li><a href="#">Data</a></li>
+            <li><a href="#">Data</a></li>
+            <li><a href="#">Data</a></li>
+        </ul>
+    </aside>
+
+    <h1>Site Title</h1>
+    <span>tag line</span>
+    <h2>Sub title</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum nostrum unde soluta molestiae, sunt nemo
+        voluptates omnis, quibusdam voluptas numquam ut consectetur nobis magni ullam cupiditate! Est rem laborum
+        veritatis.</p>
+    <h2>Sub title</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum nostrum unde soluta molestiae, sunt nemo
+        voluptates omnis, quibusdam voluptas numquam ut consectetur nobis magni ullam cupiditate! Est rem laborum
+        veritatis.</p>
+    <h2>Sub title</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum nostrum unde soluta molestiae, sunt nemo
+        voluptates omnis, quibusdam voluptas numquam ut consectetur nobis magni ullam cupiditate! Est rem laborum
+        veritatis.</p>
+    <h2>Sub title</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum nostrum unde soluta molestiae, sunt nemo
+        voluptates omnis, quibusdam voluptas numquam ut consectetur nobis magni ullam cupiditate! Est rem laborum
+        veritatis.</p>
+    <h2>Sub title</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum nostrum unde soluta molestiae, sunt nemo
+        voluptates omnis, quibusdam voluptas numquam ut consectetur nobis magni ullam cupiditate! Est rem laborum
+        veritatis.</p>
+    <form action="">
+        <input type="text" name="" id=""> <span>*</span>
+    </form>
+
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+</body>
+
+</html> 
