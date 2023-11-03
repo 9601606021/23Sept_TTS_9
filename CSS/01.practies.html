@@ -5,136 +5,95 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        h1{S
-            color: blue; background-color: rgb(234, 194, 36);
+        *{
+            color: rgb(7, 53, 7);    
         }
-        a:link {
-            color: rgb(73, 73, 250);
+        *{
+            background-color: rgb(145, 200, 234);
         }
-        a:visited {
-  color: rgb(233, 69, 44);}
-  a:hover {
-  background: yellow;}
-  form:active {
-  color: rgb(233, 238, 239); }
-  form button {
-  color: white; background: rgb(251, 33, 33);}
-  p:active {
-  background: #eee;}
-    </style>
-</head>
-<body>
-    <h1>Name Of Course</h1>
-    <h2>front end devloper</h2>
-    <p>
-        This paragraph contains a link:
-        <a href="#">This link will turn red while you click on it.</a>
-        The paragraph will get a gray background while you click on it or the link.
-      </p>
-      <form>
-        <label for="my-button">My button: </label>
-        <button id="my-button" type="button">Try Clicking Me or My Label!</button>
-      </form>  
-</body>
-</html>
-<hr><hr>
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        button {
-            font-size: 1.2rem;
-            padding: 5px 15px;
-        }
-
-        dialog::backdrop {
-            background-color: salmon;
-        }
-    </style>
-</head>
-
-<body>
-
-    <button id="showDialogBtn">Show a dialog</button>
-
-    <dialog id="favDialog">
-        <form method="dialog">
-            <p>The background shown outside of this dialog is a backdrop.</p>
-            <button id="confirmBtn">Close the dialog</button>
-        </form>
-    </dialog>
-    <script>
-        const showDialogBtn = document.getElementById('showDialogBtn');
-        const favDialog = document.getElementById('favDialog');
-
-        showDialogBtn.addEventListener('click', () => favDialog.showModal());
-
-    </script>
-
-</body>
-
-</html>
-
-<hr><hr>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        h1{ color: teal; }
-        #tagline{ color: blue; }
-        span{ color: red; }
     </style>
 </head>
 <body>
     
-    <h1>Site Title</h1>
-    <span id="tagline">tag line</span>
-    <h2>Sub title</h2>
-    <!-- <span id="tagline">tag line</span> never repeat ID -->
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum nostrum unde soluta molestiae, sunt nemo voluptates omnis, quibusdam voluptas numquam ut consectetur nobis magni ullam cupiditate! Est rem laborum veritatis.</p>
-    <h2>Sub title</h2>
-    <!-- <span id="tagline">tag line</span>  never repeat ID -->
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum nostrum unde soluta molestiae, sunt nemo voluptates omnis, quibusdam voluptas numquam ut consectetur nobis magni ullam cupiditate! Est rem laborum veritatis.</p>
-    <h2>Sub title</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum nostrum unde soluta molestiae, sunt nemo voluptates omnis, quibusdam voluptas numquam ut consectetur nobis magni ullam cupiditate! Est rem laborum veritatis.</p>
-    <h2>Sub title</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum nostrum unde soluta molestiae, sunt nemo voluptates omnis, quibusdam voluptas numquam ut consectetur nobis magni ullam cupiditate! Est rem laborum veritatis.</p>
-    <h2>Sub title</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum nostrum unde soluta molestiae, sunt nemo voluptates omnis, quibusdam voluptas numquam ut consectetur nobis magni ullam cupiditate! Est rem laborum veritatis.</p>
-    <form action="">
-        <input type="text" name="" id=""> <span>*</span>
-    </form>
-</body>
-</html>
-<hr><hr>
-<!DOCTYPE html>
-<html lang="en">
+    <h1><a href="#">Selectors</a></h1>
+
+    <h1>1.Universal</h1>
+    <p>Test</p>
+    <h1>Universal Selector * &#123; &#125;</h1>
+    <label for="">Label</label>
+    <p>The universal selector in CSS is the asterisk (*). It's used to select <b>all elements</b> on an HTML page, including elements inside other elements. </p>
+    <p> The universal selector is usually written as an asterisk followed by a selector. For example, you can use the universal selector to change the color of all the text on a page to red</p>
+
+    <hr><hr>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            h1{
+                color: rgb(10, 52, 10);    
+            }
+            label{ color: rgb(160, 216, 160);background-color: blueviolet; }
+        </style>
+    </head>
+    
+        <h1>2.Element type Selectors</h1>
+        <p>Test</p>
+        <h1>Universal Selector * &#123; &#125;</h1>
+        <label for="">Label</label>
+        <p>The universal selector in CSS is the asterisk (*). It's used to select <b>all elements</b> on an HTML page, including elements inside other elements. </p>
+        <p> The universal selector is usually written as an asterisk followed by a selector. For example, you can use the universal selector to change the color of all the text on a page to red</p>
+    <hr><hr>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            h1{ color: teal; }
+            #tagline{ color: blue; }
+            span{ color: red; }
+        </style>
+    </head>
+   
+        <h1>3.Id Selectors</h1>
+        <h3>Site Title</h3>
+        <span id="tagline">tag line</span>
+        <h2>Sub title</h2>
+        <!-- <span id="tagline">tag line</span> never repeat ID -->
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum nostrum unde soluta molestiae, sunt nemo voluptates omnis, quibusdam voluptas numquam ut consectetur nobis magni ullam cupiditate! Est rem laborum veritatis.</p>
+        <h2>Sub title</h2>
+        <!-- <span id="tagline">tag line</span>  never repeat ID -->
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum nostrum unde soluta molestiae, sunt nemo voluptates omnis, quibusdam voluptas numquam ut consectetur nobis magni ullam cupiditate! Est rem laborum veritatis.</p>
+        <h2>Sub title</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum nostrum unde soluta molestiae, sunt nemo voluptates omnis, quibusdam voluptas numquam ut consectetur nobis magni ullam cupiditate! Est rem laborum veritatis.</p>
+        <h2>Sub title</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum nostrum unde soluta molestiae, sunt nemo voluptates omnis, quibusdam voluptas numquam ut consectetur nobis magni ullam cupiditate! Est rem laborum veritatis.</p>
+        <h2>Sub title</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum nostrum unde soluta molestiae, sunt nemo voluptates omnis, quibusdam voluptas numquam ut consectetur nobis magni ullam cupiditate! Est rem laborum veritatis.</p>
+        <form action="">
+            <input type="text" name="" id=""> <span>*</span>
+        </form>    
+    <hr><hr>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    
     <style>
         .custom-p{
             color: orangered;
         }
     </style>
 </head>
-<body>
-    
-    <h1>Site Title</h1>
+
+    <h1>4.Class Selectors</h1>
+    <h2>Site Title</h1>
     <span id="tagline">tag line</span>
     <h2>Sub title</h2>
     <p class="custom-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum nostrum unde soluta molestiae, sunt nemo voluptates omnis, quibusdam voluptas numquam ut consectetur nobis magni ullam cupiditate! Est rem laborum veritatis.</p>
     <h2>Sub title</h2>
-    <p class="custom-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum nostrum unde soluta molestiae, sunt nemo voluptates omnis, quibusdam voluptas numquam ut consectetur nobis magni ullam cupiditate! Est rem laborum veritatis.</p>
+     <p class="custom-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum nostrum unde soluta molestiae, sunt nemo voluptates omnis, quibusdam voluptas numquam ut consectetur nobis magni ullam cupiditate! Est rem laborum veritatis.</p>
     <h2>Sub title</h2>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum nostrum unde soluta molestiae, sunt nemo voluptates omnis, quibusdam voluptas numquam ut consectetur nobis magni ullam cupiditate! Est rem laborum veritatis.</p>
     <h2>Sub title</h2>
@@ -144,38 +103,13 @@
     <form action="">
         <input type="text" name="" id=""> <span>*</span>
     </form>
-</body>
-</html>
-<hr><hr>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        *{
-            color: rgb(5, 148, 96);   background-color: antiquewhite; 
-        }
-    </style>
-</head>
-<body>
-    
-    <p>Test</p>
-    <h1>Universal Selector * &#123; &#125;</h1>
-    <label for="">Label</label>
-    <p>The universal selector in CSS is the asterisk (*). It's used to select <b>all elements</b> on an HTML page, including elements inside other elements. </p>
-    <p> The universal selector is usually written as an asterisk followed by a selector. For example, you can use the universal selector to change the color of all the text on a page to red</p>
-</body>
-</html>
-<hr><hr>
-<!DOCTYPE html>
-<html lang="en">
+    <hr><hr>
+
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+   
     <style>
         /* this will remove all anchor underline 
         a{
@@ -190,7 +124,7 @@
     </style>
 </head>
 
-<body>
+    <h1><a href="#">5. Descendant Selectors </a></h1>
     <header>
         <nav>
             <ul class="test">
@@ -262,6 +196,160 @@
         </nav>
     </footer>
 
-</body>
+<hr><hr>
 
-</html> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* header a{
+            text-decoration: none;
+        } */
+        header>nav  a{
+        /* header>nav>ul>li>a{ */
+            text-decoration: none;
+        }
+    </style>
+</head>
+    <h1>Child Selectors</h1>
+    <header>
+        <a href="">Logo</a>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+    <aside>
+        <ul>
+            <li><a href="#">Data</a></li>
+            <li><a href="#">Data</a></li>
+            <li><a href="#">Data</a></li>
+            <li><a href="#">Data</a></li>
+            <li><a href="#">Data</a></li>
+        </ul>
+    </aside>
+
+    <h1>Site Title</h1>
+    <span>tag line</span>
+    <h2>Sub title</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum nostrum unde soluta molestiae, sunt nemo voluptates omnis, quibusdam voluptas numquam ut consectetur nobis magni ullam cupiditate! Est rem laborum veritatis.</p>
+    <h2>Sub title</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum nostrum unde soluta molestiae, sunt nemo voluptates omnis, quibusdam voluptas numquam ut consectetur nobis magni ullam cupiditate! Est rem laborum veritatis.</p>
+    <h2>Sub title</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum nostrum unde soluta molestiae, sunt nemo voluptates omnis, quibusdam voluptas numquam ut consectetur nobis magni ullam cupiditate! Est rem laborum veritatis.</p>
+    <h2>Sub title</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum nostrum unde soluta molestiae, sunt nemo voluptates omnis, quibusdam voluptas numquam ut consectetur nobis magni ullam cupiditate! Est rem laborum veritatis.</p>
+    <h2>Sub title</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum nostrum unde soluta molestiae, sunt nemo voluptates omnis, quibusdam voluptas numquam ut consectetur nobis magni ullam cupiditate! Est rem laborum veritatis.</p>
+    <form action="">
+        <input type="text" name="" id=""> <span>*</span>
+    </form>
+
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </footer>
+    <hr><hr>
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        h2+p+span{
+            background-color: teal;
+        }
+    </style>
+</head>
+
+    <h1>7. Adjacent Sibling Selectors</h1>
+    <h2>Site Title</h2>
+    <span>tag line</span>
+    <h2>Sub title</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum nostrum unde soluta molestiae, sunt nemo voluptates omnis, quibusdam voluptas numquam ut consectetur nobis magni ullam cupiditate! Est rem laborum veritatis.</p>
+    <h2>Sub title</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum nostrum unde soluta molestiae, sunt nemo voluptates omnis, quibusdam voluptas numquam ut consectetur nobis magni ullam cupiditate! Est rem laborum veritatis.</p>
+    <span>Test</span>
+    <h2>Sub title</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum nostrum unde soluta molestiae, sunt nemo voluptates omnis, quibusdam voluptas numquam ut consectetur nobis magni ullam cupiditate! Est rem laborum veritatis.</p>
+    <h2>Sub title</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum nostrum unde soluta molestiae, sunt nemo voluptates omnis, quibusdam voluptas numquam ut consectetur nobis magni ullam cupiditate! Est rem laborum veritatis.</p>
+    <h2>Sub title</h2>
+    <span>test</span>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum nostrum unde soluta molestiae, sunt nemo voluptates omnis, quibusdam voluptas numquam ut consectetur nobis magni ullam cupiditate! Est rem laborum veritatis.</p>
+    <form action="">
+        <input type="text" name="" id=""> <span>*</span>
+    </form>
+    <hr><hr>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2~span{
+            background-color: teal;
+        }
+    </style>
+</head>
+    <h1>8. Genderal Sibling Selectors</h1>
+    <h2>Site Title</h2>
+    <span>tag line</span>
+    <h2>Sub title</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum nostrum unde soluta molestiae, sunt nemo voluptates omnis, quibusdam voluptas numquam ut consectetur nobis magni ullam cupiditate! Est rem laborum veritatis.</p>
+    <h2>Sub title</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum nostrum unde soluta molestiae, sunt nemo voluptates omnis, quibusdam voluptas numquam ut consectetur nobis magni ullam cupiditate! Est rem laborum veritatis.</p>
+    <span>Test</span>
+    <h2>Sub title</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum nostrum unde soluta molestiae, sunt nemo voluptates omnis, quibusdam voluptas numquam ut consectetur nobis magni ullam cupiditate! Est rem laborum veritatis.</p>
+    <h2>Sub title</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum nostrum unde soluta molestiae, sunt nemo voluptates omnis, quibusdam voluptas numquam ut consectetur nobis magni ullam cupiditate! Est rem laborum veritatis.</p>
+    <h2>Sub title</h2>
+    <span>test</span>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum nostrum unde soluta molestiae, sunt nemo voluptates omnis, quibusdam voluptas numquam ut consectetur nobis magni ullam cupiditate! Est rem laborum veritatis.</p>
+    <form action="">
+        <input type="text" name="" id=""> <span>*</span>
+    </form>
+    <hr><hr>
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            .heading,h2,div {
+                font-size: 13px;
+                margin-block-start: 0;
+                color: orangered;
+            }
+        </style>
+    </head>
+    
+    
+        
+        
+        <h1>9. Grouping Selectors</h1>
+        <h2 class="heading">Welcome to BOB</h2>
+        <p>Baat krnese baat banti hai</p>
+        <h2>Welcome to BOB</h2>
+        <label for="">testing</label>
+        <p>Baat krnese baat banti hai</p>
+        <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta quia omnis magnam nobis, quo obcaecati atque excepturi cumque repudiandae beatae, hic temporibus. Quasi, qui magni sapiente repudiandae consequuntur sunt vitae.</div>
+    
+
+</body>
+</html>
