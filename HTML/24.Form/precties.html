@@ -1,38 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <fieldset>
         <legend>This is my form</legend>
-    <form>
-        <table>
+        <form>
+            <table border="1">
 
-            <tr>
-                <td><label for="">Email:</label></td>
-                <td><input type="text" name="" id=""></td>
-            </tr>
-            <tr>
-                <td><label for="">Password:</label></td>
-                <td><input type="password" name="" id=""></td>
-            </tr>
-            <tr>
-                <td><label for="">confirm Password:</label></td>
-                <td><input type="text" name="" id=""></td>
-            </tr>
-            <tr>
-                <td><label for="">Upload Your Picture:</label></td>
-                <td><input type="file" name="" id=""></td>                
-            </tr>
-            <tr>
-                <td><label for="">Gender</label></td>
-                <td><input type="checkbox" name="" id="">Male <input type="checkbox" name="" id="">Female</td>
-            </tr>
-        </table>
-    </form>
-</fieldset>
+                <tr>
+                    <td><label for="">Email:</label></td>
+                    <td><input type="text" name="" id=""></td>
+                </tr>
+                <tr>
+                    <td><label for="">Password:</label></td>
+                    <td><input type="password" name="" id=""></td>
+                </tr>
+                <tr>
+                    <td><label for="">Confirm Password:</label></td>
+                    <td><input type="text" name="" id=""></td>
+                </tr>
+                <tr>
+                    <td><label for="">Upload Your Picture:</label></td>
+                    <td><input type="file" name="" id=""></td>
+                </tr>
+                <tr>
+                    <td><label for="">Gender:</label></td>
+                    <td><input type="radio" name="Gender" value="Male" id="Male">
+                        <label for="">Male</label>
+                        <input type="radio" name="Gender" value="Female" id="Female">
+                        <label for="">Female</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="">Select Country:</label></td>
+                    <td><select name id multiple>
+                        <option value="1">Unitade kingdam</option>
+                        <option value="2">India</option>
+                        <option value="3">Canada</option>
+                        <option value="4">China</option>
+                        <option value="5">Bangladesh</option>
+                        <option value="6">Germany</option>
+                        </select> </td>
+                </tr>
+                <tr>
+                    <td><label for="">Hobby:</label></td>
+                    <td><input type="checkbox" name="checkbox" id="Cricket">
+                        <label for="">Cricket</label>
+                        <input type="checkbox" name="checkbox" id="Football">
+                        <label for="">Football</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="">Address:</label></td>
+                    <td><textarea name id cols="50" rows="5"></textarea> </td>
+                </tr>
+                <tr>
+                    <td><label for=""></label></td>
+                    <td><input type="submit"> </td>
+                </tr>
+            </table>
+        </form>
+    </fieldset>
 </body>
 </html>
