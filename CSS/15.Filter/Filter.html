@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 1000px;
+            margin: 0 auto;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .col {
+            width: 20%;
+            box-shadow: 2px 5px 15px rgb(32, 32, 34);
+            margin: 15px;
+        }
+
+        img {
+            width: 100%;
+        }
+        .filter-blur:hover{filter: blur(5px);  }
+        .filter-brightness{filter: brightness(.5);  }
+        .filter-brightness:hover{filter: brightness(1);  }
+        .filter-contrast:hover{filter: contrast(200%);  }
+        .filter-drop-shadow:hover{ filter: drop-shadow(16px 16px 20px blue);  }
+        .filter-grayscale:hover{filter: grayscale(50%);  }
+        .filter-hue-rotate:hover{ filter: hue-rotate(90deg);  }
+        .filter-invert:hover{filter: invert(75%);  }
+        .filter-opacity:hover{filter: opacity(25%);  }
+        .filter-saturate:hover{filter: saturate(30%);  }
+        .filter-sepia:hover{filter: sepia(60%);  }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li> filter: blur(5px);</li>
+        <li> filter: brightness(0.4);</li>
+        <li> filter: contrast(200%);</li>
+        <li> filter: drop-shadow(16px 16px 20px blue);</li>
+        <li> filter: grayscale(50%);</li>
+        <li> filter: hue-rotate(90deg);</li>
+        <li> filter: invert(75%);</li>
+        <li> filter: opacity(25%);</li>
+        <li> filter: saturate(30%);</li>
+        <li> filter: sepia(60%);</li>
+    </ul>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <img class="filter-blur" src="600px-Channels4_profile.jpg" alt="">
+            </div>
+            <div class="col">
+                <img class="filter-brightness" src="600px-Channels4_profile.jpg" alt="">
+            </div>
+            <div class="col">
+                <img class="filter-contrast" src="600px-Channels4_profile.jpg" alt="">
+            </div>
+            <div class="col">
+                <img class="filter-drop-shadow" src="600px-Channels4_profile.jpg" alt="">
+            </div>
+            <div class="col">
+                <img class="filter-grayscale" src="600px-Channels4_profile.jpg" alt="">
+            </div>
+            <div class="col">
+                <img class="filter-hue-rotate" src="600px-Channels4_profile.jpg" alt="">
+            </div>
+            <div class="col">
+                <img class="filter-invert" src="600px-Channels4_profile.jpg" alt="">
+            </div>
+            <div class="col">
+                <img class="filter-opacity" src="600px-Channels4_profile.jpg" alt="">
+            </div>
+            <div class="col">
+                <img class="filter-saturate" src="600px-Channels4_profile.jpg" alt="">
+            </div>
+            <div class="col">
+                <img class="filter-sepia" src="600px-Channels4_profile.jpg" alt="">
+            </div>
+            
+            
+            
+            
+        </div>
+    </div>
+
+</body>
+
+</html>
