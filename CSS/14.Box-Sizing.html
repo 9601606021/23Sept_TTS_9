@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            /* box-sizing: content-box; */
+            box-sizing: border-box;
+        }
+        .box {
+            height: 200px;
+            width: 200px;
+            margin: 20px;
+            border: 10px dashed rgb(3, 68, 23);
+            outline: 15px dashed rgb(17, 0, 128);
+        }
+
+        .box1 {
+            background-color: brown;
+            color: white;
+            padding: 50px;
+        }
+
+        .box2 {
+            background-color: rgb(42, 165, 63);
+            color: white;
+            padding: 80px;
+            
+            
+        }
+
+        .box3 {
+            background-color: rgb(71, 42, 165);
+            color: white;
+            padding: 100px;
+        }
+
+        .box4 {
+            background-color: rgb(151, 165, 42);
+            color: white;
+            padding: 150px;
+        }
+
+        .row {
+            display: flex;
+        }
+        .container{
+            /* margin: 0 auto; */
+            margin: auto;
+            /* width: 80%; */
+            width: 900px;
+        }
+
+        /* img{
+            text-align: center;
+        }
+        .img-container{
+            text-align: center;
+        } */
+        .center{
+            margin: 0 auto;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="box box1">Box1</div>
+            <div class="box box2">Box2</div>
+            <div class="box box3">Box3</div>
+            <div class="box box4">Box4</div>
+        </div>
+    </div>
+    <div class="img-container">
+
+        <img src="08Background/images.jfif" class="center" alt="">
+    </div>
+
+    <div class="center box">data</div>
+
+</body>
+
+</html>
