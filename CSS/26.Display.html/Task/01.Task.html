@@ -6,17 +6,75 @@
     <title>Document</title>
     <style>
         * {
-            border: 1px solid;
+            box-sizing: border-box;
         }
-        .disp-inline {
-            margin: 10px;
-            padding: 40px;
-            height: 150px;
+        .container {
+            margin: auto;
+            width: 1500px;
+        }
+        .row {
+            display: flex;
+        }
+        .box {
+            height: 200px;
             width: 200px;
+            margin: 2px;
+            border: 5px solid;
+            text-align: center;
+            background-color: rgb(89, 49, 219);             
         }
+        .box1 {
+            height: 300px;
+            width: 350px;
+        }
+        .box2 {
+            height: 300px;
+            width: 150px;
+        }
+        .box3 {
+            height: 300px;
+            width: 1000px;
+        }
+        .box4 {
+            height: 50px;
+            width: 800px;
+            border: 5px solid;
+            margin-top: 3px;
+            text-align: center;
+            background-color:aqua;            
+        }
+        .box5 {
+            height: 50px;
+            width: 500px;
+            border: 5px solid;
+            margin-top: 3px;
+            text-align: center;
+            background-color: brown;
+        }
+        .box6 {
+            height: 50px;
+            width: 200px;
+            border: 5px solid;
+            margin-top: 3px;
+            text-align: center;
+            background-color:aqua;
+        }
+
     </style>
 </head>
 <body>
-    <div class="disp-inline">Confused</div>
+    <div class="container">
+        <div class="row">
+            <div class="box box1">Confused</div>
+            <div class="box box2">Happy</div>
+            <div class="box box3">Sad</div>
+        </div>
+    <div class="container">    
+        <div class="row">
+            <div class="box4">Warm</div>
+            <div class="box5">Cool</div>
+            <div class="box6">Hot</div>
+        </div>
+    </div>    
 </body>
 </html>
