@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            border: 1px solid;
+        }
+        .container{
+            width: 1100px;
+            margin: 0 auto;
+        }
+        .row{
+            display: flex;
+            min-height: 200px;
+            background-color: teal;
+        }
+        .col{
+            height: 50px;
+            background-color: rgb(0, 128, 98);
+            color: white;
+        }
+        .flex-direction-row{flex-direction: row; }
+        .flex-direction-row-reverse{flex-direction: row-reverse; }
+        .flex-direction-col{flex-direction: column; }
+        .flex-direction-col--reverse{flex-direction: column-reverse; }
+        .col-3{ width: 25%; }
+        .flex-wrap{ flex-wrap: wrap; }
+        .flex-wrap-rev{ flex-wrap: wrap-reverse; }
+    </style>
+</head>
+<body>
+
+    <i class="fa-solid fa-cart-shopping"></i>
+    <a href="https://yoksel.github.io/flex-cheatsheet/" target="_blank">flex-cheatsheet</a>
+    <ul>
+        <li><h2>Ordering & Orientation</h2></li>
+        <li>flex-direction</li>
+        <li>flex-wrap</li>
+        <li>flex-flow</li>
+        <li>order</li>
+        <li>Alignment</li>
+        <li>justify-content</li>
+        <li>align-items, align-self</li>
+        <li>align-content</li>
+        <li>Flexibility</li>
+        <li>flex-grow</li>
+        <li>flex-shrink</li>
+        <li>flex-basis</li>
+        <li>flex</li>
+        <li>Flex values</li>
+    </ul>
+    <ul>
+        <li>flex</li>
+        <li>flex-basis</li>
+        <li>flex-direction</li>
+        <li>flex-flow</li>
+        <li>flex-grow</li>
+        <li>flex-shrink</li>
+        <li>flex-wrap</li>
+    </ul>
+    <h3>Display flex</h3>
+    <div class="row">
+        <div class="box">Test</div>
+        <div class="box">Test</div>
+        <div class="box">Test</div>
+        <div class="box">Test</div>
+        <div class="box">Test</div>
+    </div>
+    <h3>Display flex-direction:column</h3>
+    <ul>
+        <li>column</li>
+        <li>column-reverse</li>
+        <li>row</li>
+        <li>row-reverse</li>
+    </ul>
+
+    
+    <div class="container">
+        <div class="row"> <div class="col">Col1</div> <div class="col">Col2</div> <div class="col">Col3</div> </div>
+        <h3>flex-direction-col</h3>
+        <div class="row flex-direction-col"> <div class="col">Col1</div> <div class="col">Col2</div> <div class="col">Col3</div> </div>
+        <h3>flex-direction-col--reverse</h3>
+        <div class="row flex-direction-col--reverse"> <div class="col">Col1</div> <div class="col">Col2</div> <div class="col">Col3</div> </div>
+        <h3>flex-direction-row</h3>
+        <div class="row flex-direction-row"> <div class="col">Col1</div> <div class="col">Col2</div> <div class="col">Col3</div> </div>
+        <h3>flex-direction-row-reverse</h3>
+        <div class="row flex-direction-row-reverse"> <div class="col">Col1</div> <div class="col">Col2</div> <div class="col">Col3</div> </div>
+        <h3>flex-no-wrap</h3>
+        <div class="row"> <div class="col-3">Col1</div> <div class="col-3">Col2</div> <div class="col-3">Col3</div><div class="col-3">Col4</div> </div>
+        <div class="row"> <div class="col-3">Col1</div> <div class="col-3">Col2</div> <div class="col-3">Col3</div><div class="col-3">Col4</div><div class="col-3">Col5</div> </div>
+        <h3>flex-wrap</h3>
+        <div class="row flex-wrap"> <div class="col-3">Col1</div> <div class="col-3">Col2</div> <div class="col-3">Col3</div><div class="col-3">Col4</div><div class="col-3">Col5</div> </div>
+        <h3>flex-wrap-rev</h3>
+        <div class="row flex-wrap-rev"> <div class="col-3">Col1</div> <div class="col-3">Col2</div> <div class="col-3">Col3</div><div class="col-3">Col4</div><div class="col-3">Col5</div> </div>
+        <div class="row flex-wrap-rev"> <div class="col-3">Col1</div> <div class="col-3">Col2</div> <div class="col-3">Col3</div><div class="col-3">Col4</div><div class="col-3">Col5</div> <div class="col-3">Col6</div><div class="col-3">Col7</div><div class="col-3">Col8</div> <div class="col-3">Col9</div>   </div>
+    </div>
+
+</body>
+</html>

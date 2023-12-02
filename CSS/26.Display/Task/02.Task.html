@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .container {
+            height: 400px;
+            width: 400px;
+            margin: auto;
+            border: 1px orange solid;
+        }
+
+        .row {
+            display: flex;
+        }
+
+        .box {
+            margin: 2px;
+        }
+
+        .box1 {
+            height: 100px;
+            width: 200px;
+            border: 0px solid;
+            background-color: blueviolet;
+        }
+
+        .box2 {
+            height: 100px;
+            width: 200px;
+            border: 0px solid;
+            background-color: blueviolet;
+        }
+
+        .box3 {
+            display: flex;
+            height: 100px;
+            width: 200px;
+            border: 0px solid;
+            background-color:orange;
+        }
+
+        .box4 {
+            height: 50px;
+            width: 200px;
+            border: 0px solid;
+            background-color: blue;
+
+        }
+
+        .row1 {
+            display: flex;
+            /* flex-wrap: wrap; */
+            /* align-content: end; */
+        }
+
+        .box5 {
+            height: 50px;
+            width: 200px;
+            border: 0px solid;
+            background-color: blue;
+        }
+        .box6 {
+            height: 100px;
+            width: 200px;
+            border: 0px solid;
+            background-color:pink;
+        }
+        .box7 {
+            height: 100px;
+            width: 200px;
+            border: 0px solid;
+            background-color:pink;
+        }
+        .box8 {
+            height: 100px;
+            width: 200px;
+            border: 0px solid;
+            background-color:pink;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+            <div class="row">
+            <div class="box box1">Menu1</div>
+            <div class="box box2">Menu2</div>
+            </div>
+
+        <div>
+            <div class="row1">
+            <div class="box box3">Menu3</div>
+            <div>
+                <div class="box box4">Menu4</div>
+                <div class="box box5">Menu5</div>
+                </div>
+            </div>
+            <div class="row1">
+                <div class="box box6">Menu6</div>
+                <div class="box box6">Menu7</div>
+                <div class="box box6">Menu8</div>
+            </div>
+
+           
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            border: 1px solid;
+        }
+
+        .container {
+            width: 1100px;
+            margin: 0 auto;
+        }
+
+        .row {
+            display: flex;
+            min-height: 150px;
+            background-color: teal;
+        }
+
+        .col {
+            height: 50px;
+            background-color: rgb(0, 128, 98);
+            color: white;
+        }
+
+        .col-3 {
+            width: 25%;
+            height: 50px;
+        }
+
+        .flex-wrap {
+            flex-wrap: wrap;
+        }
+
+        .justify-content {
+            /* justify-content: flex-start; */
+            /* justify-content: flex-end; */
+            /* justify-content: center; */
+            justify-content: space-between;
+            justify-content: space-around;
+            justify-content: space-evenly;
+        }
+
+        .justify-content-end {
+            justify-content: flex-end;
+        }
+
+        .justify-content-around {
+            justify-content: space-around;
+        }
+
+        .justify-content-between {
+            justify-content: space-between;
+        }
+
+        .justify-content-evenly {
+            justify-content: space-evenly;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="container">
+        <div class="row justify-content">
+            <div class="col-3">Col1</div>
+            <div class="col-3">Col2</div>
+            <div class="col-3">Col3</div>
+            <div class="col-3">Col4</div>
+            <div class="col-3">Col5</div>
+        </div>
+        <h3>justify-content-end</h3>
+        <div class="row justify-content-end">
+            <div class="col">Col1</div>
+            <div class="col">Col2</div>
+            <div class="col">Col3</div>
+            <div class="col">Col4</div>
+            <div class="col">Col5</div>
+        </div>
+        <h3>justify-content-around</h3>
+        <div class="row justify-content-around">
+            <div class="col">Col1</div>
+            <div class="col">Col2</div>
+            <div class="col">Col3</div>
+            <div class="col">Col4</div>
+            <div class="col">Col5</div>
+        </div>
+        <h3>justify-content-between</h3>
+        <div class="row justify-content-between">
+            <div class="col">Col1</div>
+            <div class="col">Col2</div>
+            <div class="col">Col3</div>
+            <div class="col">Col4</div>
+            <div class="col">Col5</div>
+        </div>
+        <h3>justify-content-evenly</h3>
+        <div class="row justify-content-evenly">
+            <div class="col">Col1</div>
+            <div class="col">Col2</div>
+            <div class="col">Col3</div>
+            <div class="col">Col4</div>
+            <div class="col">Col5</div>
+        </div>
+        <style>
+            .align-items-auto {
+                align-items: auto;
+            }
+
+            .align-items-stretch {
+                align-items: stretch;
+            }
+
+            .align-items-start {
+                align-items: flex-start;
+            }
+
+            .align-items-end {
+                align-items: flex-end;
+            }
+
+            .align-items-center {
+                align-items: center;
+            }
+
+            .align-items-baseline {
+                align-items: baseline;
+            }
+
+            .align-content-space-between {
+                align-content: space-between;
+            }
+        </style>
+        <div class="row justify-content-evenly align-items-stretch">
+            <div class="col">Col1</div>
+            <div class="col">Col2</div>
+            <div class="col">Col3</div>
+            <div class="col">Col4</div>
+            <div class="col">Col5</div>
+        </div>
+        <h3>align-items-start</h3>
+        <div class="row justify-content-evenly align-items-start">
+            <div class="col">Col1</div>
+            <div class="col">Col2</div>
+            <div class="col">Col3</div>
+            <div class="col">Col4</div>
+            <div class="col">Col5</div>
+        </div>
+        <h3>align-items-end</h3>
+        <div class="row justify-content-evenly align-items-end">
+            <div class="col">Col1</div>
+            <div class="col">Col2</div>
+            <div class="col">Col3</div>
+            <div class="col">Col4</div>
+            <div class="col">Col5</div>
+        </div>
+        <h3>align-items-center</h3>
+        <div class="row justify-content-evenly align-items-center">
+            <div class="col">Col1</div>
+            <div class="col">Col2</div>
+            <div class="col">Col3</div>
+            <div class="col">Col4</div>
+            <div class="col">Col5</div>
+        </div>
+        <h3>align-items-baseline</h3>
+        <div class="row justify-content-evenly align-items-baseline">
+            <div class="col">Col1</div>
+            <div class="col">Col2</div>
+            <div class="col">Col3</div>
+            <div class="col">Col4</div>
+            <div class="col">Col5</div>
+        </div>
+        <h3>align-items-auto</h3>
+        <div class="row justify-content-evenly align-items-auto">
+            <div class="col">Col1</div>
+            <div class="col">Col2</div>
+            <div class="col">Col3</div>
+            <div class="col">Col4</div>
+            <div class="col">Col5</div>
+        </div>
+        <h3>align-content: space-between;</h3>
+        <div class="row  align-content-space-between flex-wrap">
+            <div class="col-3">Col1</div>
+            <div class="col-3">Col2</div>
+            <div class="col-3">Col3</div>
+            <div class="col-3">Col4</div>
+            <div class="col-3">Col5</div>
+        </div>
+        <style>
+            .flex-grow{
+                flex-grow: 1;
+            }
+        </style>
+        <div class="row  align-content-space-between flex-wrap">
+            <div class="col flex-grow">Col1</div>
+            <div class="col ">Col2</div>
+            <div class="col ">Col3</div>
+            <div class="col flex-grow">Col4</div>
+            <div class="col flex-grow">Col5</div>
+        </div>
+        <div class="row  align-content-space-between flex-wrap">
+            <div class="col flex-grow">Col1</div>
+            <div class="col flex-grow">Col2</div>
+            <div class="col flex-grow">Col3</div>
+            <div class="col flex-grow">Col4</div>
+            <div class="col flex-grow">Col5</div>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
