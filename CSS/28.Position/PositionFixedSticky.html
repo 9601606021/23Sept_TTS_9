@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{ margin: 0 ;padding: 0; box-sizing: border-box; }
+        section{
+            min-height: 800px;
+            padding-top: 70px;
+        }
+        section:nth-child(odd){
+            background-color: rgba(128, 128, 128, 0.527);
+        }
+        section:nth-child(2){
+            margin-top: 60px;
+            /* background-color: rgba(158, 13, 13, 0.527); */
+        }
+        nav ul li { display: inline-block;}
+        header {background-color: rgb(5, 70, 103); color: white; padding: 20px; position: fixed; width: 100%; top: 0;}
+        a{ color: white; text-decoration: none; padding: 20px; } 
+        .position-st{ position: sticky; top: 70px; background-color: teal; color: white; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="menu"> 
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+             
+        </div>
+    </header>
+    <section id="home"> <h3 class="position-st">Welcome</h3> <p>something</p></section>
+    <section id="about"> <h3 class="position-st">About</h3> <p>something</p></section>
+    <section id="team"> <h3 class="position-st">Team</h3> <p>something</p></section>
+    <section id="contact"> <h3 class="position-st">Contact</h3> <p>something</p></section>
+</body>
+</html>

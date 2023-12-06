@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        section {
+            min-height: 800px;
+            padding-top: 70px;
+        }
+
+        section:nth-child(odd) {
+            background-color: rgba(128, 128, 128, 0.527);
+        }
+
+        section:nth-child(2) {
+            margin-top: 60px;
+            /* background-color: rgba(158, 13, 13, 0.527); */
+        }
+
+        nav ul li {
+            display: inline-block;
+        }
+
+        header {
+            background-color: rgb(5, 70, 103);
+            color: white;
+            padding: 20px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+            padding: 20px;
+        }
+
+        .container {
+            width: 900px;
+            margin: 0 auto;
+        }
+
+        .row {
+            display: flex;
+        }
+        .col{ width: 25%; position: relative; }
+        img {
+            width: 100%;
+        }
+        .position-ab{ position: absolute; width: 100px; left: 20px; }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="menu">
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+    <section id="home">
+
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="iphone.jpg" alt="">
+                            <img src="offer.png" class="position-ab" alt="">
+                        </div>
+                        <div class="card-body">
+                            Lorem ipsum dolor sit amet.
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="iphone.jpg" alt="">
+                            <img src="offer.png" class="position-ab" alt="">
+                        </div>
+                        <div class="card-body">
+                            Lorem ipsum dolor sit amet.
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="iphone.jpg" alt="">
+                            <img src="offer.png" class="position-ab" alt="">
+                        </div>
+                        <div class="card-body">
+                            Lorem ipsum dolor sit amet.
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="iphone.jpg" alt="">
+                            <img src="offer.png" class="position-ab" alt="">
+                        </div>
+                        <div class="card-body">
+                            Lorem ipsum dolor sit amet.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </section>
+    <section id="about">
+        <h3 class="position-st">About</h3>
+        <p>something</p>
+    </section>
+    <section id="team">
+        <h3 class="position-st">Team</h3>
+        <p>something</p>
+    </section>
+    <section id="contact">
+        <h3 class="position-st">Contact</h3>
+        <p>something</p>
+    </section>
+</body>
+
+</html>

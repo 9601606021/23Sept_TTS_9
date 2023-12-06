@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .static{ position:static ; top: 50px; left: 60px;  background-color: blueviolet;}
+        .relative{ position:relative ;top: 60px; left: 90px;  background-color: rgb(43, 192, 226);}
+        .absolute{ position:absolute ; top: 90px; left: 120px; background-color: rgb(144, 226, 43);}
+        .fixed{ position:fixed ; top: 0px; background-color: rgb(226, 147, 43);}
+        .sticky{ position:sticky ; top: 30px; background-color: rgb(43, 144, 226);}
+    </style>
+</head>
+<body>
+    
+
+    <ul>
+        <li>position: static; default</li> 
+        <li>position: relative; enable top-left-right-bottom</li> 
+        <li>position: absolute; enable top-left-right-bottom and creating a layer</li> 
+        <li>position: fixed; fixed content on screen</li> 
+        <li>position: sticky; fixed content on parent wrapper</li> 
+        <!-- <li>position: inherit;</li>  -->
+    </ul>
+
+    <div class="static">position Static</div>
+    <div class="relative">position Relative</div>
+    after Relative
+    <div class="absolute">position absolute</div>
+    after Absolute
+    <div class="fixed">position fixed</div>
+    <div class="sticky">position sticky</div>
+
+</body>
+</html>
