@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box {
+            margin: auto;
+            height: 200px;
+            width: 200px;
+            background-color: teal;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            /* animation: anim-effect 5s ease-in infinite; */
+            /* animation: anim-effect 2s ease-in-out forwards; */
+            /* animation: anim-effect 2s infinite alternate-reverse; */
+            animation: anim-effect 2s infinite;
+        }
+        /* @keyframes anim-effect {
+            to{}
+            from{}
+        } */
+        @keyframes anim-effect {
+            0%{ transform: rotate(20deg); }
+            /* 50%{ transform: rotate(50deg); } */
+            100%{ transform: rotate(180deg) scale(2); border-radius: 50%; }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box"></div>
+
+</body>
+
+</html>

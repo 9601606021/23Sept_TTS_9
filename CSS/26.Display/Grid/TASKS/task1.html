@@ -6,25 +6,84 @@
     <title>Document</title>
     <style>
         * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            border: 1px solid;
+            /* margin: 0; */
+            /* padding: 0; */
+            /* box-sizing: border-box; */
+            /* border: 1px solid; */
         }
         .wrapper {
             display: grid;
-            height: 38vh;
-            width: 174vh;
-            grid-template-columns: 1fr 1fr;
+            height: 100vh;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
+            grid-template-areas:
+            "Header Menu Menu Menu"
+            "Hero Hero Hero Hero"
+            "Main Main Image Extra"
+            "Banner Banner Banner Banner";
         }
         .Header {
-            width: 200px;
-            height: 100px;
-            /* background-color: black; */
+            /* width: 200px; */
+            /* height: 100px; */
+            background-color: black;
+            color: white;
+            grid-area:Header;
         }
-        .menu {
+        .Menu {
             background-color: red;
-
+            color: white;
+            grid-area:Menu;
+        }
+        .Hero {
+            background-color: blue;
+            color: white;
+            grid-area:Hero;
+        }
+        .Main {
+            background-color: rgb(2, 2, 48);
+            color: white;
+            grid-area:Main;
+        }
+        .Banner {
+            background-color: rgb(204, 162, 46);
+            color: white;
+            grid-area:Banner;
+        }
+        .Extra {
+            background-color: rgb(0, 128, 73);
+            color: white;
+            grid-area:Extra;
+        }
+        .Image {
+            background-color: rgb(98, 122, 124);
+            color: white;
+            grid-area:Image;
+        }
+    @media (max-width:992px) {
+        .wrapper {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1.2fr 1.2fr 2.2fr 1.8fr 1.2fr 1.2fr 1.2fr;
+            grid-template-areas: 
+            "Header Header Header Header"
+            "Hero Hero Hero Hero"
+            "Menu Main Main Main"
+            "Menu Banner Banner Banner"
+            "Menu Extra Extra Image";
+        }
+    }
+        @media (max-width:702px) {
+            .wrapper {
+                grid-template-columns: 1fr;
+                grid-template-rows:1.2fr 1.2fr 2.2fr 1.8fr 1.2fr 1.2fr 1.2fr;
+                grid-template-areas:
+                "Header"
+                "Menu"
+                "Hero"
+                "Main"
+                "Banner"
+                "Extra"
+                "Image";
+            }
         }
     </style>
 </head>
