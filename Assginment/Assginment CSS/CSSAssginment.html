@@ -82,6 +82,28 @@
     <h3>10.Why should background and color be used as separate properties?</h3>
     <h3>11.How to center block elements using CSS1?</h3>
     <p>The “blocks” are known for taking full line space, forcing other elements to start on a new line. In other words, they have a width of 100% of the webpage or container holding the block.  In this article, we are going to see how to block elements that usually behave and how to center them using CSS.</p>
-    <h3></h3>
+    <h3>12.How to maintain the CSS specifications?</h3>
+    <h3>13.What are the ways to integrate CSS as a web page?</h3>
+    <h3>14.What is embedded style sheets?</h3>
+    <p>It allows you to define styles for a particular HTML document as a whole in one place. This is done by embedding the &lt;style&gt;&lt;/style&gt; tags containing the CSS properties in the head of your document. Embedded style sheets are particularly useful for HTML documents that have unique style requirements from the rest of the documents in your project. However, if the styles need to be applied across multiple documents, you should link to an external style sheet instead of using individual embedded style sheets. Using embedded stylesheets holds a distinct advantage over inline styles which only allow you to address one HTML element at a time.</p>
+    <h3>15.What are the external style sheets?</h3>
+    <p>An external style sheet is a separate file where you can declare all the styles that you want to use on your website. You then link to the external style sheet from all your HTML pages.</p>
+    <p>This means you only need to set the styles for each element once. If you want to update the style of your website, you only need to do it in one place.</p>
+    <h3>16.What are the advantages and disadvantages of using external style sheets?</h3>
+    <style>
+        .post-full-content h4 {
+            /* font-size: 2.8rem; */
+            /* color: black; */
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            /* margin: 0.5em; */
+        }
+    </style>
+    <h4 id="prosofexternalstylesheets">Pros of External Stylesheets</h4>
+    <ul>
+        <li>Makes styles reusable across multiple HTML files.</li>
+        <li>It is easier to maintain.</li>
+        <li>It is cached by the browser on initial load, making page rendering easier and less time consuming after subsequent page loads.</li>
+        <li>It can be hosted on a CDN, so bandwidth becomes minimal and it can be easily transported across various regions of the world.</li>
+    </ul>
 </body>
 </html>
