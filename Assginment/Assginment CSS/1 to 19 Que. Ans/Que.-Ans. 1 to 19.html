@@ -7,6 +7,10 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
     <title>CSS Assginment</title>
     <style>
+        body {
+            background-color: peachpuff;
+            color: black;
+        }
         .row {
             display: flex;
         }
@@ -23,6 +27,7 @@
         .filter-opacity2 {
             filter: opacity(50%);
         }
+        
     </style>
 </head>
 
@@ -43,6 +48,7 @@
         <li>These bandwidth savings are substantial figures of insignificant tags that are indistinct from a mess of
             pages.</li>
     </ul>
+    <hr>
     <h3>02.What are the disadvantages of CSS?</h3>
     <ul>
         <li>CSS, CSS 1 up to CSS3, result in creating of confusion among web browsers.</li>
@@ -58,6 +64,7 @@
         <li>There might be cross-browser issues while using CSS.</li>
         <li>There are multiple levels which creates confusion for non-developers and beginners.</li>
     </ul>
+    <hr>
     <h3>03.What is the difference between CSS2 and CSS3?</h3>
     <ul>
         <li>CSS3 is split into many various documents known as Modules. each module adds new capability or extends
@@ -75,6 +82,7 @@
         <li>New values and new units square measure introduced to support all those new properties. for example, Angle
             units deg, grad, rad, and switch or Time units s and ms.</li>
     </ul>
+    <hr>
     <h3>04.Name a few CSS style components.</h3>
     <p>At its most basic level, CSS consists of two components:</p>
     <list>
@@ -84,47 +92,56 @@
             <li><b>Values:</b> Each property is assigned a value. This value indicates how to style the property.</li>
         </ol>
     </list>
+    <hr>
     <h3>05.What do you understand by CSS opacity?</h3>
     <p>The opacity property sets the opacity level for an element.</p>
     <p>The opacity-level describes the transparency-level, where 1 is not transparent and 2 is 50% transparent
         see-through.</p>
     <div class="row">
         <div class="col">
-            <img class="filter-opacity1" src="Image/img_forest.jpg">
+            <img class="filter-opacity1" src="img_forest.jpg">
         </div>
         <div class="col">
-            <img class="filter-opacity2" src="Image/img_forest.jpg">
+            <img class="filter-opacity2" src="img_forest.jpg">
         </div>
     </div>
+    <hr>
     <h3>06.How can the background color of an element be changed?</h3>
     <div style="background-color: aqua;">
         <p>The background-color property sets the background color of an element.</p>
         <p>The background of an element is the total size of the element, including padding and border (but not the
             margin).</p>
     </div>
+    <hr>
     <h3>07.How can image repetition of the backup be controlled?</h3>
     <p>In this article, we will see how an image repetition of the backup is controlled in CSS. This task can be
         achieved by using the background-repeat property that will help us to control the repetition of the image.</p>
     <p>The background-repeat property in CSS is used to repeat the background image both horizontally and vertically. It
         also decides whether the background image will be repeated or not.</p>
     <p>Syntax: background-repeat: repeat|repeat-x|repeat-y|no-repeat|initial|inherit;</p>
+    <hr>
     <h3>08.What is the use of the background-position property?</h3>
     <p>The background-position property sets the starting position of a background image.</p>
+    <hr>
     <h3>09.Which property controls the image scroll in the background?</h3>
     <p>The background-attachment property sets whether a background image scrolls with the rest of the page, or is
         fixed.</p>
+    <hr>    
     <h3>10.Why should background and color be used as separate properties?</h3>
     <p>There are two reasons behind this: It enhances the legibility of style sheets. The background property is a
         complex property in CSS, and if it is combined with color, the complexity will further increase.</p>
+    <hr>
     <h3>11.How to center block elements using CSS1?</h3>
     <p>The “blocks” are known for taking full line space, forcing other elements to start on a new line. In other words,
         they have a width of 100% of the webpage or container holding the block. In this article, we are going to see
         how to block elements that usually behave and how to center them using CSS.</p>
+    <hr>    
     <h3>12.How to maintain the CSS specifications?</h3>
     <p>The CSS specifications are maintained by the World Wide Web Consortium (W3C).</p>
     <p>Even though every browser supports CSS, there are many inconsistencies in the supported specification version.
     </p>
     <p>Some browsers even have their own implementation of the specification and have proprietary (vendor) prefixes.</p>
+    <hr>
     <h3>13.What are the ways to integrate CSS as a web page?</h3>
     <p>CSS is used for styling the look and formatting of a document written in HTML. There are three ways to add CSS in
         HTML</p>
@@ -133,6 +150,7 @@
         <li><strong>Internal CSS:</strong> Styles defined at the <code>head</code> section of the document.</li>
         <li><strong>External CSS</strong>: Styles defined in a separate file.</li>
     </ul>
+    <hr>
     <h3>14.What is embedded style sheets?</h3>
     <p>It allows you to define styles for a particular HTML document as a whole in one place. This is done by embedding
         the &lt;style&gt;&lt;/style&gt; tags containing the CSS properties in the head of your document. Embedded style
@@ -140,11 +158,13 @@
         documents in your project. However, if the styles need to be applied across multiple documents, you should link
         to an external style sheet instead of using individual embedded style sheets. Using embedded stylesheets holds a
         distinct advantage over inline styles which only allow you to address one HTML element at a time.</p>
+    <hr>
     <h3>15.What are the external style sheets?</h3>
     <p>An external style sheet is a separate file where you can declare all the styles that you want to use on your
         website. You then link to the external style sheet from all your HTML pages.</p>
     <p>This means you only need to set the styles for each element once. If you want to update the style of your
         website, you only need to do it in one place.</p>
+    <hr>
     <h3>16.What are the advantages and disadvantages of using external style sheets?</h3>
     <p><strong>Advantages of External Style Sheets</strong></p>
     <ul>
@@ -159,6 +179,7 @@
             performance.</li>
         <li>Large-scale projects may face versioning and caching challenges when using external CSS.</li>
     </ul>
+    <hr>
     <h3>17.What is the meaning of the CSS selector?</h3>
     <p>A CSS selector is the first part of a CSS Rule. It is a pattern of elements and other terms that tell the browser
         which HTML elements should be selected to have the CSS property values inside the rule applied to them. The
@@ -211,6 +232,7 @@
             </tr>
         </tbody>
     </table>
+    <hr>
     <h3>18.What are the media types allowed by CSS?</h3>
     <p>If the specified media type matches the type of device the document is being displayed on and all expressions in
         the media query.</p>
@@ -241,6 +263,7 @@
             </tr>
         </tbody>
     </table>
+    <hr>
     <h3>19.What is the rule set?</h3>
     <p>A CSS ruleset is various affirmations to various pieces or elements of the document. The objective is to apply a
         bunch of properties for certain distinct qualities to a solitary, or a particular arrangement of components in
@@ -250,358 +273,9 @@
         .image {
             width: 645px;
             height: 310px;
-            background-image: url(Image/CSSrulesetImage.png);
+            background-image: url(CSSrulesetImage.png);
         }
     </style>
     <div class="image"></div>
-    <h3>20.Create image gallery using display grid with responsive.</h3>
-
-    <style>
-        #page {
-            display: grid;
-            box-sizing: border-box;
-            border: 1px solid;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-            grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
-            /* grid-template-columns: 150px 1fr; */
-            /* grid-template-rows: 50px auto 60px; */
-            grid-template-areas:
-                "main main main footer"
-                "main main main footer"
-                "main main main footer"
-                "main main main footer";
-        }
-
-        #page>footer {
-            grid-area: footer;
-            background-color: black;
-            object-fit: cover;
-            color: white;
-            /* height: 145 vh; */
-            /* margin: 0; */
-            /* padding: 0; */
-            /* box-sizing: border-box; */
-            /* border: 1px solid; */
-        }
-
-        #page>footer>div {
-            margin: 10px;
-            text-align: end;
-
-        }
-
-        #page>footer>H3 {
-            text-align: end;
-            margin: 10px;
-            margin-top: 20px;
-        }
-
-        #page>main {
-            grid-area: main;
-            /* margin: 0; */
-            /* padding: 0; */
-            /* box-sizing: border-box; */
-            /* border: 1px solid; */
-            background-color: black;
-        }
-
-        #page>footer>div>img {
-            width: 20px;
-            height: 20px;
-            margin: 4px;
-            margin-top: 25px;
-        }
-
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            grid-auto-rows: auto;
-            grid-auto-flow: dense;
-            gap: 6px;
-            /* background-color: black; */
-            /* height: 30px; */
-        }
-
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        img.four-grid-cells {
-            grid-row: span 2 / auto;
-            grid-column: span 2 / auto;
-        }
-
-        img.wide-image {
-            grid-column: span 2 / auto;
-        }
-    </style>
-    <section id="page">
-        <footer>
-            <H3>SHUTTER</H3>
-            <div><a href>HOME</a></div>
-            <div><a href>PHOTOS</a></div>
-            <div><a href>BIO</a></div>
-            <div><a href>BLOG</a></div>
-            <div><a href>CONTACT</a></div>
-            <div>
-                <img src="Image/facebook.png">
-                <img src="Image/twitter.png">
-                <img src="Image/instagram.png">
-            </div>
-        </footer>
-        <main>
-            <div class="gallery">
-                <img class="four-grid-cells" src="Image/img10.jpeg" alt="" />
-
-                <img src="Image/img11.jpeg" alt="" />
-
-                <img class="wide-image" src="Image/img12.jpeg" alt="" />
-
-                <img src="Image/img14.jpeg" alt="" />
-
-                <img src="Image/img17.jpeg" alt="" />
-
-                <img class="wide-image" src="Image/img15.jpeg" alt="" />
-
-                <img src="Image/img13.jpeg" alt="" />
-        </main>
-        </div>
-    </section>
-       <h3>21. Create below example with the help of clip path.</h3> 
-       <style>
-            .box{
-            height: 730px;
-            /* background-color: rgb(65, 68, 65); */
-        }
-        .clip{
-            clip-path: polygon(50% 0%, 100% 0, 100% 34%, 100% 75%, 50% 86%, 50% 86%, 50% 86%, 0 78%, 0 35%, 0 0);
-            height:660px;
-            background: url(wp.jpg);   
-        }
-        nav ul li {
-            display: inline-block;
-            
-        }
-        .A {
-            color: #fff;
-            /* text-decoration: none; */
-            padding: 20px;
-        }
-        .menu{
-            padding-left: 40%;
-        }
-        header {
-            /* background-color: rgb(5, 70, 103); */
-            color: white;
-            padding: 20px;
-            /* position: fixed; */
-            width: 100%;
-            top: 0;
-        }
-        .title {
-            text-align: center;
-            /* padding: 20px; */
-            /* margin: 0%; */
-            color: white;
-        }
-        .container {
-            /* margin-bottom: 0%; */
-            padding:0px;
-        }
-        .line {
-            width: 20%;
-            height: 45px;
-            position: relative;
-            left: 40%;
-        }
-        .line::after, .line::before {
-            content:'';
-            position: absolute;
-            margin: 4px;
-            background: #fff;
-            width: 40%;
-            top: 0px;
-            border: 1px solid #fff;
-        }
-        .line::after {
-            left: 0;
-        }
-        .line::before {
-            right: 0;
-        }
-        .circle {
-            height: 10px;
-            width: 10px;
-            border: 1px solid #fff;
-            left: 0;
-            right: 0;
-            top: 0;
-            bottom: 0;
-            margin:auto;
-            border-radius: 50%;
-        }
-        .title .font {
-            font-size: 425%;
-            margin-top: 0%;
-            line-height: 85%;
-        }
-        .text {
-            width: 35%;
-            text-align: center;
-            font-size: small;
-            margin: auto;
-            color: #fff;
-        }
-        .container1 {
-            text-align: center;
-            margin-top: 30px;
-        }
-        .btn {
-            border: 1px solid  rgb(249, 93, 93);
-            padding: 10px 20px;
-            font-size: 20px;
-            cursor:pointer;
-            margin: 10px;
-            text-transform: uppercase;
-            border-radius: 5px;
-            color: #fff;
-        }
-        .btn1 {
-            background-color: rgb(249, 93, 93);
-        }
-        .btn2 {
-            background: transparent; 
-        }
-        .fa-solidfa-anchorfa-2xs i {
-            text-align: center;
-            font-size: 20px;
-        }
-        .icon-container2 {
-            /* background: transparent; */
-            /* border: 1px solid rgb(245, 166, 192); */
-            /* width: 20px; */
-            /* height: 20px; */
-            display: block;
-            /* margin: auto; */
-            /* box-sizing: border-box; */
-            padding: 10px;
-            float: left;
-        }
-        .icon-voicemail::before{
-            content:'';
-            display: block;
-            width: 1em;
-            height: 1em;
-            background-repeat:no-repeat;
-            background-size: contain;
-            -webkit-background-size:contain;
-        }
-        .icon-voicemail {
-            /* border: 1px solid rgb(245, 166, 192); */
-            /* width: 20px; */
-            /* height: 20px; */
-            background-image:url(voicemail.svg);
-            /* display: block; */
-        }
-        .love {
-            border: 1px solid rgb(245, 166, 192);
-            width: 20px;
-            height: 20px;
-            
-            
-        }
-        .chatting {
-            border: 1px solid rgb(245, 166, 192);
-            width: 20px;
-            height: 20px;
-        }
-        .idea {
-            border: 1px solid rgb(245, 166, 192);
-            width: 20px;
-            height: 20px;
-        }
-       </style>
-         <div class="box">
-            <div class="clip">
-                <header>
-                    <div class="menu">
-                        <nav>
-                            <ul >
-                                <li><a class="A" href="#home">Home</a></li>
-                                <li><a class="A" href="#aboutas">About As</a></li>
-                                <li><a class="A" href="#pricing">Pricing</a></li>
-                                <li><a class="A" href="#team">Team</a></li>
-                                <li><a class="A" href="#blog">Blog</a></li>
-                                <li><a class="A" href="#protfolio">Portfolio</a></li>
-                                <li><a class="A" href="#contact">Contact</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                </header>
-                <div class="title">
-                <p>Our Clients Are Our First Priority</p>
-                <h3 class="font">WELCOME TO SKY</h3>
-                </div>
-                <div class="container">
-                    <div class="line">
-                        <div class="circle"></div>
-                    </div>
-                </div>
-                <div class="text">
-                    <p>Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the industry's standard dummy text ever since the 1500s. when an unknown printer took a gallary of type and scrambled it to make a type specimen book.</p>       </p>
-                </div>
-                <div class="container1">
-                    <button class="btn btn1">get started now</button>
-                    <button class="btn btn2">learn more</button>
-                </div>
-            </div>
-            <style>
-                .row{
-                    display: block;
-                    justify-content: center;
-                    align-items:center;
-                    flex-wrap: wrap;
-                    gap: 2rem;
-                
-                }
-                .row .col {
-                    flex: 1 1 30rem;
-                    background: var(--bg-color);
-                    padding: 3rem 2rem 4rem;
-                    border-radius: 2rem;
-                    box box-shadow: 0 .1rem .5rem var(--shadow-color);
-                    text-align: center;
-                }
-            </style>
-            <div class="row">
-                <div class="col">
-                    <i class="fa-solid fa-8 fa-rotate-90"></i>
-                    <h3>sleek design</h3>
-                        <div class="line1"></div>
-                    <p>Lorem ipsum is simply dummy text of the 
-                        printing and typesetting let. 
-                        Lorem ipsum has been the industry.</p>     
-                </div>
-                <div class="col">
-                    <i class="fa-thin fa-heart"></i>
-                    <h3>clean code</h3>
-                    <div class="container">
-                        <div class="line"></div>
-                    </div>
-                    <p>Lorem ipsum is simply dummy text of the printing and typesetting let. Lorem ipsum has been the industry.</p>     
-                </div>
-                <div class="col">
-                    <i class="fa-solid fa-8 fa-rotate-90"></i>
-                    <h3>sleek design</h3>
-                    <div class="container">
-                        <div class="line"></div>
-                    </div>
-                    <p>Lorem ipsum is simply dummy text of the printing and typesetting let. Lorem ipsum has been the industry.</p>     
-                </div>
-            </div>
-            </div>
-            
-</body>
-</html>
+    <hr>
+    <hr>
