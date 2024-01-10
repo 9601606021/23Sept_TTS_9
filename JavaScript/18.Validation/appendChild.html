@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="next-element">
+        <input type="text" name="" id="">
+    </div>
+    <script>
+        const span = document.createElement('span');
+        span.textContent = 'This is a span element.';
+        // console.log(span);
+        const nextElement = document.querySelector('.next-element');
+        nextElement.appendChild(span);
+    </script>
+</body>
+
+</html>

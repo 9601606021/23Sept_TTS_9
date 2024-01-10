@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .form-control {
+            width: 100%;
+            border: 1px solid grey;
+            border-radius: 5px;
+            padding: 10px;
+        }
+        .card{
+            border: 1px solid grey;
+            border-radius: 5px;
+            width: 500px;
+            margin: 0 auto;   
+        }
+        .card-header{
+            background-color: rgb(199, 199, 199);
+            padding: 10px;
+        }
+        .card-body{
+            padding: 10px;
+        }
+        .mt-2{ margin-top: .5rem; }
+        .mt-5{ margin-top: 2.5rem; }
+        .btn{ padding: 8px 15px; border-radius: 5px; border: 1px solid grey; }
+        .btn-primary{ background-color: rgb(0, 27, 27); color: white; }
+    </style>
+
+</head>
+<body>
+    <div class="card mt-5">
+        <div class="card-header">
+            Registration Form
+        </div>
+        <div class="card-body">
+            <form action="" method="post" id="form">
+                <div class="row mt-2">
+                    <div class="col">
+                        <label for="fullname">Full Name</label>
+                        <input type="text" onblur="checkreq()" class="form-control" name="fullname" id="fullname" placeholder="Your Full Name">
+                        <!-- <p id="firstname" class="error"></p> -->
+                        <span id="usernameError"></span> 
+                        <!-- <span id="successfull"></span> -->
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <div class="col">
+                        <label for="username">Email</label>
+                        <input type="email" class="form-control" name="Email" id="Email" placeholder="Enter Email Id" >
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <div class="col">
+                        <label for="username">Mobile No.</label>
+                        <input type="phone" onblur="checkreq()" class="form-control" name="phone" id="phone" placeholder="Enter Phone No." required>
+                        <span id="phoneError"></span>
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <div class="col">
+                        <label for="username">Age:</label>
+                        <input type="number" class="form-control" name="age" id="age" >
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <div class="col">
+                        <label for="username">City Name:</label>
+                        <input type="text" class="form-control" name="cityname" id="cityname" required>
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <div class="col">
+                        <label for="username">State Name:</label>
+                        <input type="text" class="form-control" name="statename" id="statename" required>
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <div class="col">
+                        <input type="Register" value="Register" class="btn btn-primary" name="btn" id="btn">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+        function checkreq() {
+        let uname = document.getElementById("fullname").value
+        console.log(uname);
+        if (uname == "") {
+            document.getElementById("usernameError").innerHTML = "This field is required"            
+        } else {
+            document.getElementById("usernameError") = "Minimum 3 character"              
+        }
+    }
+        // function checkreq() {
+        //     let phone = document.getElementById("phone").value
+        //     console.log(phone);
+        //     if (phone == "") {
+        //         document.getElementById("phoneError").innerHTML = "Phone No. Empty"
+        //     } else if (phone.length !< 10) {
+        //         document.getElementById("phoneError") = "Not a Valid Number"
+        //     }  
+        // }   
+        // const form = document.getElementById("form")
+        // const firstname = document.getElementById("firstname")
+        // const middlename = document.getElementById("middlename")
+        // const lastname = document.getElementById("lastname")
+
+        // const validateform = () => {
+        //     const form = form.value.trim();
+        //     const firstname =firstname.value.trim();
+        //     const middlename =middlename.value.trim();
+        //     const lastname =lastname.value.trim();
+
+        //     if(firstname === ""){
+        //         seterrormsg(firstname,"name empty")
+        //     }else if(firstname.length <=2){
+        //         seterrormsg(firstname,"name min 3 char")
+        //     }else{
+
+        //     }
+        // }
+    //     const firstname = document.getElementById("firstname");
+    //     let password = document.getElementById("password");
+
+    // function validateform(){
+    //     if(firstname.value == ""){
+    //         error(firstname, "name empty");
+    //     }else if (firstname.length =< 2) {
+    //         error(firstname,"name main 3 char");
+    //     }esle{
+
+    //     }
+    // }        
+    </script>
+</body>
+</html>
