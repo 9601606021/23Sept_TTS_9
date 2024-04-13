@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Common.css">
+    <title>Reverse Number</title>
+</head>
+<body>
+    <div id="box">
+    <h2>34.Write to print number in reverse order e.g.: number = 64728 -> reverse =82746 in JS?</h2>
+
+    <p class="Example"><strong>Program :</strong></p>
+
+    <fieldset>
+        <pre>
+
+            &lt;h3 id="ans">&lt;/h3>
+
+            &lt;script>
+            var a = prompt("Enter a four number of value");
+            var b, sum = 0;
+            var z = a;
+            while(a > 0)
+            {
+              b = a % 10;
+              sum = sum * 10 + b;
+              a = parseInt(a / 10);
+            }
+            // alert(sum);
+            document.getElementById("text").innerHTML = sum;
+        
+            &lt;/script>
+
+        </pre>
+    </fieldset>
+
+    <br>
+
+    <p class="Example"><strong>Output :</strong></p>
+
+    <fieldset>
+        <h3 id="ans"></h3>
+    </fieldset>
+
+    <script>
+        var a = prompt("Enter a four number of value");
+        var b, sum = 0;
+        var z = a;
+        while(a > 0)
+        {
+          b = a % 10;
+          sum = sum * 10 + b;
+          a = parseInt(a / 10);
+        }
+        // alert(sum);
+        document.getElementById("ans").innerHTML = sum;
+    </script>
+    </div>
+    <div class="button-maindiv">
+
+        <button class="btn_1"><a class="left" href="33_JavaScript.HTML">❮ Previous</a></button>
+        <button class="btn_2"><a class="left" href="35_JavaScript.HTML">Next ❯</a></button>
+    
+    </div>
+    <script>
+        var div_tag = document.getElementById('box');
+        // console.log(body_tag)
+        div_tag.classList.add("css")   
+    </script>
+</body>
+</html>

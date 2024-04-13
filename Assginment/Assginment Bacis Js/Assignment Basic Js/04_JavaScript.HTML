@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Common.css" />
+    <title>MUL() Function</title>
+</head>
+<body>
+    <div id="box">
+
+        <h2>4.  Write a mul Function Which will Work Properly When invoked With Following Syntax. </h2>
+       
+        <p>The MUL function is a miniature of the multiplication function. In this function, we call the function that required an argument as a first number, and that function calls another function that required another argument and this step goes on. 
+       
+           The first function’s argument is x, the second function`s argument is y and the third is z, so the return value will be xyz.</p>
+       
+           <p><strong>Syntax:</strong></p>
+       
+           <fieldset>
+               
+               <pre>
+       
+                   &lt;script&gt; 
+                       function mul(x) { 
+                       return function(y) { 
+                           return function(z) { 
+                           return x*y*z; 
+                           }; 
+                       } 
+                       } 
+                       
+                       console.log(mul(2)(3)(5)); 
+                       console.log(mul(2)(3)(4)); 
+                   &lt;/script &gt;
+           
+               </pre>
+       
+           </fieldset>
+       
+           <p class="Example"><strong>Output:</strong></p>
+       
+           <fieldset>
+               30 <br>
+               24
+           </fieldset>
+    </div>
+
+    <div class="button-maindiv">
+
+        <!-- <div class="divbutton"> -->
+            <button class="btn_1"><a class="left" href="03_JavaScript.HTML">❮ Previous</a></button>
+        <!-- </div> -->
+
+        <!-- <div class="divbutton"> -->
+          <button class="btn_2"><a class="left" href="05_JavaScript.HTML">Next ❯</a></button>
+        <!-- </div> -->
+
+    </div>
+    <script>
+        var div_tag = document.getElementById('box');
+        // console.log(body_tag)
+        div_tag.classList.add("css")   
+      </script>
+</body>
+</html>

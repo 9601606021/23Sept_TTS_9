@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Common.css">
+    <title> looping</title>
+</head>
+<body>
+    <div id="box">
+
+    <h2>30. What are the looping structures in JavaScript? Any one Example?</h2>
+
+    <p>for loop : A for loop is used to repeatedly execute a block of code based on a condition.</p>
+    <p>while loop : A while loop executes a block of code as long as a condition is met.</p>
+    <p>do-while loop : Similar to a while loop, a do-while loo.</p>
+
+    <p class="Example"><strong>Example :</strong></p>
+
+    <fieldset>
+        <pre>
+
+            &lt;h3 id="ans">&lt;/h3>
+
+            &lt;script>
+                const cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
+        
+                let text = "";
+                for (let i = 0; i < cars.length; i++) {
+                text += cars[i] + "&lt;br>";
+                }
+        
+                document.getElementById("ans").innerHTML = text;
+            &lt;/script>
+
+        </pre>
+    </fieldset>
+
+    <br>
+
+    <p class="Example"><strong>Output :</strong></p>
+
+    <fieldset>
+        <h3 id="ans"></h3>
+    </fieldset>
+
+    <script>
+        const cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
+
+        let text = "";
+        for (let i = 0; i < cars.length; i++) {
+        text += cars[i] + "<br>";
+        }
+
+        document.getElementById("ans").innerHTML = text;
+    </script>
+    </div>
+
+    <div class="button-maindiv">
+
+        <button class="btn_1"><a class="left" href="29_JavaScript.HTML">❮ Previous</a></button>
+        <button class="btn_2"><a class="left" href="31_JavaScript.HTML">Next ❯</a></button>
+    
+    </div>
+    <script>
+        var div_tag = document.getElementById('box');
+        // console.log(body_tag)
+        div_tag.classList.add("css")   
+    </script>
+     
+    
+    
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Common.css">
+    <title>Question Answer</title>
+</head>
+<body>
+    <div id="box">
+
+    <h2>16. What is the result of the expression (true && 1 && "hello")?</h2>
+
+    <fieldset>
+        <pre>
+
+            &lt;script>
+
+            &lt;h3 id="answer">&lt;/h3> <br>
+                let test =(true && 1 && "hello");
+                console.log(test);
+                document.getElementById('answer').innerHTML = test;
+
+            &lt;/script>
+
+        </pre>
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+        <h3 id="answer"></h3>
+    </fieldset>
+
+    <script>
+        let test =(true && 1 && "hello");
+        console.log(test);
+        document.getElementById('answer').innerHTML = test;
+    </script>
+    </div>
+    <div class="button-maindiv">
+
+        <button class="btn_1"><a class="left" href="15_JavaScript.HTML">❮ Previous</a></button>
+        <button class="btn_2"><a class="left" href="17_JavaScript.HTML">Next ❯</a></button>
+
+</div>
+<script>
+    var div_tag = document.getElementById('box');
+    // console.log(body_tag)
+    div_tag.classList.add("css")   
+</script>
+        
+    
+</body>
+</html>

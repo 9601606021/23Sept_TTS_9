@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Common.css">
+    <title> Condition</title>
+</head>
+<body>
+    <div id="box">
+        <h2>10. What is Condition Statement? </h2>
+    
+        <p>Very often when you write code, you want to perform different actions for different decisions.</p>
+    
+        <p>You can use conditional statements in your code to do this.</p> <br>
+    
+        <li>Use if to specify a block of code to be executed, if a specified condition is true</li>
+        <li>Use else to specify a block of code to be executed, if the same condition is false</li>
+        <li>Use else if to specify a new condition to test, if the first condition is false</li>
+        <li>Use switch to specify many alternative blocks of code to be executed</li>
+    
+        <br>
+        
+        <p class="Example"><strong>Example :</strong></p>
+    
+        <fieldset>
+    
+            If time is less than 10:00, create a "Good morning" greeting, if not, but time is less than 20:00, create a "Good day" greeting, otherwise a "Good evening":
+    
+    
+            <pre>
+                if (time < 10) { <br>
+                    greeting = "Good morning"; <br>
+                } else if (time < 20) { <br>
+                    greeting = "Good day"; <br>
+                } else { <br>
+                    greeting = "Good evening"; <br>
+                }
+            </pre>
+        </fieldset>
+    
+        <p class="Example"><strong>Output :</strong></p>
+    
+        <fieldset>
+            
+            The result of greeting will be: <br> <br>
+    
+            Good day
+        </fieldset>
+    </div>
+
+    <div class="button-maindiv">
+
+            <button class=btn_1><a class="left" href="09_JavaScript.HTML">❮ Previous</a></button>
+            <button class=btn_2><a class="left" href="11_JavaScript.HTML">Next ❯</a></button>
+    </div>
+    <script>
+        var div_tag = document.getElementById('box');
+        // console.log(body_tag)
+        div_tag.classList.add("css")   
+    </script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Common.css">
+    <title>Largest Number</title>
+</head>
+<body>
+    <div id="box">
+    <h2>26. Write find maximum number among 3 numbers using ternary operator in JS?</h2>
+
+    <p class="Example"><strong>Program :</strong></p>
+
+    <fieldset>
+        <pre>
+
+            &lt;h3 id="ans">&lt;/h3>
+
+
+            &lt;script>
+                const num1 = parseFloat(prompt("Enter first number: "));
+                const num2 = parseFloat(prompt("Enter second number: "));
+                const num3 = parseFloat(prompt("Enter third number: "));
+                let largest;
+        
+                if(num1 >= num2 && num1 >= num3) {
+                    largest = num1;
+                }
+                else if (num2 >= num1 && num2 >= num3) {
+                    largest = num2;
+                }
+                else {
+                    largest = num3;
+                }
+        
+                document.getElementById('ans').innerHTML = ("Among " + num1 + ", " + num2 + ", and " + num3 + ", the largest number is : " + largest + ".");
+            &lt;/script>
+
+        </pre>
+    </fieldset>
+
+    <br>
+
+    <p class="Example"><strong>Output :</strong></p>
+
+    <fieldset>
+        <h3 id="ans"></h3>
+    </fieldset>
+
+    <script>
+        const num1 = parseFloat(prompt("Enter first number: "));
+        const num2 = parseFloat(prompt("Enter second number: "));
+        const num3 = parseFloat(prompt("Enter third number: "));
+        let largest;
+
+        if(num1 >= num2 && num1 >= num3) {
+            largest = num1;
+        }
+        else if (num2 >= num1 && num2 >= num3) {
+            largest = num2;
+        }
+        else {
+            largest = num3;
+        }
+
+        document.getElementById('ans').innerHTML = ("Among " + num1 + ", " + num2 + ", and " + num3 + ", the largest number is : " + largest + ".");
+
+    </script>
+    </div>
+
+<div class="button-maindiv">
+
+    <button class="btn_1"><a class="left" href="25_JavaScript.HTML">❮ Previous</a></button>
+    <button class="btn_2"><a class="left" href="27_JavaScript.HTML">Next ❯</a></button>
+
+</div>
+<script>
+    var div_tag = document.getElementById('box');
+    // console.log(body_tag)
+    div_tag.classList.add("css")   
+</script>
+    
+</body>
+</html>

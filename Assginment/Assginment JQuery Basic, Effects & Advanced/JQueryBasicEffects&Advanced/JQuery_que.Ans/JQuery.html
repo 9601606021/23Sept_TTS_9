@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <h3>01. What is jQuery?</h3>
+    <p>jQuery is a lightweight, "write less, do more", JavaScript library.</p>
+    <p>The purpose of jQuery is to make it much easier to use JavaScript on your website.</p>
+    <p>jQuery takes a lot of common tasks that require many lines of JavaScript code to accomplish, and wraps them into
+        methods that you can call with a single line of code.</p>
+    <p>jQuery also simplifies a lot of the complicated things from JavaScript, like AJAX calls and DOM manipulation.</p>
+    <hr>
+    <h3>02.How to Apply CSS Using JQuery, How to Add Class and Remove Class in
+        Jquery, JQuery Animation?</h3>
+    <p><b>How to Apply CSS Using JQuery</b></p>
+
+    <p id="result">&nbsp;</p>
+    <div id="box1">1</div>
+    <div id="box2">2</div>
+    <div id="box3">3</div>
+    <div id="box4">4</div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        $("div").click(function () {
+            let styleProps = $(this).css(["width", "height", "color", "background-color"])
+            console.log("css ", styleProps);
+            var html = ["The clicked div has the following styles:"];
+            $.each(styleProps, function (prop, value) {
+                html.push(prop + ": " + value);
+            });
+            console.log(html);
+            console.log(html.join("<br>"));
+            $("#result").html(html.join("<br>"))
+        })
+    </script>
+    <br><br><br><br>
+    <h3><b>How to Add Class</b></h3>
+
+    <h4>This is a heading</h4>
+    <button>Add a class name to the first h4 element</button>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> -->
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                $("h4:first").addClass("intro");
+            });
+        });
+    </script>
+    <h3><b>How to Remove Class</b></h3>
+
+    <p class="under">Hello</p>
+    <p class="blue under highlight">and</p>
+    <p class="blue under">then</p>
+    <p class="blue">Goodbye</p>
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> -->
+    <script>
+        console.log($("p"));
+        $("p").eq(1).removeClass();
+    </script>
+
+    <h4>Jquery Animation</h4>
+    <div id="box"></div>
+    <br><br><br><br><br><br><br><br>
+    <button id="animateBtn">Play</button>
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> -->
+    <script>
+        $(document).ready(function () {
+            $("#animateBtn").click(function () {
+                $("#box").animate({ left: '400px', width: '400px' }, 3000);
+                $("#box").animate({ top: '150px' });
+                $("#box").animate({ width: 'toggle' });
+            });
+        });
+    </script>
+</body>
+
+</html>

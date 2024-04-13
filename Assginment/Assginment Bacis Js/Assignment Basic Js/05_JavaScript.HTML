@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Common.css" />
+    <title>Undefined and Undeclare</title>
+</head>
+<body>
+    <div id="box">
+        <h2>
+            5. What the deference between undefined and undeclare in JavaScript?
+        </h2>
+    
+        <p class="paragraph"><strong>Undefined:</strong></p>
+    
+        <p>
+             It occurs when a variable has been declared but has not been assigned any value. Undefined is not a keyword. 
+        </p>
+    
+        <p class="Example"><strong>Example:</strong></p>
+    
+        <fieldset>
+            // ReferenceError: myVariable is not defined <br>
+            console.log(myVariable) 
+        </fieldset>
+    
+        <p class="paragraph"><strong>Undeclare:</strong></p>
+    
+        <p>
+             It occurs when we try to access any variable that is not initialized or declared earlier using the var or const keyword. If we use ‘typeof’ operator to get the value of an undeclared variable, we will face the runtime error with the return value as “undefined”. The scope of the undeclared variables is always global. 
+        </p>
+    
+        <p class="Example"><strong>Example:</strong></p>
+    
+        <fieldset>
+            let veer; <br>
+            undefined <br>
+            console.log(veer)
+        </fieldset>
+    </div>
+
+    <div class="button-maindiv">
+
+        <div class="divbutton">
+            <button class=btn_1><a class="left" href="04_JavaScript.HTML">❮ Previous</a></button>
+        </div>
+
+        <div class="divbutton">
+          <button class="btn_2"><a class="left" href="06_JavaScript.HTML">Next ❯</a></button>
+        </div>
+
+    </div>
+    <script>
+        var div_tag = document.getElementById('box');
+        // console.log(body_tag)
+        div_tag.classList.add("css")   
+      </script>
+    
+</body>
+</html>

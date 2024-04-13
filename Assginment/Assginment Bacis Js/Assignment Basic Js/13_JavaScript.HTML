@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Common.css">
+    <title> Fahrenheit to Celsius</title>
+</head>
+<body>
+    <div id="box">
+    <h2>13. Convert temperature Fahrenheit to Celsius? (Conditional logic Question) </h2>
+
+    <p class="Example"><strong>Example :</strong></p>
+
+    <fieldset>
+        <pre>
+        &lt;h3 id="Celsius"&gt; &lt;/h3&gt; <br>
+        let fahrenheit = prompt("Enter temperature in Fahrenheit: "); 
+        let celsius = (fahrenheit - 32) * 5/9;
+        document.getElementById('Celsius').innerHTML ='The temperature in Celsius is : ' + celsius ;
+        </pre>
+    </fieldset>
+
+    <p class="Example"><strong>Output :</strong></p>
+
+    <fieldset>
+        <h3 id="Celsius"></h3>
+    </fieldset>
+
+    <script>
+        let fahrenheit = prompt("Enter temperature in Fahrenheit: "); 
+        let celsius = (fahrenheit - 32) * 5/9;
+        document.getElementById('Celsius').innerHTML ='The temperature in Celsius is : ' + celsius ;
+    </script>
+    </div>
+    <div class="button-maindiv">
+
+            <button class="btn_1"><a class="left" href="12_JavaScript.HTML">❮ Previous</a></button>
+            <button class="btn_2"><a class="left" href="14_JavaScript.HTML">Next ❯</a></button>
+        
+
+    </div>
+    <script>
+        var div_tag = document.getElementById('box');
+        // console.log(body_tag)
+        div_tag.classList.add("css")   
+    </script>
+
+</body>
+</html>

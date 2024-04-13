@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Q.37 Use console.log() and escape characters to print
+        the following pattern in JS?<br>
+        1 1 1 1 1 <br>
+        2 1 2 4 8 <br>
+        3 1 3 9 27 <br>
+        4 1 4 16 64 <br>
+        5 1 5 25 125</h2>
+    <script>                         
+                            function printPattern(rows) {
+                                for (let i = 1; i <= rows; i++) {
+                                    let row = '';
+                                    for (let j = 1; j <= 5; j++) {
+                                        if (j === 1) {
+                                            row += `${i} `;
+                                        } else {
+                                            row += `${Math.pow(i, j)} `;
+                                        } 
+                                    }
+                                    document.write("<br>"+"\n"+row);       
+                                }
+                            }
+                            printPattern(5);
+
+                                               
+    </script>
+</body>
+</html>

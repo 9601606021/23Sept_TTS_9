@@ -1,0 +1,63 @@
+/* How to Apply CSS Using JQuery */
+div {
+    height: 50px;
+    margin: 5px;
+    padding: 5px;
+    float: left;
+}
+
+#box1 {
+    width: 50px;
+    color: yellow;
+    background-color: orangered;
+}
+
+#box2 {
+    width: 80px;
+    color: rgb(255, 255, 255);
+    background-color: blue;
+}
+
+#box3 {
+    width: 40px;
+    color: #fcc;
+    background-color: green;
+}
+
+#box4 {
+    width: 70px;
+    background-color: palevioletred;
+}
+
+/* how to add class */
+.intro {
+    font-size: 150%;
+    color: red;
+  }
+
+
+/* How to Remove Classow to Remove Class */
+p {
+  margin: 4px;
+  font-size: 16px;
+  font-weight: bolder;
+}
+.blue {
+  color: blue;
+}
+.under {
+  text-decoration: underline;
+}
+.highlight {
+  background: yellow;
+}  
+
+/* Jquery Animation */
+#box{
+    background: green;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #000;
+    position: relative;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .css{
+            margin: 1rem;
+            padding: 1rem;
+            border: 1px solid #e54343;
+            background: #e69292;
+            border-radius: 35px 35px;
+        }
+        .btn {
+            position: absolute;
+            top: 62%;
+            left: 25px;
+            transform: translateY(-50%);
+            padding: 10px 20px;
+            border: none;
+            background-color: #93beec;
+            color: white;
+            cursor: pointer;
+            font-size: larger;
+            border-radius: 10px 10px;
+        }
+    </style>
+</head>
+<body >
+    <div id="box">
+    <h2>1. What is JavaScript. How to use it? </h2>
+
+    <p class="paragraph"><strong>What is JavaScript</strong></p>
+
+    <p>JavaScript is the Programming Language for the Web.</p>
+
+    <p>JavaScript can update and change both HTML and CSS.</p>
+        
+    <p>JavaScript can calculate, manipulate and validate data.</p>
+
+    <br>
+
+    <p class="paragraph"><strong>How to use it?</strong></p>
+
+    <p>1.&nbsp;Open your favorite browser (here we will use Google Chrome).
+    </p>
+    <p>2.&nbsp;Open the developer tools by right clicking on an empty area and select Inspect. Shortcut: F12 . Inspect Browser.</p>
+    <p>3.&nbsp;On the developer tools, go to the console tab. Then, write JavaScript code and press enter to run the code.</p>
+    </div>
+    <br>
+    
+
+        <div class="divbutton end">
+           <button class="btn"> <a class="left" href="02_JavaScript.html">Next ❯</a></button>
+        </div>
+            
+<script>
+    var div_tag = document.getElementById('box');
+    // console.log(body_tag)
+    div_tag.classList.add("css")   
+</script>
+</body>
+</html>

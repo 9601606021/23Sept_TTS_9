@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Common.css">
+    <title>NaN() Method</title>
+</head>
+<body>
+    <div id="box">
+
+    <h2>19. What is the use of is Nan function? </h2>
+
+    <p>In JavaScript NaN is short for "Not-a-Number".</p>
+        
+    <p>The isNaN() method returns true if a value is NaN.</p>
+        
+    <p> The isNaN() method converts the value to a number before testing it.</p>
+
+    <p class="Example"><strong>Example :</strong></p>
+
+    <fieldset>
+        <pre>
+
+            &lt;h3>isNaN() returns true if a value is NaN:&lt;/h3>
+
+            &lt;h3 id="ans">&lt;/h3>
+
+
+            &lt;script>
+
+                let result =
+                "Is '9999' NaN? " + isNaN('9999') + "&lt;br>" +
+                "Is 'Nixit' NaN? " + isNaN('Nixit') + "&lt;br>" +
+                "Is '24/01/2024' NaN? " + isNaN('24/01/2024');
+                document.getElementById("ans").innerHTML = result;
+
+            &lt;/script>
+
+        </pre>
+    </fieldset>
+
+    <br>
+
+    <p class="Example"><strong>Output :</strong></p>
+
+    <fieldset>
+        <h3>isNaN() returns true if a value is NaN:</h3>
+
+        <h3 id="ans"></h3>
+    </fieldset>
+
+    <script>
+        let result =
+        "Is '9999' NaN? " + isNaN('9999') + "<br>" +
+        "Is 'Nixit' NaN? " + isNaN('Nixit') + "<br>" +
+        "Is '24/01/2024' NaN? " + isNaN('24/01/2024');
+        document.getElementById("ans").innerHTML = result;
+    </script>
+    </div>
+
+<div class="button-maindiv">
+
+    <button class="btn_1"><a class="left" href="18_JavaScript.HTML">❮ Previous</a></button>
+    <button class="btn_2"><a class="left" href="20_JavaScript.HTML">Next ❯</a></button>
+
+</div>
+<script>
+    var div_tag = document.getElementById('box');
+    // console.log(body_tag)
+    div_tag.classList.add("css")   
+</script>
+        
+       
+    
+</body>
+</html>

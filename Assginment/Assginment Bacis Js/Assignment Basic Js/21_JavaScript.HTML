@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Common.css">
+    <title>JS Void (0)</title>
+</head>
+<body>
+    <div id="box">
+        <h2>21. What is the use of Void (0)? </h2>
+    
+        <p>
+            JavaScript void 0 means returning undefined (void) as a primitive value. You might come across the term “JavaScript:void(0)” while going through HTML documents. It is used to prevent any side effects caused while inserting an expression in a web page.
+        </p>
+    
+        <h3>This is without using JavaScript:void(0)</h3>
+    
+        <fieldset>
+            <a href="#" ondblclick="alert('This is without using JavaScript:void(0)')">Double Click Me!</a>
+        </fieldset>
+    
+        <h3>Using JavaScript:void(0)</h3>
+    
+        <fieldset>
+            <a href="JavaScript:void(0);" ondblclick="alert('Using JavaScript:void(0)')">Double Click Me!</a>
+        </fieldset>
+    </div>
+
+    <div class="button-maindiv">
+
+        <button class="btn_1"><a class="left" href="20_JavaScript.HTML">❮ Previous</a></button>
+        <button class="btn_2"><a class="left" href="22_JavaScript.HTML">Next ❯</a></button>
+
+    </div>
+    <script>
+        var div_tag = document.getElementById('box');
+        // console.log(body_tag)
+        div_tag.classList.add("css")   
+    </script>
+    
+</body>
+</html>

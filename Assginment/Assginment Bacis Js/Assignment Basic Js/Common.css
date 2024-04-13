@@ -1,0 +1,42 @@
+.css {
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid #e54343;
+    background: #e69292;
+    border-radius: 35px 35px;
+  }
+
+  .button-maindiv {
+    display: flex;
+
+  }
+
+  .btn_1 {
+    position: relative;
+    /* top: 60%; */
+    margin-top: 18px;
+    left: 15px;
+    transform: translateY(-50%);
+    padding: 10px 15px;
+    border: none;
+    background-color: #93beec;
+    color: white;
+    cursor: pointer;
+    font-size: larger;
+    border-radius: 10px 10px;
+  }
+
+  .btn_2 {
+    position: relative;
+    /* top: 60%; */
+    margin-top: 18px;
+    left: 20px;
+    transform: translateY(-50%);
+    padding: 10px 30px;
+    border: none;
+    background-color: #93beec;
+    color: white;
+    cursor: pointer;
+    font-size: larger;
+    border-radius: 10px 10px;
+  }

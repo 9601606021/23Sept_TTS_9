@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Common.css">
+    <title>Switch Case</title>
+</head>
+<body>
+    <div id="box">
+
+    <h2>29. Write to show <br>
+        i. Monday to Sunday using switch case in JS? <br>
+        ii. Vowel or Consonant using switch case in JS?</h2>
+
+        <h3>i. Monday to Sunday using switch case in JS?</h3>
+
+        <p class="Example"><strong>Program :</strong></p>
+
+        <fieldset>
+            <pre>
+
+                &lt;h3 id="ans">&lt;/h3>
+
+                &lt;script>
+
+                                var day;
+                    switch (new Date().getDay()) {
+                        case 0:
+                            day = "Sunday";
+                            break;
+                        case 1:
+                            day = "Monday";
+                            break;
+                        case 2:
+                            day = "Tuesday";
+                            break;
+                        case 3:
+                            day = "Wednesday";
+                            break;
+                        case 4:
+                            day = "Thursday";
+                            break;
+                        case 5:
+                            day = "Friday";
+                            break;
+                        case  6:
+                            day = "Saturday";
+                            break;
+                    }
+                    document.getElementById("ans").innerHTML = "Today is " + day;
+
+                &lt;/script>
+
+            </pre>
+        </fieldset>
+
+        <br>
+
+        <p class="Example"><strong>Output :</strong></p>    
+
+        <fieldset>
+            <h3 id="ans"></h3>
+        </fieldset>
+
+        <script>
+
+                        var day;
+            switch (new Date().getDay()) {
+                case 0:
+                    day = "Sunday";
+                    break;
+                case 1:
+                    day = "Monday";
+                    break;
+                case 2:
+                    day = "Tuesday";
+                    break;
+                case 3:
+                    day = "Wednesday";
+                    break;
+                case 4:
+                    day = "Thursday";
+                    break;
+                case 5:
+                    day = "Friday";
+                    break;
+                case  6:
+                    day = "Saturday";
+                    break;
+            }
+            document.getElementById("ans").innerHTML = "Today is " + day;
+
+        </script>
+
+        <br>
+
+        <h3>ii. Vowel or Consonant using switch case in JS?</h3>
+
+        <p class="Example"><strong>Program :</strong></p>
+
+        <fieldset>
+            <pre>
+
+                &lt;input type="text" name="a" id="first" placeholder="Enter character"/> 
+            
+            
+                &lt;button onclick = "vowel()">Submit</button>
+                
+                &lt;script type="text/javascript">
+                    function vowel()
+                    {
+                    var ch;
+                    ch = document.getElementById("first").value;
+                    switch(ch)
+                    {
+                    case 'a':
+                    case 'e':
+                    case 'i':
+                    case 'o':
+                    case 'u':
+                    case 'A':
+                    case 'E':
+                    case 'I':
+                    case 'O':
+                    case 'U':
+                    document.getElementById("num"). innerHTML= "vowel character";
+                    break;
+                    default: document.getElementById("num"). innerHTML= "Not an vowel";
+                    break;
+                    }
+                    }
+                &lt;/script>
+
+            </pre>
+        </fieldset>
+
+        <br>
+
+        <input type="text" name="a" id="first" placeholder="Enter character"/> 
+            
+            
+        <button onclick = "vowel()">Submit</button> 
+
+        <p class="Example"><strong>Output :</strong></p> 
+
+        <fieldset>
+
+            <div id="num"></div>
+
+        </fieldset>
+
+        <script type="text/javascript">
+            function vowel()
+            {
+            var ch;
+            ch = document.getElementById("first").value;
+            switch(ch)
+            {
+            case 'a':
+            case 'e':
+            case 'i':
+            case 'o':
+            case 'u':
+            case 'A':
+            case 'E':
+            case 'I':
+            case 'O':
+            case 'U':
+            document.getElementById("num"). innerHTML= "vowel character";
+            break;
+            default: document.getElementById("num"). innerHTML= "Not an vowel";
+            break;
+            }
+            }
+        </script>
+    </div>
+
+<div class="button-maindiv">
+
+    <button class="btn_1"><a class="left" href="28_JavaScript.HTML">❮ Previous</a></button>
+    <button class="btn_2"><a class="left" href="30_JavaScript.HTML">Next ❯</a></button>
+
+</div>
+<script>
+    var div_tag = document.getElementById('box');
+    // console.log(body_tag)
+    div_tag.classList.add("css")   
+</script>
+    
+</body>
+</html>

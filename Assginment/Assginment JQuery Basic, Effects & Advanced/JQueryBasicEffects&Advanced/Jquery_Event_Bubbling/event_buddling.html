@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>jQuery Live() Method And Event Bubbling</title>
+</head>
+<style>
+    #box{
+        border: 2px solid;
+        font-size: 25px;
+        margin: 20px;
+        background-color:yellowgreen;
+    }
+    .btn{
+        margin: 15px;
+        font-size: 20px;
+        background-color: aqua;
+    }
+</style>
+
+<body>
+
+    <div id="box">
+        <h1> Jquery event bubbling </h1>
+        <p id="p1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta delectus ipsam sequi atque architecto cumque
+            repellendus veniam reprehenderit, iure, voluptatem animi autem voluptates, assumenda molestiae harum commodi
+            in ex recusandae.</p>
+        <button class="btn">Button</button>
+    </div>
+    <script src="https:ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('Button').click(function(){
+             $("#p1").css("color","red")
+             .fadeIn(1000)
+             .fadeOut(1000)    
+            })
+        })
+
+    </script>
+</body>
+
+</html>

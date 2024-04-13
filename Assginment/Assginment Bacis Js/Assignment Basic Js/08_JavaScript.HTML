@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Common.css" />
+    <title>Area of Triangle</title>
+</head>
+<body>
+    <div id="box">
+        <h2>8. Write a JavaScript Program to find the area of a triangle? </h2>
+        
+        <fieldset>
+            <p class="Example"><strong>Program :</strong></p>
+    
+            <pre>
+                &lt;h3 id="answer"&gt;&lt;/h3&gt;
+        
+                var base = prompt('Please enter the base value');
+                var height = prompt ('please enter the height value');
+                var area = (base * height)/2;
+                console.log(area);
+                document.getElementById('answer').innerHTML =  'Triangle of Base:'  +  base + ' &lt;br&gt; <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Triangle of height:' + height + '&lt;br&gt;&lt;br&gt; Total Area of Triangle:' +area ;
+            </pre>
+            
+            <p class="Example"><strong>output :</strong></p>
+            
+            
+            <h3 id="answer"></h3>
+            
+            
+            <script>
+                
+                var base = prompt('Please enter the base value');
+                var height = prompt ('please enter the height value');
+                var area = (base * height)/2;
+                
+                console.log(area);
+                document.getElementById('answer').innerHTML =  'Triangle of Base:'  +  base + ' <br> Triangle of height:' + height + '<br><br> Total Area of Triangle:' +area ; 
+                
+            </script>
+        </fieldset>
+    </div>
+
+    <div class="button-maindiv">
+
+        <button class="btn_1"><a class="left" href="07_JavaScript.HTML">❮ Previous</a></button>
+        <button class="btn_2"><a class="left" href="09_JavaScript.HTML">Next ❯</a></button>
+
+    </div>
+    <script>
+        var div_tag = document.getElementById('box');
+        // console.log(body_tag)
+        div_tag.classList.add("css")   
+      </script>
+    </body>
+</html>
+

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Common.css">
+    <title>Difference Between And</title>
+</head>
+<body>
+    <div id="box">
+
+        <h2>20. What is the difference between && and || in JavaScript?</h2>
+    
+        <p>
+            || means “or”. It evaluates to true if the expression on either side is truthy. && means “and”.
+        </p>
+    
+        <p class="Example"><strong>Example :</strong></p>
+    
+        <fieldset>
+            <pre>
+                var first  = 123;
+                var second = false;
+                var third  = 456;
+                var fourth = "abc";
+                var fifth  = true;
+                alert(first & second); // 0
+                alert(first & third);  // 72
+                alert(first & fourth); // 0
+                alert(first & fifth);  // 1
+        
+                alert(first && second); // false
+                alert(first && third);  // 456
+                alert(first && fourth); // abc
+                alert(first && fifth);  // true
+            </pre>
+        </fieldset>
+    </div>
+
+    <div class="button-maindiv">
+
+        <button class="btn_1"><a class="left" href="19_JavaScript.HTML">❮ Previous</a></button>
+        <button class="btn_2"><a class="left" href="21_JavaScript.HTML">Next ❯</a></button>
+
+    </div>
+    <script>
+        var div_tag = document.getElementById('box');
+        // console.log(body_tag)
+        div_tag.classList.add("css")   
+    </script>
+    
+</body>
+</html>

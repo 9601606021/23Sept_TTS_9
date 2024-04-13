@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Common.css">
+    <title> Rectangle area calculate </title>
+</head>
+<body>
+    <div id="box">
+    <h2>11. Find circumference of Rectangle formula : C = 4 * a ? </h2>
+
+    <p>
+        A rectangle is a flat figure in a plane. It has four sides and four equal angles of 90 degrees each. In a rectangle all four sides are not of equal length like a square, sides opposite to each other have equal length. Both diagonals of the rectangle have equal lengths.
+    </p>
+
+    <p class="Example"><strong>Example :</strong></p> 
+    <fieldset>
+
+
+        <pre>
+            var height = prompt('please enter the height value');
+            var Length = prompt('please enter the Length value');
+            var area = (2 *(height + Length));
+
+            console.log(area);
+            document.getElementById('Total').innerHTML =  'Rectangle of height : '  +  height + ' &gt;br&lt; Rectangle of Length : ' + Length + '&gt;br&lt;&gt;br&lt; Total Area of Rectangle : ' +area ;
+        </pre>
+        
+    </fieldset>
+
+    <br>
+
+    <p class="Example"><strong>Output :</strong></p> 
+        
+    <fieldset>
+        <h3 id="Total"></h3>
+    </fieldset>
+        
+
+        <script>
+            var height = prompt('please enter the height value');
+            var Length = prompt('please enter the Length value');
+            var area = (2 *(height + Length));
+            
+            console.log(area);
+            document.getElementById('Total').innerHTML =  'Rectangle of height : '  +  height + ' <br> Rectangle of Length : ' + Length + '<br><br> Total Area of Rectangle : ' +area ;
+            
+        </script>
+    </div>
+
+        <div class="button-maindiv">
+
+                <button class="btn_1"><a class="left" href="10_JavaScript.HTML">❮ Previous</a></button>
+                <button class="btn_2"><a class="left" href="12_JavaScript.HTML">Next ❯</a></button>
+    
+        </div>
+        <script>
+            var div_tag = document.getElementById('box');
+            // console.log(body_tag)
+            div_tag.classList.add("css")   
+        </script>
+</body>
+</html>

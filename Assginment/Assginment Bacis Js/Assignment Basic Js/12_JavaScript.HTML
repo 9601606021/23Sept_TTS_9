@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Common.css">
+    <title>Days Years Convertor</title>
+</head>
+<body>
+    <div id="box">
+   <h2>12. WAP to convert years into days and days into years?</h2>
+
+   <p class="Example"><strong>Example :</strong></p>
+   
+   <fieldset>
+    <pre>
+        let numofDays = prompt('Enter Total Days : ');
+        let numofYear = prompt('Enter Numbers of Year : ');
+        //let year, days;
+        function daystoYear(numofDays) {
+            year = parseInt(numofDays / 365);
+            return year;
+        }
+    
+        function yearstoDays(numofYear) {
+            days = (numofYear * 365);
+            return days;
+        }
+        document.getElementById('br').innerHTML = numofDays + ' Days are Approx = '  + daystoYear(numofDays)  +  '<br>' + numofYear + ' year have approx = ' + yearstoDays(numofYear);
+       </pre>
+   </fieldset>
+        
+   
+   <p class="Example"><strong>Output :</strong></p>
+    
+    <fieldset>
+        <h3 id="br"></h3>
+    </fieldset>
+
+            <script>
+                let numofDays = prompt('Enter Total Days : ');
+                let numofYear = prompt('Enter Numbers of Year : ');
+                //let year, days;
+                function daystoYear(numofDays) {
+                    year = parseInt(numofDays / 365);
+                    return year;
+                }
+
+                function yearstoDays(numofYear) {
+                    days = (numofYear * 365);
+                    return days;
+                }
+                document.getElementById('br').innerHTML = numofDays + ' Days are Approx = '  + daystoYear(numofDays)  +  '<br>' + numofYear + ' year have approx = ' + yearstoDays(numofYear);
+            </script>
+        </div>
+
+            <div class="button-maindiv">
+
+                    <button class="btn_1"><a class="left" href="11_JavaScript.HTML">❮ Previous</a></button>
+                    <button class="btn_2"><a class="left" href="13_JavaScript.HTML">Next ❯</a></button>
+        
+            </div>
+            <script>
+                var div_tag = document.getElementById('box');
+                // console.log(body_tag)
+                div_tag.classList.add("css")   
+            </script>
+</body>
+</html>

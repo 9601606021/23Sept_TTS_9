@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Q.54 Form Validtion in JS?</h2>
+    <form action="" name="myForm">
+        Name : <input name="name" id="name" type="text"> <br>
+        Password : <input name="password" id="password" type="password"> <br>
+        <p id="form-error"></p>
+        <button onclick="validateForm()" name="submit" value="Submit">Submit</button>
+    </form>
+    <script>
+        function validateForm() {
+            event.preventDefault();
+            // var name = document.getElementById('name').value;
+            var name = document.forms['myForm']['name'].value;
+            // console.log(name);
+            var password = document.getElementById('password').value;
+            // console.log(password);
+
+            if (name == null || name == '') {
+                // alert('Please Enter your Name');
+                var error = 'Please Enter your Name';
+                // return false;
+            } else if (password.length < 6) {
+                // alert('Password must be declare 6 characters long');
+                var error = 'Password must be declare 6 characters long';
+                // return false;
+            }
+            document.getElementById('form-error').innerHTML = error;        
+        }
+    </script>
+</body>
+</html>

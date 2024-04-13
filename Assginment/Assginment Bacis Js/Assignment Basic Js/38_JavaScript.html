@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Q.38 Use pattern in console.log in JS?
+        <pre>   1)  1
+                    1 0
+                    1 0 1
+                    1 0 1 0
+                    1 0 1 0 1 
+                2)  A
+                    B C
+                    D E F
+                    G H I J
+                    K L M N O
+                3)  1
+                    2 3
+                    4 5 6
+                    7 8 9 10
+                    11 12 13 14 15
+                4)  *
+                    * *
+                    * * *
+                    * * * *
+                    * * * * *
+
+            </pre>
+    </h2>
+    <script>
+        // Numeric Pattern
+        function printNumericPattern(rows) {
+            for (let i = 1; i <= rows; i++) {
+                for (let j = 1; j <= i; j++) {
+                    document.write(`${j} `);
+                }
+                document.write("<br>");
+            }
+        }
+
+        // Example usage
+        document.write("<strong>1) Numeric Pattern:</strong><br>");
+        printNumericPattern(5);
+        document.write("<br>");
+    </script>
+
+    <script>
+        // Alphabetic Pattern
+        function printAlphabeticPattern(rows) {
+            let currentChar = 65; // ASCII code for 'A'
+            for (let i = 1; i <= rows; i++) {
+                for (let j = 1; j <= i; j++) {
+                    document.write(`${String.fromCharCode(currentChar)} `);
+                    currentChar++;
+                }
+                document.write("<br>");
+            }
+        }
+
+        // Example usage
+        document.write("<strong>2) Alphabetic Pattern:</strong><br>");
+        printAlphabeticPattern(5);
+        document.write("<br>");
+
+    </script>
+
+    <script>
+        // Numeric Triangle Pattern
+        function printNumericTrianglePattern(rows) {
+            let counter = 1;
+            for (let i = 1; i <= rows; i++) {
+                for (let j = 1; j <= i; j++) {
+                    document.write(`${counter} `);
+                    counter++;
+                }
+                document.write("<br>");
+            }
+        }
+    
+        // Example usage
+        document.write("<strong>3) Numeric Triangle Pattern:</strong><br>");
+        printNumericTrianglePattern(5);
+        document.write("<br>");
+    </script>
+    
+    <script>
+        // Asterisk Triangle Pattern
+        function printAsteriskTrianglePattern(rows) {
+            for (let i = 1; i <= rows; i++) {
+                for (let j = 1; j <= i; j++) {
+                    document.write("* ");
+                }
+                document.write("<br>");
+            }
+        }
+    
+        // Example usage
+        document.write("<strong>4) Asterisk Triangle Pattern:</strong><br>");
+        printAsteriskTrianglePattern(5);
+    
+    </script>
+</body>
+</html>
