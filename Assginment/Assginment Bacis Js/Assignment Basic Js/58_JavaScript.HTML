@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Common.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="box">
+        <h2>Q.58 What is Bom vs Dom in JS?</h2>
+        <fieldset>
+            <pre>
+    <p>
+        BOM (Browser Object Model) and DOM (Document Object Model) are two different but closely
+        related concepts in JavaScript that deal with interacting with web browsers.
+    </p>
+    <ol>
+        <li>DOM (Document Object Model):</li>
+        <ul>
+            <li>The DOM is a programming interface provided by browsers that represents the
+                structure of a document as a tree of objects. These objects can be manipulated using
+                JavaScript to change the content, structure, and style of a web page.</li>
+            <li>The DOM represents the HTML or XML document as a tree structure, where each element,
+                attribute, and piece of text in the document is a node in the tree.</li>
+            <li>JavaScript interacts with the DOM to dynamically update or manipulate the content
+                and structure of a web page. For example, you can use DOM methods to create, modify,
+                or delete elements on a page.</li>
+        </ul>
+        <li>BOM (Browser Object Model):</li>
+        <ul>
+            <li>The BOM, on the other hand, represents additional objects provided by the browser to
+                interact with the browser itself, rather than the document.</li>
+            <li>The BOM includes objects such as window, navigator, screen, location, history, and
+                document (which is also part of the DOM).</li>
+            <li>The window object, in particular, is a top-level object in the BOM and represents
+                the browser window. It provides methods and properties for manipulating the browser,
+                such as opening new windows, setting timeouts, and handling events related to the
+                window.</li>
+            <li>Unlike the DOM, the BOM is not standardized, and its features can vary between
+                different browsers.</li>
+        </ul>
+    </ol>
+</pre>
+        </fieldset>
+    </div>
+    <div class="button-maindiv">
+
+        <button class="btn_1"><a class="left" href="57_JavaScript.HTML">❮ Previous</a></button>
+        <button class="btn_2"><a class="left" href="59_JavaScript.HTML">Next ❯</a></button>
+
+    </div>
+
+    <script>
+        var div_tag = document.getElementById('box');
+        // console.log(body_tag)
+        div_tag.classList.add("css")   
+    </script>
+</body>
+
+</html>

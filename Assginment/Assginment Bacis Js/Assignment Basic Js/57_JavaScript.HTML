@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Common.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="box">
+        <h2>Q.57 how many type of JS Event? How to use it?</h2>
+        <fieldset>
+            <pre>
+    <p>        In JavaScript, there are several types of events that can occur in the browser, and you can
+        use them to trigger functions or behaviors in response to user actions or other
+        interactions. Here are some common types of JavaScript events:
+    </p>
+    <ul>
+        <li>Mouse Events:</li>
+        <ul>
+            <li>click: Occurs when the mouse button is clicked.</li>
+            <li> dblclick: Occurs when the mouse button is double-clicked.</li>
+            <li>mousedown, mouseup: Occur when the mouse button is pressed down or released.</li>
+            <li>mousemove: Occurs when the mouse pointer is moved.</li>
+        </ul>
+
+        <li>Keyboard Events:</li>
+        <ul>
+            <li>keydown, keyup: Occur when a key on the keyboard is pressed down or released.</li>
+            <li>keypress: Occurs when a key that produces a character value is pressed down.</li>
+        </ul>
+
+        <li>Form Events:</li>
+        <ul>
+            <li>submit: Occurs when a form is submitted.</li>
+            <li>reset: Occurs when a form is reset.</li>
+            <li>change: Occurs when the value of an input element changes.</li>
+            <li>focus, blur: Occur when an element gains or loses focus.</li>
+        </ul>
+
+        <li>Window Events:</li>
+        <ul>
+            <li>load: Occurs when the document and its resources (like images and stylesheets) have finished loading.</li>
+            <li>unload: Occurs when the user leaves the page.</li>
+            <li>resize: Occurs when the browser window is resized.</li>
+            <li>scroll: Occurs when the document view or an element is scrolled.</li>
+        </ul>
+
+        <li>Event Delegation:</li>
+        <ul>
+            <li>Events like mouseenter, mouseleave, and others related to event delegation can be used to
+        handle events on multiple elements with a single event listener on a common ancestor.</li>
+        </ul>
+    </ul>
+</pre>
+        </fieldset>
+    </div>
+    <div class="button-maindiv">
+
+        <button class="btn_1"><a class="left" href="56_JavaScript.HTML">❮ Previous</a></button>
+        <button class="btn_2"><a class="left" href="58_JavaScript.HTML">Next ❯</a></button>
+
+    </div>
+
+    <script>
+        var div_tag = document.getElementById('box');
+        // console.log(body_tag)
+        div_tag.classList.add("css")   
+    </script>
+</body>
+
+</html>

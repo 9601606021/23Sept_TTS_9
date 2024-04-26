@@ -1,16 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Common.css">
     <title>Document</title>
 </head>
+
 <body>
-    <h2>Q.49 Change all the string characters to capital
-        letters using toUpperCase() method?</h2>
+    <div id="box">
+        <h2>Q.49 Change all the string characters to capital
+            letters using toUpperCase() method?</h2>
+        <p class="Example"><strong>Program :</strong></p>
+
+        <fieldset>
+            <pre>
+
+        &lt;script>
+            var str1 = "Parekh"
+            document.write("string " + str1 + " uppercase is " + str1.toUpperCase());        
+        &lt;/script>
+
+    </pre>
+        </fieldset>
+
+        <br>
+        <p class="Example"><strong>Output :</strong></p>
+        <script>
+            var str1 = "Parekh"
+            document.write("string " + str1 + " uppercase is " + str1.toUpperCase());
+        </script>
+    </div>
+    <div class="button-maindiv">
+
+        <button class="btn_1"><a class="left" href="48_JavaScript.HTML">❮ Previous</a></button>
+        <button class="btn_2"><a class="left" href="50_JavaScript.HTML">Next ❯</a></button>
+
+    </div>
+
     <script>
-        var str1 = "Hardik"
-        document.write("string " + str1 + " uppercase is " + str1.toUpperCase());
+        var div_tag = document.getElementById('box');
+        // console.log(body_tag)
+        div_tag.classList.add("css")   
     </script>
 </body>
+
 </html>

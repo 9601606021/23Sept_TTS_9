@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        class abc {
+            constructor(a, b) {
+                this.a = a;
+                this.b = b;
+            }
+            sum() {
+                document.write(`sum of a & b are ${this.a + this.b} <br>`);
+            }
+            multi() {
+                document.write(`Multi of a & b are ${this.a * this.b} <br>`);
+            }
+            sub()
+            {
+                document.write(`sub of a & b ar ${this.a - this.b}`)
+            }
+        }
+        const obj1 = new abc(20,10)
+        obj1.sum()
+        obj1.multi()
+        obj1.sub()
+    </script>
+</body>
+
+</html>

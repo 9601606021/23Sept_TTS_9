@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Common.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="box">
+    <h2>Q.73 What is === operator?</h2>
+    <p class="Example"><strong>Program :</strong></p>
+    <fieldset>
+        <pre>
+    <p>JavaScript Strict Equality Operator is used to compare two operands and return true if both
+        the value and type of operands are the same. Since type conversion is not done, so even if
+        the value stored in operands is the same but their type is different the operation will
+        return false. </p>
+    
+    &lt;script>
+    var a1 = 2, b1 = 2, c1 = 3;
+    var d1 = { name: "Ram" };
+    var e1 = { name: "Ram" };
+    var f1 = e1;
+
+    document.write("\n a === b :", a1 === b1);
+    document.write("\n a === c :", a1 === c1);
+    document.write("\n d === e :", d1 === e1);
+    document.write("\n f === e :", f1 === e1);
+    &lt;/script>
+</pre>
+        </fieldset>
+        <br>
+        <p class="Example"><strong>Output :</strong></p>
+    <script>
+        var a1 = 2, b1 = 2, c1 = 3;
+        var d1 = { name: "Ram" };
+        var e1 = { name: "Ram" };
+        var f1 = e1;
+
+        document.write("\n a === b :", a1 === b1);
+        document.write("\n a === c :", a1 === c1);
+        document.write("\n d === e :", d1 === e1);
+        document.write("\n f === e :", f1 === e1);
+    </script>
+        </div>
+        <div class="button-maindiv">
+    
+            <button class="btn_1"><a class="left" href="72_JavaScript.HTML">❮ Previous</a></button>
+            <button class="btn_2"><a class="left" href="74_JavaScript.HTML">Next ❯</a></button>
+    
+        </div>
+    
+        <script>
+            var div_tag = document.getElementById('box');
+            // console.log(body_tag)
+            div_tag.classList.add("css")   
+        </script>
+</body>
+</html>

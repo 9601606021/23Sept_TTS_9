@@ -3,12 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Common.css">
     <title>Document</title>
 </head>
 <body>
+    <div id="box">
     <h2>Q.54 Form Validtion in JS?</h2>
+    <p class="Example"><strong>Program :</strong></p>
+
+        <fieldset>
+            <pre>
+    
+        &lt;script>
+        function validateForm() {
+            event.preventDefault();
+            var name = document.forms['myForm']['name'].value;
+            var password = document.getElementById('password').value;
+
+            if (name == null || name == '') {
+                var error = 'Please Enter your Name';
+            } else if (password.length < 6) {
+                var error = 'Password must be declare 6 characters long';
+            }
+            document.getElementById('form-error').innerHTML = error;        
+        }
+        &lt;/script>
+
+    </pre>
+        </fieldset>
+
+        <br>
+        <p class="Example"><strong>Output :</strong></p>
     <form action="" name="myForm">
-        Name : <input name="name" id="name" type="text"> <br>
+        Name : <input name="name" id="name" type="text">
         Password : <input name="password" id="password" type="password"> <br>
         <p id="form-error"></p>
         <button onclick="validateForm()" name="submit" value="Submit">Submit</button>
@@ -16,23 +43,29 @@
     <script>
         function validateForm() {
             event.preventDefault();
-            // var name = document.getElementById('name').value;
             var name = document.forms['myForm']['name'].value;
-            // console.log(name);
             var password = document.getElementById('password').value;
-            // console.log(password);
 
             if (name == null || name == '') {
-                // alert('Please Enter your Name');
                 var error = 'Please Enter your Name';
-                // return false;
             } else if (password.length < 6) {
-                // alert('Password must be declare 6 characters long');
                 var error = 'Password must be declare 6 characters long';
-                // return false;
             }
             document.getElementById('form-error').innerHTML = error;        
         }
+    </script>
+    </div>
+    <div class="button-maindiv">
+
+        <button class="btn_1"><a class="left" href="53_JavaScript.HTML">❮ Previous</a></button>
+        <button class="btn_2"><a class="left" href="55_JavaScript.HTML">Next ❯</a></button>
+
+    </div>
+
+    <script>
+        var div_tag = document.getElementById('box');
+        // console.log(body_tag)
+        div_tag.classList.add("css")   
     </script>
 </body>
 </html>

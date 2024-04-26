@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wallpaper Slider</title>
+    <style>
+        .title {
+            text-align: center;
+            font-size: 50px;
+            color: red;
+        }
+
+        .slider-container {
+            position: relative;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .slider {
+            display: flex;
+            overflow: hidden;
+        }
+
+        .slide {
+            flex: 0 0 100%;
+            text-align: center;
+            padding: 20px;
+        }
+
+        button {
+            position: absolute;
+            /* top: 50%; */
+            transform: translateY(-50%);
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        .prev {
+            left: 20px;
+        }
+
+        .next {
+            right: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="title"><b>Wallpaper Slider</b></div>
+    <div class="slider-container">
+        <div class="slider">
+            <div class="slide">
+                <img src="IMAGES/wp1.jpg" style="width:100%">
+            </div>
+            <div class="slide">
+                <img src="IMAGES/wp2.jpg" style="width:100%">
+            </div>
+            <div class="slide">
+                <img src="IMAGES/wp3.jpg.crdownload" style="width:100%">
+            </div>
+            <div class="slide">
+                <img src="IMAGES/wp4.jpg" style="width:100%">
+            </div>
+            <div class="slide">
+                <img src="IMAGES/wp5.jpg" style="width:100%">
+            </div>
+        </div>
+        <button class="prev" onclick="prevSlide()">Prev</button>
+        <button class="next" onclick="nextSlide()">Next</button>
+    </div>
+
+    <script>
+        let slideIndex = 0;
+
+        function showSlide(n) {
+            const slides = document.querySelectorAll('.slide');
+
+            // Hide all slides
+            for (let slide of slides) {
+                slide.style.display = 'none';
+            }
+
+            // Loop back to the start if the index exceeds the number of slides
+            if (n >= slides.length) {
+                slideIndex = 0;
+            } else if (n < 0) {
+                slideIndex = slides.length - 1;
+            }
+
+            // Show the slide with the current index
+            slides[slideIndex].style.display = 'block';
+        }
+
+        function prevSlide() {
+            showSlide(--slideIndex);
+        }
+
+        function nextSlide() {
+            showSlide(++slideIndex);
+        }
+
+        // Show the first slide when the page loads
+        showSlide(slideIndex);
+
+    </script>
+</body>
+
+</html>

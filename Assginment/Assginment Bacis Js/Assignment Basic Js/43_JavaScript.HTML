@@ -1,44 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Common.css">
     <title>Document</title>
 </head>
+
 <body>
+    <div id="box">
     <h2>Q.43 Write a JavaScript program to convert an array
         of objects into CSV string?</h2>
+
+        <p class="Example"><strong>Program :</strong></p>
+
+        <fieldset>
+            <pre>
+
+        &lt;script>
+        const objectToCsv = function (data) {
+
+            const csvRows = [];
+
+            const headers = Object.keys(data[0]);
+
+            csvRows.push(headers.join(','));
+            
+            // Loop to get value of each objects key
+            for (const row of data) {
+                const values = headers.map(header => {
+                    const val = row[header]
+                    return `"${val}"`;
+                });
+
+                // To add, separator between each value
+                csvRows.push(values.join(''));
+            }
+            
+            return csvRows.join('\n');
+        };
+
+        const data = [{
+            "firstname": "geeks",
+            "lastname": "org",
+            "age": 12
+        },
+        {
+            "firstname": "devendra",
+            "lastname": "salunke",
+            "age": 31
+        },
+        {
+            "firstname": "virat",
+            "lastname": "kohli",
+            "age": 34
+        },
+        ];
+
+        // Data passed as parameter 
+        const csvData = objectToCsv(data);
+        document.writeln(csvData);  
+        &lt;/script>
+    </pre>
+        </fieldset>
+
+        <br>
+
+        <p class="Example"><strong>Output :</strong></p>
         <script>
             const objectToCsv = function (data) {
 
                 const csvRows = [];
 
-                /* Get headers as every csv data format 
-                has header (head means column name)
-                so objects key is nothing but column name 
-                for csv data using Object.key() function.
-                We fetch key of object as column name for 
-                csv */
                 const headers = Object.keys(data[0]);
 
-                /* Using push() method we push fetched 
-                   data into csvRows[] array */
                 csvRows.push(headers.join(','));
-                
+
                 // Loop to get value of each objects key
                 for (const row of data) {
                     const values = headers.map(header => {
                         const val = row[header]
                         return `"${val}"`;
                     });
-                
+
                     // To add, separator between each value
                     csvRows.push(values.join(''));
                 }
-                
-                /* To add new line for each objects values
-                   and this return statement array csvRows
-                   to this function.*/
+
                 return csvRows.join('\n');
             };
 
@@ -63,5 +112,19 @@
             const csvData = objectToCsv(data);
             document.writeln(csvData);  
         </script>
+    </div>
+    <div class="button-maindiv">
+
+        <button class="btn_1"><a class="left" href="42_JavaScript.HTML">❮ Previous</a></button>
+        <button class="btn_2"><a class="left" href="44_JavaScript.HTML">Next ❯</a></button>
+
+    </div>
+
+    <script>
+        var div_tag = document.getElementById('box');
+        // console.log(body_tag)
+        div_tag.classList.add("css")   
+    </script>
 </body>
+
 </html>

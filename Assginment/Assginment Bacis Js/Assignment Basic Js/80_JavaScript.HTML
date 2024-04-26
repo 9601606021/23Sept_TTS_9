@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Common.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="box">
+    <h2>Q.80 What is the use of Void (0)?</h2>
+    <fieldset>
+    <p>In JavaScript, void(0) is often used in the context of creating "void" or "undefined" values.
+        The void operator takes an expression as its operand and evaluates it, but it always returns
+        the value undefined. It's commonly used in combination with the href attribute of anchor
+        (a) tags to prevent the default behavior of navigating to a new page when the link is
+        clicked.</p>
+    <code>
+        &lt;a href="javascript:void(0);" onclick="myFunction()"&gt;Click me&lt;/a&gt;
+    </code>
+</fieldset>
+</div>
+<div class="button-maindiv">
+
+    <button class="btn_1"><a class="left" href="79_JavaScript.HTML">❮ Previous</a></button>
+    <button class="btn_2"><a class="left" href="81_JavaScript.HTML">Next ❯</a></button>
+
+</div>
+
+<script>
+    var div_tag = document.getElementById('box');
+    // console.log(body_tag)
+    div_tag.classList.add("css")   
+</script>    
+</body>
+</html>

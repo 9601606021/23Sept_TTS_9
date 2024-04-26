@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Common.css">
     <title>Question Answer</title>
 </head>
+
 <body>
     <div id="box">
 
-    <h2>17. What is the result of the expression true && false || false && true?</h2>
+        <h2>17. What is the result of the expression true && false || false && true?</h2>
 
-    <fieldset>
-        <pre>
+        <fieldset>
+            <pre>
             &lt;h3 id="answer">&lt;/h3>
 
             &lt;script>
@@ -24,33 +26,34 @@
             &lt;/script>
 
         </pre>
-    </fieldset>
+        </fieldset>
 
-    <br>
+        <br>
 
-    <fieldset>
-        <h3 id="answer"></h3>
-    </fieldset>
+        <fieldset>
+            <h3 id="answer"></h3>
+        </fieldset>
 
 
-    <script>
-        let test =(true && false || false && true);
-        console.log(test);
-        document.getElementById('answer').innerHTML = test;
-    </script>
+        <script>
+            let test = (true && false || false && true);
+            console.log(test);
+            document.getElementById('answer').innerHTML = test;
+        </script>
     </div>
 
-<div class="button-maindiv">
+    <div class="button-maindiv">
 
-    <button class="btn_1"><a class="left" href="16_JavaScript.HTML">❮ Previous</a></button>
-    <button class="btn_2"><a class="left" href="18_JavaScript.HTML">Next ❯</a></button>
+        <button class="btn_1"><a class="left" href="16_JavaScript.HTML">❮ Previous</a></button>
+        <button class="btn_2"><a class="left" href="18_JavaScript.HTML">Next ❯</a></button>
 
-</div>
-<script>
-var div_tag = document.getElementById('box');
-// console.log(body_tag)
-div_tag.classList.add("css")   
-</script>
-    
+    </div>
+    <script>
+        var div_tag = document.getElementById('box');
+        // console.log(body_tag)
+        div_tag.classList.add("css")   
+    </script>
+
 </body>
+
 </html>

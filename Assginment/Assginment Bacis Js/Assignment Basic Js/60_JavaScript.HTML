@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Common.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="box">
+        <h2>Q.60 Split the string into an array using split() Method?</h2>
+        <p class="Example"><strong>Program :</strong></p>
+        <fieldset>
+            <pre>
+
+    <p>The split method splits a string into an array of strings. It takes an argument for the
+        delimiter, which can be a character to use to break up the string or a regular expression.
+        For example, if the delimiter is a space, you get an array of words, and if the delimiter is
+        an empty string, you get an array of each character in the string.
+
+        Ex: Here we use split one string by spaces, then another by digits using a regular
+        expression:</p>
+        &lt;script>
+        // Example string
+            var myString = "Hello,World,How,Are,You";
+
+            // Split the string into an array using the comma as a separator
+            var myArray = myString.split(',');
+
+            // Display the resulting array
+            document.write(myArray);
+        &lt;/script>
+    </pre>
+        </fieldset>
+        <br>
+        <p class="Example"><strong>Output :</strong></p>
+        <script>
+            // Example string
+            var myString = "Hello,World,How,Are,You";
+
+            // Split the string into an array using the comma as a separator
+            var myArray = myString.split(',');
+
+            // Display the resulting array
+            document.write(myArray);
+
+        </script>
+    </div>
+    <div class="button-maindiv">
+
+        <button class="btn_1"><a class="left" href="59_JavaScript.HTML">❮ Previous</a></button>
+        <button class="btn_2"><a class="left" href="61_JavaScript.HTML">Next ❯</a></button>
+
+    </div>
+
+    <script>
+        var div_tag = document.getElementById('box');
+        // console.log(body_tag)
+        div_tag.classList.add("css")   
+    </script>
+</body>
+
+</html>

@@ -1,17 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Common.css">
     <title>Document</title>
 </head>
+
 <body>
-    <h2>Q.41 Write a JavaScript program to get the current
-        date?
-    </h2>
+    <div id="box">
+        <h2>Q.41 Write a JavaScript program to get the current
+            date?
+        </h2>
+        <p class="Example"><strong>Program :</strong></p>
+
+        <fieldset>
+            <pre>
+
+                &lt;script>
+                var d = new Date()
+                document.write(d.getDate() + "/" + (d.getMonth() + 1) + "/" + d.getFullYear())
+                &lt;/script>
+    
+            </pre>
+        </fieldset>
+
+        <br>
+
+        <p class="Example"><strong>Output :</strong></p>
+
+        <script>
+            var d = new Date()
+            document.write(d.getDate() + "/" + (d.getMonth() + 1) + "/" + d.getFullYear())
+        </script>
+    </div>
+    <div class="button-maindiv">
+
+        <button class="btn_1"><a class="left" href="40_Java_Script.HTML">❮ Previous</a></button>
+        <button class="btn_2"><a class="left" href="42_JavaScript.HTML">Next ❯</a></button>
+
+    </div>
+
     <script>
-        var d = new Date()
-        document.write(d.getDate() + "/" + (d.getMonth() + 1) + "/" + d.getFullYear())
+        var div_tag = document.getElementById('box');
+        // console.log(body_tag)
+        div_tag.classList.add("css")   
     </script>
 </body>
 </html>

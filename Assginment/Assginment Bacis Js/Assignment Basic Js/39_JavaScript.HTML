@@ -1,15 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Common.css">
     <title>Document</title>
 </head>
+
 <body>
-    <h2>Q.39 Accept 3 numbers from user using while loop
-        and check each numbers palindrome?</h2>
-        <script>
-            // Function to check if a number is a palindrome
+    <div id="box">
+        <h2>Q.39 Accept 3 numbers from user using while loop
+            and check each numbers palindrome?</h2>
+
+        <p class="Example"><strong>Program :</strong></p>
+
+        <fieldset>
+            <pre>
+
+        &lt;script>
+                // Function to check if a number is a palindrome
         function isPalindrome(number) {
             const originalString = String(number);
             const reversedString = originalString.split('').reverse().join('');
@@ -35,7 +45,55 @@
                 document.write("Invalid input. Please enter a valid number.");
             }
         }
+        &lt;/script>
+    
+    </pre>
+        </fieldset>
 
+        <br>
+
+        <p class="Example"><strong>Output :</strong></p>
+        <script>
+            // Function to check if a number is a palindrome
+            function isPalindrome(number) {
+                const originalString = String(number);
+                const reversedString = originalString.split('').reverse().join('');
+                return originalString === reversedString;
+            }
+
+            // Accept 3 numbers from the user and check if each is a palindrome
+            let count = 1;
+
+            const userNumber = prompt("Enter the Palindrome Number:");
+            while (count <= 1) {
+
+
+                // Check if the entered number is a palindrome
+                if (!isNaN(userNumber)) {
+                    if (isPalindrome(userNumber)) {
+                        document.write(`${userNumber} is a palindrome.`);
+                    } else {
+                        document.write(`${userNumber} is not a palindrome.`);
+                    }
+                    count++;
+                } else {
+                    document.write("Invalid input. Please enter a valid number.");
+                }
+            }
         </script>
+    </div>
+    <div class="button-maindiv">
+
+        <button class="btn_1"><a class="left" href="38_JavaScript.HTML">❮ Previous</a></button>
+        <button class="btn_2"><a class="left" href="40_Java_Script.HTML">Next ❯</a></button>
+
+    </div>
+
+    <script>
+        var div_tag = document.getElementById('box');
+        // console.log(body_tag)
+        div_tag.classList.add("css")   
+    </script>
 </body>
+
 </html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Common.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="box">
+        <h2>Q.83 Create password field with show hide functionalities</h2>
+        <p class="Example"><strong>Program :</strong></p>
+        <fieldset>
+            <pre>
+                &lt;script>
+                function check() {
+                    var x = document.getElementById("pass");
+                    if (x.type === "password") {
+                        x.type = "text";
+                    }
+                    else {
+                        x.type = "password";
+                    }
+                }         
+                &lt;/script>
+            </pre>
+        </fieldset>
+        <br>
+        <p class="Example"><strong>Output :</strong></p>
+        <form action="">
+            <label for="pass">Enter Password : </label>
+            <input type="password" name="password" id="pass">
+            <br>
+            <input type="checkbox" name="show" id="show" onclick="check()">Show Password
+        </form>
+        <script>
+            function check() {
+                var x = document.getElementById("pass");
+                if (x.type === "password") {
+                    x.type = "text";
+                }
+                else {
+                    x.type = "password";
+                }
+            }                            
+        </script>
+    </div>
+    <div class="button-maindiv">
+
+        <button class="btn_1"><a class="left" href="82_JavaScript.HTML">❮ Previous</a></button>
+        <button class="btn_2"><a class="left" href="84_JavaScript.HTML">Next ❯</a></button>
+
+    </div>
+
+    <script>
+        var div_tag = document.getElementById('box');
+        // console.log(body_tag)
+        div_tag.classList.add("css")   
+    </script>
+</body>
+
+</html>

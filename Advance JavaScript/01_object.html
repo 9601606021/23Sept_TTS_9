@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        var person1 = {name:"dhruv",age:21,course:"FE",car:{
+            car1:"",
+            car2:""
+        }}
+         
+
+         
+
+        // JSON (api):- javascript object notation  
+
+        console.log(person1.name)
+
+        for (nav1 in person1) {
+
+            document.write("person:- ",person1[nav1],"<br>")
+        }
+
+        // person1.forEach((ele,key) => {
+        //     console.log(ele)
+        // });
+
+        Object.entries(person1).forEach(([key,value]) =>{
+            console.log(key,value)
+            // document.write(key[value])
+            document.write(`${key}:${value}<br>`)
+            
+        })
+        var arr1 = [23,35,234,"sdf","234",13,53]
+
+        console.log(arr1)
+        // document.write(arr1)
+
+        for(let first of arr1) {
+            // values
+            document.write(first,"<br>")
+        }
+
+        for (nav in arr1){
+            // index
+        document.write(arr1[nav],"<br>")
+        }
+
+        document.write("arr")
+        // index,value
+        arr1.forEach((element,index) => {
+            console.log(element)
+            document.write(element,"<br>")
+        });
+
+        var a=10,b=20
+        function sum(){
+            var result = a+b;
+            document.write("sum:-",result)
+        }
+        sum()
+
+        // arrow
+        let add=()=>{
+            document.write(a+b)
+        }
+        add()
+
+        function sub(a,b){
+            document.write(a-b)
+        }
+        sub(20,10)
+        sub(40,10)
+
+
+    </script>
+</body>
+</html>

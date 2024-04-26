@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marksheet</title>
+    <style>
+        .form-container {
+            max-width: 300px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mark Sheet</h1>
+    <div class="form-container">
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter your name">
+
+        <label for="maths">Maths:</label>
+        <input type="number" id="maths" placeholder="Enter marks for Maths">
+
+        <label for="science">Science:</label>
+        <input type="number" id="science" placeholder="Enter marks for Science">
+
+        <label for="english">English:</label>
+        <input type="number" id="english" placeholder="Enter marks for English">
+
+        <button onclick="calculateTotal()">Calculate</button>
+    </div>
+    <div id="result-container" style="display: none;">
+        <h2>Result:</h2>
+        <p id="total"></p>
+        <p id="percentage"></p>
+        <p id="grade"></p>
+    </div>
+    
+    <script>
+        function calculateTotal() {
+            const name = document.getElementById('name').value;
+            const maths = parseInt(document.getElementById('maths').value);
+            const science = parseInt(document.getElementById('science').value);
+            const english = parseInt(document.getElementById('english').value);
+
+            const totalMarks = maths + science + english;
+            const percentage = (totalMarks / 300) * 100;
+            let grade;
+
+            if (percentage >= 90) {
+                grade = 'A';
+            } else if (percentage >= 80) {
+                grade = 'B';
+            } else if (percentage >= 70) {
+                grade = 'C';
+            } else if (percentage >= 60) {
+                grade = 'D';
+            } else {
+                grade = 'F';
+            }
+
+            document.getElementById('total').textContent = `Total Marks: ${totalMarks}`;
+            document.getElementById('percentage').textContent = `Percentage: ${percentage.toFixed(2)}%`;
+            document.getElementById('grade').textContent = `Grade: ${grade}`;
+            document.getElementById('result-container').style.display = 'block';
+        }
+    </script>
+</body>
+</html>

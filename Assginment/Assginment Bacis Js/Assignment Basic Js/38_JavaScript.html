@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Common.css">
     <title>Document</title>
 </head>
+
 <body>
-    <h2>Q.38 Use pattern in console.log in JS?
-        <pre>   1)  1
+    <div id="box">
+        <h2>Q.38 Use pattern in console.log in JS?
+            <pre>
+             1)     1
                     1 0
                     1 0 1
                     1 0 1 0
@@ -29,25 +34,58 @@
                     * * * * *
 
             </pre>
-    </h2>
-    <script>
-        // Numeric Pattern
-        function printNumericPattern(rows) {
-            for (let i = 1; i <= rows; i++) {
-                for (let j = 1; j <= i; j++) {
-                    document.write(`${j} `);
+        </h2>
+        <p class="Example"><strong>Program :</strong></p>
+        <fieldset>
+            <pre>
+        <p>1) Numeric Pattern:</p>
+        &lt;script>
+            // Numeric Pattern
+            function printNumericPattern(rows) 
+            {
+                for (let i = 1; i <= rows; i++) 
+                {
+                    for (let j = 1; j <= i; j++) 
+                    {
+                        document.write(`${j} `);
+                    }
+                    document.write("&lt br>");
                 }
-                document.write("<br>");
             }
-        }
+    
+            // Example usage
+            document.write("&lt strong>1) Numeric Pattern:&lt /strong>&lt br>");
+            printNumericPattern(5);
+            document.write("&lt br>");
+    
+        &lt;/script>
+        </pre>
+        </fieldset>
 
-        // Example usage
-        document.write("<strong>1) Numeric Pattern:</strong><br>");
-        printNumericPattern(5);
-        document.write("<br>");
-    </script>
+        <p class="Example"><strong>Output :</strong></p>
 
-    <script>
+        <script>
+            // Numeric Pattern
+            function printNumericPattern(rows) {
+                for (let i = 1; i <= rows; i++) {
+                    for (let j = 1; j <= i; j++) {
+                        document.write(`${j} `);
+                    }
+                    document.write("<br>");
+                }
+            }
+
+            // Example usage
+            document.write("<strong>1) Numeric Pattern:</strong><br>");
+            printNumericPattern(5);
+            document.write("<br>");
+        </script>
+        <br>
+        <p class="Example"><strong>Program :</strong></p>
+        <fieldset>
+            <pre>
+        <p>2) Alphabetic Pattern:</p>
+        &lt;script>
         // Alphabetic Pattern
         function printAlphabeticPattern(rows) {
             let currentChar = 65; // ASCII code for 'A'
@@ -56,51 +94,145 @@
                     document.write(`${String.fromCharCode(currentChar)} `);
                     currentChar++;
                 }
-                document.write("<br>");
+                document.write("&lt br>");
             }
         }
 
         // Example usage
-        document.write("<strong>2) Alphabetic Pattern:</strong><br>");
+        document.write("&lt strong>2) Alphabetic Pattern:&lt /strong>&lt br>");
         printAlphabeticPattern(5);
-        document.write("<br>");
+        document.write("&lt br>");
+        &lt;/script>
+        </pre>
+        </fieldset>
 
-    </script>
+        <br>
+
+        <p class="Example"><strong>Output :</strong></p>
+
+        <script>
+            // Alphabetic Pattern
+            function printAlphabeticPattern(rows) {
+                let currentChar = 65; // ASCII code for 'A'
+                for (let i = 1; i <= rows; i++) {
+                    for (let j = 1; j <= i; j++) {
+                        document.write(`${String.fromCharCode(currentChar)} `);
+                        currentChar++;
+                    }
+                    document.write("<br>");
+                }
+            }
+
+            // Example usage
+            document.write("<strong>2) Alphabetic Pattern:</strong><br>");
+            printAlphabeticPattern(5);
+            document.write("<br>");
+
+        </script>
+
+        <p class="Example"><strong>Program :</strong></p>
+        <fieldset>
+            <pre>
+    <p>3) Numeric Triangle Pattern:</p>
+    &lt;script>
+    // Numeric Triangle Pattern
+    function printNumericTrianglePattern(rows) {
+        let counter = 1;
+        for (let i = 1; i <= rows; i++) {
+            for (let j = 1; j <= i; j++) {
+                document.write(`${counter} `);
+                counter++;
+            }
+            document.write("&lt br>");
+        }
+    }
+
+    // Example usage
+    document.write("&lt strong>3) Numeric Triangle Pattern:&lt /strong>&lt br>");
+    printNumericTrianglePattern(5);
+    document.write("&lt br>");
+    &lt;/script>
+    </pre>
+        </fieldset>
+
+        <br>
+
+        <p class="Example"><strong>Output :</strong></p>
+
+        <script>
+            // Numeric Triangle Pattern
+            function printNumericTrianglePattern(rows) {
+                let counter = 1;
+                for (let i = 1; i <= rows; i++) {
+                    for (let j = 1; j <= i; j++) {
+                        document.write(`${counter} `);
+                        counter++;
+                    }
+                    document.write("<br>");
+                }
+            }
+
+            // Example usage
+            document.write("<strong>3) Numeric Triangle Pattern:</strong><br>");
+            printNumericTrianglePattern(5);
+            document.write("<br>");
+        </script>
+
+
+        <p class="Example"><strong>Program :</strong></p>
+        <fieldset>
+            <pre>
+        <p>4) Asterisk Triangle Pattern:</p>
+        &lt;script>
+            // Asterisk Triangle Pattern
+            function printAsteriskTrianglePattern(rows) {
+                for (let i = 1; i <= rows; i++) {
+                    for (let j = 1; j <= i; j++) {
+                        document.write("* ");
+                    }
+                    document.write("&lt br>");
+                }
+            }
+        
+            // Example usage
+            document.write("&lt strong>4) Asterisk Triangle Pattern:&lt /strong>&lt br>");
+            printAsteriskTrianglePattern(5);    
+        &lt;/script>
+    </pre>
+        </fieldset>
+
+
+
+        <script>
+            // Asterisk Triangle Pattern
+            function printAsteriskTrianglePattern(rows) {
+                for (let i = 1; i <= rows; i++) {
+                    for (let j = 1; j <= i; j++) {
+                        document.write("* ");
+                    }
+                    document.write("<br>");
+                }
+            }
+
+            // Example usage
+            document.write("<strong>4) Asterisk Triangle Pattern:</strong><br>");
+            printAsteriskTrianglePattern(5);
+        </script>
+
+        </script>
+    </div>
+    <div class="button-maindiv">
+
+        <button class="btn_1"><a class="left" href="37_JavaScript.HTML">❮ Previous</a></button>
+        <button class="btn_2"><a class="left" href="39_JavaScript.HTML">Next ❯</a></button>
+
+    </div>
 
     <script>
-        // Numeric Triangle Pattern
-        function printNumericTrianglePattern(rows) {
-            let counter = 1;
-            for (let i = 1; i <= rows; i++) {
-                for (let j = 1; j <= i; j++) {
-                    document.write(`${counter} `);
-                    counter++;
-                }
-                document.write("<br>");
-            }
-        }
-    
-        // Example usage
-        document.write("<strong>3) Numeric Triangle Pattern:</strong><br>");
-        printNumericTrianglePattern(5);
-        document.write("<br>");
-    </script>
-    
-    <script>
-        // Asterisk Triangle Pattern
-        function printAsteriskTrianglePattern(rows) {
-            for (let i = 1; i <= rows; i++) {
-                for (let j = 1; j <= i; j++) {
-                    document.write("* ");
-                }
-                document.write("<br>");
-            }
-        }
-    
-        // Example usage
-        document.write("<strong>4) Asterisk Triangle Pattern:</strong><br>");
-        printAsteriskTrianglePattern(5);
-    
+        var div_tag = document.getElementById('box');
+        // console.log(body_tag)
+        div_tag.classList.add("css")   
     </script>
 </body>
+
 </html>

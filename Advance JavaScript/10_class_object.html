@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- class :- blue print of object :- data member and memebr function -->
+
+    <!-- syntax :- 
+    class classname
+    {
+        var name = "varname"; // data memeber
+
+        function name() //member function
+        {
+
+        }
+        var object-name = new classname()
+    } -->
+
+    <script>
+        class Bank
+        {
+            x = function Details(pin,balnce)
+            {
+                let atmpin = pin;
+                let bankbalnce = balnce;
+                let bankname = "HDFC";
+                var IFSC = "HDFC08882D"
+                
+                console.log(atmpin)
+                console.log(balnce)
+                console.log(bankname)
+                console.log(IFSC)
+            }
+        }
+
+        const obj1 = new Bank;
+        const dhruv = new Bank;
+        obj1.x(123,3000)
+        dhruv.x(234,5000)
+
+        
+
+
+
+    </script>
+</body>
+</html>

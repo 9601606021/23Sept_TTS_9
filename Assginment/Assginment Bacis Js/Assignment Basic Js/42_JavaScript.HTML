@@ -1,18 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Common.css">
     <title>Document</title>
 </head>
+
 <body>
-    <h2>Q.42 Write a JavaScript program to compare two
-        objects?</h2>
+    <div id="box">
+        <h2>Q.42 Write a JavaScript program to compare two
+            objects?</h2>
+
+        <p class="Example"><strong>Program :</strong></p>
+
+        <fieldset>
+            <pre>
+
+        &lt;script>
+            const Fruit1 = { fruit: 'kiwi' }; // Creating Fruit1 object
+            const Fruit2 = { fruit: 'kiwi' }; // Creating Fruit2 object
+            // Performing JSON.Stringify and === operator
+            document.write(JSON.stringify(Fruit1) === JSON.stringify(Fruit2));
+        &lt;/script>
+    
+            </pre>
+        </fieldset>
+
+        <br>
+
+        <p class="Example"><strong>Output :</strong></p>
+
+        <script>
+            const Fruit1 = { fruit: 'kiwi' }; // Creating Fruit1 object
+            const Fruit2 = { fruit: 'kiwi' }; // Creating Fruit2 object
+            // Performing JSON.Stringify and === operator
+            document.write(JSON.stringify(Fruit1) === JSON.stringify(Fruit2));
+        </script>
+    </div>
+    <div class="button-maindiv">
+
+        <button class="btn_1"><a class="left" href="41_JavaScript.HTML">❮ Previous</a></button>
+        <button class="btn_2"><a class="left" href="43_JavaScript.HTML">Next ❯</a></button>
+
+    </div>
+
     <script>
-        const Fruit1 = { fruit: 'kiwi' }; // Creating Fruit1 object
-        const Fruit2 = { fruit: 'kiwi' }; // Creating Fruit2 object
-        // Performing JSON.Stringify and === operator
-        document.write(JSON.stringify(Fruit1) === JSON.stringify(Fruit2));
+        var div_tag = document.getElementById('box');
+        // console.log(body_tag)
+        div_tag.classList.add("css")   
     </script>
 </body>
+
 </html>

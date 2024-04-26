@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Operations</title>
+    <style>
+        .form-container {
+            max-width: 300px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <h1>Math Operations</h1>
+    <div class="form-container">
+        <label for="num1">Number 1:</label>
+        <input type="number" id="num1" placeholder="Enter first number">
+
+        <label for="num2">Number 2:</label>
+        <input type="number" id="num2" placeholder="Enter second number">
+
+        <button onclick="performOperations()">Perform Operations</button>
+    </div>
+
+    <div id="result-container" style="display: none;">
+        <h2>Results:</h2>
+        <p id="addition"></p>
+        <p id="subtraction"></p>
+        <p id="multiplication"></p>
+        <p id="division"></p>
+    </div>
+
+    <script>
+        function performOperations() {
+            const num1 = parseFloat(document.getElementById('num1').value);
+            const num2 = parseFloat(document.getElementById('num2').value);
+
+            const addition = `Addition: ${num1 + num2}`;
+            const subtraction = `Subtraction: ${num1 - num2}`;
+            const multiplication = `Multiplication: ${num1 * num2}`;
+
+            let division;
+            if (num2 !== 0) {
+                division = `Division: ${num1 / num2}`;
+            } else {
+                division = "Division by zero is undefined";
+            }
+
+            document.getElementById('addition').textContent = addition;
+            document.getElementById('subtraction').textContent = subtraction;
+            document.getElementById('multiplication').textContent = multiplication;
+            document.getElementById('division').textContent = division;
+
+            document.getElementById('result-container').style.display = 'block';
+        }
+    </script>
+</body>
+</html>

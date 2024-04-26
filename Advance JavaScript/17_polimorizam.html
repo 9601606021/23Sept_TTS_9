@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- The term Polymorphism is derived from the word “Polymorph,” where “Poly” means “Many”
+    and “Morph” means “Transforming one form into another“. In Object-Oriented Programming,
+    Polymorphism allows you to perform the same operation in multiple ways.
+
+    It enables you to invoke the same method with different JavaScript objects by passing
+    selected data members.
+
+    1) overloading : use same name of function in diffrent ways in same class (Not work)
+    1) overriding : use same name of function in diffrent ways in parent and child class -->
+
+    <!-- not working i javascript
+class A  
+  {  
+    sum(a,b)  
+    {  
+      document.writeln(a+b);  
+    }  
+	sum(a,b,c)  
+    {  
+      document.writeln(a+b+c);  
+    }  
+  }  
+obj=new A;
+obj.sum(2,3);
+obj.sum(2,3,4); -->
+
+
+  <script>
+    // overriding
+    class A 
+    {
+        display()
+        {
+            console.log("class A prop")
+        }
+    }
+    class B extends A
+    {
+        display()
+        {
+            console.log("class B prop")
+        }
+    }
+    class C extends B
+    {
+        display()
+        {
+            console.log("class C prop")
+        }
+    }
+
+    // orriding
+    const obje = new C
+    obje.display()
+
+     // array
+    const obj1 =[new A(),new B(),new C()]
+   
+    // for for loops
+    obj1.forEach((value)=>value.display())
+</script>
+
+
+</body>
+</html>

@@ -1,17 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Common.css">
     <title>Document</title>
 </head>
+
 <body>
-    <h2>Q.40 Write a JavaScript Program to display the
-        current day and time in the following format.
-        Sample Output: Today is Friday. Current Time is 12 PM: 12 : 22 2 ?
-    </h2>
-    <script>
-        var date = new Date();
+    <div id="box">
+        <h2>Q.40 Write a JavaScript Program to display the current day and time in the following format. Sample Output:
+            Today is Friday. Current Time is 12 PM: 12 : 22 2 ?</h2>
+
+        <p class="Example"><strong>Program :</strong></p>
+
+        <fieldset>
+            <pre>
+
+        &lt;script>
+                var date = new Date();
         var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
         var day = days[date.getDay()];
         var time = date.getHours();
@@ -19,6 +27,37 @@
         var second = date.getSeconds();
         var milsec = date.getMilliseconds();
         document.write("Today is " + day + ". current time is " + time + "PM: " + minutes + " : " + second + " " + milsec);
+        &lt;/script>
+    
+    </pre>
+        </fieldset>
+
+        <br>
+
+        <p class="Example"><strong>Output :</strong></p>
+        <script>
+            var date = new Date();
+            var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+            var day = days[date.getDay()];
+            var time = date.getHours();
+            var minutes = date.getMinutes();
+            var second = date.getSeconds();
+            var milsec = date.getMilliseconds();
+            document.write("Today is " + day + ". current time is " + time + "PM: " + minutes + " : " + second + " " + milsec);
+        </script>
+    </div>
+    <div class="button-maindiv">
+
+        <button class="btn_1"><a class="left" href="39_JavaScript.HTML">❮ Previous</a></button>
+        <button class="btn_2"><a class="left" href="41_JavaScript.HTML">Next ❯</a></button>
+
+    </div>
+
+    <script>
+        var div_tag = document.getElementById('box');
+        // console.log(body_tag)
+        div_tag.classList.add("css")   
     </script>
 </body>
+
 </html>

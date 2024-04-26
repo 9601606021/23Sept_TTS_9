@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- encuplusation/abstration :- data private / to access data from privte set  -->
+
+
+    <script>
+
+        // created 
+        function Person(name,age)
+        {
+            // private data (_)
+            let _name =name;
+            let _age = age;
+
+            this.getName = function()
+            {
+                return _name;
+            }
+            this.getAge = function()
+            {
+                return _age;
+            }
+
+            this.setage = function(newage)
+            {
+                if(newage >=0){
+                    _age = newage
+                }
+                else{
+                    console.log("Age is not negative")
+                }
+            }
+        }
+        
+        // console.log(Person("shubham",23))
+
+        // object created object
+        const person1 = new Person("priyesh",23)
+
+        // get data
+        console.log(person1.getName())
+        console.log(person1.getAge())
+
+        person1.setage(30)
+        // set
+        console.log(person1.getAge())
+        person1.setage(-5)
+        console.log(person1.getAge())
+
+        // perivate data undifned
+        console.log(person1._name)
+        console.log(person1._age)
+
+
+
+    </script>
+
+</body>
+</html>

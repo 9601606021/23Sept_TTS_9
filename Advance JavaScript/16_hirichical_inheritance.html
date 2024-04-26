@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class prent
+        {
+            x = function()
+            {
+                console.log("parent property")
+            }
+        }
+        class ChildA extends prent
+        {
+            y = function()
+            {
+                console.log("chida property")
+            }
+        }
+
+        class ChildB extends prent
+        {
+            z = function()
+            {
+                console.log("childB property")
+            }
+        }
+        const childa = new ChildA
+        childa.x()
+        childa.y()
+
+        const childb = new ChildB
+        childb.x()
+        childb.z()
+
+
+    </script>
+</body>
+</html>

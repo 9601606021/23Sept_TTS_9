@@ -4,13 +4,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Common.css">
     <title>Document</title>
 </head>
 
 <body>
-    <h2>36. Write a program you have to make a summation of
-        first and last Digit. (E.g., 1234 Ans: -
-        5) in JS? </h2>
+    <div id="box">
+        <h2>36. Write a program you have to make a summation of first and last Digit. (E.g., 1234 Ans: - 5) in JS?</h2>
+    
+        <p class="Example"><strong>Program :</strong></p>
+    
+        <fieldset>
+            <pre>
+    
+                &lt;h3 id="ans">&lt;/h3>
+    
+                &lt;script>
+                let num = prompt("Enter Four Digits Number:")
+                function sumFirstLastDigits(num){
+                    const numStr = String(num);
+                    const firstDigit = Number(numStr[0]);
+                    const LastDigit = Number(numStr[numStr.length-1]);
+                    return firstDigit + LastDigit;
+                }
+                // document.write(sumFirstLastDigits(num));
+                document.getElementById("ans").innerHTML=sumFirstLastDigits(num);
+                &lt;/script>
+    
+            </pre>
+        </fieldset>
+    
+        <br>
+    
+        <p class="Example"><strong>Output :</strong></p>
+    
+        <fieldset>
+            <h3 id="ans"></h3>
+        </fieldset>
+
     <script>
         let num = prompt("Enter Four Digits Number:")
         function sumFirstLastDigits(num){
@@ -19,8 +50,22 @@
             const LastDigit = Number(numStr[numStr.length-1]);
             return firstDigit + LastDigit;
         }
-        document.write(sumFirstLastDigits(num));
+        // document.write(sumFirstLastDigits(num));
+        document.getElementById("ans").innerHTML=sumFirstLastDigits(num);
+    </script>
+
+        </div>
+        <div class="button-maindiv">
+        
+            <button class="btn_1"><a class="left" href="35_JavaScript.HTML">❮ Previous</a></button>
+            <button class="btn_2"><a class="left" href="37_JavaScript.HTML">Next ❯</a></button>
+            
+        </div>
+
+    <script>
+        var div_tag = document.getElementById('box');
+        // console.log(body_tag)
+        div_tag.classList.add("css")   
     </script>
 </body>
-
 </html>

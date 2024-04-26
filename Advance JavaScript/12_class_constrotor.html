@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- constructor()
+    {
+        :- multiple object similar automaticall.
+        :- multipe constructor not allow
+    } -->
+    <script>
+        class exaple
+        {
+            x= function()
+            {
+                console.log("x called")
+            }
+            y= function()
+            {
+                console.log("y called")
+            }
+            z= function()
+            {
+                console.log("z called")
+            }
+            constructor()
+            {
+                console.log("automatically called")
+            }
+            static dhruv()
+            {
+                document.write("dhruv called")
+            }
+            // constructor()
+            // {
+            //     console.log("2 con")
+            // }
+
+        }
+
+        
+        const obje1 = new exaple
+        obje1.x()
+        obje1.y()
+        obje1.z()
+        // class name access
+        exaple.dhruv()
+
+    </script>
+</body>
+</html>

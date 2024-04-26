@@ -1,17 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Common.css">
     <title>Document</title>
 </head>
+
 <body>
-    <h2>Q. 45 Write a JavaScript program to determine if a
-        variable is array?
-    </h2>
+    <div id="box">
+        <h2>Q. 45 Write a JavaScript program to determine if a
+            variable is array?
+        </h2>
+        <p class="Example"><strong>Program :</strong></p>
+
+        <fieldset>
+            <pre>
+
+                &lt;script>
+                    let arr = [10, 20, 30, 40];
+                    document.write("Output for Array: " + Array.isArray(arr));
+                &lt;/script>
+            </pre>
+        </fieldset>
+
+        <br>
+
+        <p class="Example"><strong>Output :</strong></p>
+        <script>
+            let arr = [10, 20, 30, 40];
+            document.write("Output for Array: " + Array.isArray(arr));
+        </script>
+    </div>
+    <div class="button-maindiv">
+
+        <button class="btn_1"><a class="left" href="44_JavaScript.HTML">❮ Previous</a></button>
+        <button class="btn_2"><a class="left" href="46_JavaScript.HTML">Next ❯</a></button>
+
+    </div>
+
     <script>
-        let arr = [10, 20, 30, 40];
-        document.write("Output for Array: " + Array.isArray(arr));
+        var div_tag = document.getElementById('box');
+        // console.log(body_tag)
+        div_tag.classList.add("css")   
     </script>
 </body>
 </html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Common.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="box">
+    <h2>Q.65 Find the length of a string without using libraryFunction?</h2>
+    <p class="Example"><strong>Program :</strong></p>
+        <fieldset>
+            <pre>
+    &lt;script>
+    function findStringLength(inputString) {
+        let length = 0;
+
+        // Iterate through each character in the string
+        for (let char of inputString) {
+            length++;
+        }
+
+        return length;
+    }
+
+    // Example usage
+    let myStr = "Hello, World!";
+    let lengthWithoutLibraryFunction = findStringLength(myStr);
+
+    document.write("Length without using library function:" + lengthWithoutLibraryFunction);
+    &lt;/script>
+</pre>
+        </fieldset>
+        <br>
+        <p class="Example"><strong>Output :</strong></p>
+    <script>
+        function findStringLength(inputString) {
+            let length = 0;
+
+            // Iterate through each character in the string
+            for (let char of inputString) {
+                length++;
+            }
+
+            return length;
+        }
+
+        // Example usage
+        let myStr = "Hello, World!";
+        let lengthWithoutLibraryFunction = findStringLength(myStr);
+
+        document.write("Length without using library function:" + lengthWithoutLibraryFunction);
+    </script>
+        </div>
+        <div class="button-maindiv">
+    
+            <button class="btn_1"><a class="left" href="64_JavaScript.HTML">❮ Previous</a></button>
+            <button class="btn_2"><a class="left" href="66_JavaScript.HTML">Next ❯</a></button>
+    
+        </div>
+    
+        <script>
+            var div_tag = document.getElementById('box');
+            // console.log(body_tag)
+            div_tag.classList.add("css")   
+        </script>
+</body>
+</html>

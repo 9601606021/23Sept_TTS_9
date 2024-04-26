@@ -1,16 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Common.css">
     <title>Document</title>
 </head>
+
 <body>
-    <h2>Q.48 Print the length of the string on the browser
-        console using console.log()?</h2>
+    <div id="box">
+        <h2>Q.48 Print the length of the string on the browser
+            console using console.log()?</h2>
+        <p class="Example"><strong>Program :</strong></p>
+
+        <fieldset>
+            <pre>
+
+        &lt;script>
+            var str1 = "Manan"
+            document.write("string " + str1 + " length is " + str1.length);
+        &lt;/script>
+
+        </pre>
+        </fieldset>
+
+        <br>
+        <p class="Example"><strong>Output :</strong></p>
+        <script>
+            var str1 = "Manan"
+            document.write("string " + str1 + " length is " + str1.length);
+        </script>
+    </div>
+    <div class="button-maindiv">
+
+        <button class="btn_1"><a class="left" href="47_JavaScript.HTML">❮ Previous</a></button>
+        <button class="btn_2"><a class="left" href="49_JavaScript.HTML">Next ❯</a></button>
+
+    </div>
+
     <script>
-        var str1 = "Hardik"
-        document.write("string " + str1 + " length is " + str1.length);
+        var div_tag = document.getElementById('box');
+        // console.log(body_tag)
+        div_tag.classList.add("css")   
     </script>
 </body>
+
 </html>

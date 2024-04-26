@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Common.css">
+    <title>Document</title>
+    <style>
+        .error-message{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+    <h2>Q.55 Form in Email, number, Password, Validation?</h2>
+    <p class="Example"><strong>Program :</strong></p>
+
+        <fieldset>
+            <pre>
+    
+        &lt;script>
+        function validateForm(){
+
+            var email = document.getElementById('email').value;
+            var number = document.getElementById('number').value;
+            var password = document.getElementById('password').value;
+
+            if(email == '' || email == !email.includes('@')){
+                var error1 = 'Please check your email, you have insert a wrong email'
+            }
+
+            if(password == '' || password == password.length < 6){
+                var error2 = 'Your password must be atleast 6 character'
+            }
+
+            if(number == '' || number.length <= 10){
+                var error3 = 'Mobile number must be 10 digits'
+            }
+
+            document.getElementById('error-message1').innerHTML = error1;
+            document.getElementById('error-message2').innerHTML = error2;
+            document.getElementById('error-message3').innerHTML = error3;
+        }
+        &lt;/script>
+
+    </pre>
+        </fieldset>
+
+        <br>
+        <p class="Example"><strong>Output :</strong></p>
+    <form id="emailForm">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required="">
+        <div class="error-message" id="error-message1"></div>
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required="">
+        <div class="error-message" id="error-message2"></div>
+        <br>
+        <label for="number">Number:</label>
+        <input type="number" id="number" name="number" required="">
+        <div class="error-message" id="error-message3"></div>
+        <br>
+        <button type="button" onclick="validateForm()">Submit</button>
+    </form>
+    <script>
+        function validateForm(){
+
+            var email = document.getElementById('email').value;
+            var number = document.getElementById('number').value;
+            var password = document.getElementById('password').value;
+
+            if(email == '' || email == !email.includes('@')){
+                var error1 = 'Please check your email, you have insert a wrong email'
+            }
+
+            if(password == '' || password == password.length < 6){
+                var error2 = 'Your password must be atleast 6 character'
+            }
+
+            if(number == '' || number.length <= 10){
+                var error3 = 'Mobile number must be 10 digits'
+            }
+
+            document.getElementById('error-message1').innerHTML = error1;
+            document.getElementById('error-message2').innerHTML = error2;
+            document.getElementById('error-message3').innerHTML = error3;
+        }
+    </script>
+    </div>
+    <div class="button-maindiv">
+
+        <button class="btn_1"><a class="left" href="54_JavaScript.HTML">❮ Previous</a></button>
+        <button class="btn_2"><a class="left" href="56_JavaScript.HTML">Next ❯</a></button>
+
+    </div>
+
+    <script>
+        var div_tag = document.getElementById('box');
+        // console.log(body_tag)
+        div_tag.classList.add("css")   
+    </script>
+</body>
+</html>

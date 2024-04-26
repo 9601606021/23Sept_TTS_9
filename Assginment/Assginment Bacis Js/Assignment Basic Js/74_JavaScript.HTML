@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Common.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="box">
+        <h2>Q.74 How can the style/class of an element be changed?</h2>
+        <fieldset>
+            <p>You can modify any CSS property using the style property in a similar way. Keep in mind that
+                this approach modifies the inline style of the element directly.</p>
+            <pre>paragraph.style.color = "blue"; changes the text color to blue.
+        <br>
+        paragraph.style.fontSize = "20px"; sets the font size to 20 pixels.
+        <br>
+        paragraph.style.backgroundColor = "lightgray"; changes the background color to light gray.
+    </pre>
+            <p>To change the class of an element in JavaScript, you can use the classList property. The
+                classList property provides methods like add, remove, toggle, and contains to manipulate the
+                classes of an element. Here's an example:</p>
+            <pre>classList.add("newStyle") adds the class "newStyle" to the element.
+        <br>
+        classList.remove("original") removes the class "original" from the element.
+        <br>
+        classList.toggle("className") if you want to toggle a class. If the class is present, it will be removed; otherwise, it will be added.
+    </pre>
+        </fieldset>
+    </div>
+    <div class="button-maindiv">
+
+        <button class="btn_1"><a class="left" href="73_JavaScript.HTML">❮ Previous</a></button>
+        <button class="btn_2"><a class="left" href="75_JavaScript.HTML">Next ❯</a></button>
+
+    </div>
+
+    <script>
+        var div_tag = document.getElementById('box');
+        // console.log(body_tag)
+        div_tag.classList.add("css")   
+    </script>
+</body>
+</html>

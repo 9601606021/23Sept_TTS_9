@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Common.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="box">
+    <h2>Q.59 Array vs object defences in JS?</h2>
+    <fieldset>
+        <pre>
+    <h4>Array</h4>
+    <p>An Array is a collection of data and a data structure that is stored in a sequence of memory
+        locations. One can access the elements of an array by calling the index number such as 0, 1,
+        2, 3, …, etc. The array can store data types like Integer, Float, String, and Boolean all
+        the primitive data types can be stored in an array.</p>
+        <pre>
+            let Arr = [1, 2, 3, 4, 5];
+            // Iterating through loop
+            for (let i = 0; i &lt; Arr.length; i++) {
+                console.log(Arr[i]);
+            }
+
+            // Pop an element from array
+            Arr.pop();
+            console.log("After using pop() Method: " + Arr);
+
+        </pre>
+    <h4>Objects</h4>
+    <p>It stores multiple values in a single variable. The object can contain anything in the real
+        world such as person names, cars, and game characters. Objects are very easy to use in some
+        situations if you know where the data is being processed. The character set of objects is
+        known as Properties. The properties of an object can be called by using DOT notation and []
+        notation.</p>
+            <pre>
+                const person = {
+                name: 'John',
+                age: 30,
+                email: 'john@example.com'
+              };
+              const car = {
+                make: 'Toyota',
+                model: 'Camry',
+                year: 2022
+              };
+              </pre>    
+            </pre>
+        </fieldset>
+    </div>
+    <div class="button-maindiv">
+
+        <button class="btn_1"><a class="left" href="58_JavaScript.HTML">❮ Previous</a></button>
+        <button class="btn_2"><a class="left" href="60_JavaScript.HTML">Next ❯</a></button>
+
+    </div>
+
+    <script>
+        var div_tag = document.getElementById('box');
+        // console.log(body_tag)
+        div_tag.classList.add("css")   
+    </script>
+</body>
+</html>

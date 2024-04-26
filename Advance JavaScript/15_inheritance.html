@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- inheritance :- one data anthor data trnsfer using  -->
+    <!-- To create a class inheritance, use the extends keyword.
+    A class created with a class inheritance inherits all the methods from another class:
+    Type of inheritance
+
+    5 type of Inheritance
+
+    Single Inheritance.
+
+    Multi-Level Inheritance.
+    Hierarchical Inheritance.
+    Multiple Inheritance. // not possible by class keywords
+    Hybrid Inheritance. -->
+
+    <!-- single -->
+
+    <script>
+        // single
+        // class A
+        // {
+        //     sum(a,b){
+        //         var sum;
+        //         sum = a+b
+        //         document.write("sum=>",sum,"<br>")
+        //     }
+        // }
+
+        // class B extends A
+        // {
+        //     sub(a,b){
+        //         var sub;
+        //         sub = a-b
+        //         document.write("sub=>",sub,"<br>")
+        //     }
+        // }
+
+        // const obj1 = new B
+        // obj1.sub(23,3)
+        // obj1.sum(20,30)
+    
+
+        // multi level
+        // class A
+        // {
+        //     sum(a,b){
+        //         var sum;
+        //         sum = a+b
+        //         document.write("sum=>",sum,"<br>")
+        //     }
+        // }
+
+        // class B extends A
+        // {
+        //     // member function
+        //     sub(a,b){
+        //         var sub;
+        //         sub = a-b
+        //         document.write("sub=>",sub,"<br>")
+        //     }
+        // }
+
+        // class C extends B
+        // {
+        //     mul(a,b)
+        //     {
+        //         var mul;
+        //         mul = a*b;
+        //         document.write("mul=>",mul,"<br>")
+        //     }
+        // }
+
+        // const obje1 = new C
+        // obje1.sum(24,45)
+        // obje1.sub(45,23)
+        // obje1.mul(10,10)
+
+        // class A 
+        // {
+        //     sum(a,b){
+        //         var sum;
+        //         sum = a + b
+        //         document.write("sum=>",sum,"<br>")
+        //     }
+        // }
+
+        // class B extends A
+        // {
+        //     sub(a,b){
+        //         var sub;
+        //         sub = a - b
+        //         document.write("sub=>",sub,"<br>")
+        //     }
+        // }
+        
+        // class C extends B
+        // {
+        //     mul(a,b){
+        //         var mul;
+        //         mul = a*b
+        //         document.write("mul=>",mul,"<br>")
+        //     }
+        // }
+        // class D extends B
+        // {
+        //     div(a,b){
+        //         var div;
+        //         div = a/b
+        //         document.write("div=>",div,"<br>")
+        //     }
+        // }
+        // const obj1 = new C
+        // obj1.sum(2,2)
+        // obj1.sub(4,2);
+        // obj1.mul(3,3)
+
+        // const obj2 = new D
+        // obj2.div(25,4)
+
+        class A
+        {
+            a = function()
+            {
+                document.write("Boys","<br>")
+            }
+        }
+
+        class B 
+        {
+            b = function()
+            {
+                document.write("Girls","<br>")
+            }
+        }
+        class C extends A
+        {
+            c = function()
+            {
+                document.write("Rahul","<br>")
+            }
+        }
+        class D extends C
+        {
+            d = function()
+            {
+                document.write("Raj","<br>")
+            }
+        }
+        class E extends B
+        {
+            e = function()
+            {
+                document.write("Arti","<br>")
+            }
+        }
+        class F extends E
+        {
+            f = function()
+            {
+                document.write("krishna","<br>")
+            }
+        }
+        const obj2 = new D;
+        obj2.a()
+        obj2.c()
+        obj2.d() 
+        const obj3 = new F;
+        obj3.b()
+        obj3.e()
+        obj3.f()        
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Common.css">
+    <title>Document</title>
+    <style>
+        .error-message{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+    <h2>Q.56 Dynamic Form Validation in JS?</h2>
+    <p class="Example"><strong>Program :</strong></p>
+
+        <fieldset>
+            <pre>
+    
+        &lt;script>
+        function validateEmail() {
+            var emailInput = document.getElementById('email');
+            var errorMessage = document.getElementById('error-message');
+
+            // Simple email validation
+            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(emailInput.value)) {
+                emailInput.classList.add('error');
+                errorMessage.textContent = 'Invalid email address';
+            } else {
+                emailInput.classList.remove('error');
+                errorMessage.textContent = '';
+            }
+        }
+
+        function validateNumber() {
+            var numberInput = document.getElementById('number');
+            var errorMessage = document.getElementById('error-message');
+
+            // Simple number validation
+            if (isNaN(numberInput.value) || numberInput.value <= 0) {
+                numberInput.classList.add('error');
+                errorMessage.textContent = 'Invalid number';
+            } else {
+                numberInput.classList.remove('error');
+                errorMessage.textContent = '';
+            }
+        }
+
+        function validatePassword() {
+            var passwordInput = document.getElementById('password');
+            var errorMessage = document.getElementById('error-message');
+
+            // Simple password length validation
+            if (passwordInput.value.length < 8) {
+                passwordInput.classList.add('error');
+                errorMessage.textContent = 'Password must be at least 8 characters';
+            } else {
+                passwordInput.classList.remove('error');
+                errorMessage.textContent = '';
+            }
+        }
+
+        function validateForm() {
+            // Run all individual field validations
+            validateEmail();
+            validateNumber();
+            validatePassword();
+
+            // Additional logic for overall form validation or submission
+            // For now, you can perform form submission if no errors are present
+        }
+        &lt;/script>
+
+    </pre>
+        </fieldset>
+
+        <br>
+        <p class="Example"><strong>Output :</strong></p>
+    <form id="dynamicForm">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" oninput="validateEmail()">
+
+        <br><br>
+        
+        <label for="number">Number:</label>
+        <input type="number" id="number" name="number" oninput="validateNumber()">
+        
+        <br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" oninput="validatePassword()">
+        
+        <br><br>
+        <div class="error-message" id="error-message"></div>
+
+        <button type="button" onclick="validateForm()">Submit</button>
+    </form>
+    <script>
+        function validateEmail() {
+            var emailInput = document.getElementById('email');
+            var errorMessage = document.getElementById('error-message');
+
+            // Simple email validation
+            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(emailInput.value)) {
+                emailInput.classList.add('error');
+                errorMessage.textContent = 'Invalid email address';
+            } else {
+                emailInput.classList.remove('error');
+                errorMessage.textContent = '';
+            }
+        }
+
+        function validateNumber() {
+            var numberInput = document.getElementById('number');
+            var errorMessage = document.getElementById('error-message');
+
+            // Simple number validation
+            if (isNaN(numberInput.value) || numberInput.value <= 0) {
+                numberInput.classList.add('error');
+                errorMessage.textContent = 'Invalid number';
+            } else {
+                numberInput.classList.remove('error');
+                errorMessage.textContent = '';
+            }
+        }
+
+        function validatePassword() {
+            var passwordInput = document.getElementById('password');
+            var errorMessage = document.getElementById('error-message');
+
+            // Simple password length validation
+            if (passwordInput.value.length < 8) {
+                passwordInput.classList.add('error');
+                errorMessage.textContent = 'Password must be at least 8 characters';
+            } else {
+                passwordInput.classList.remove('error');
+                errorMessage.textContent = '';
+            }
+        }
+
+        function validateForm() {
+            // Run all individual field validations
+            validateEmail();
+            validateNumber();
+            validatePassword();
+
+            // Additional logic for overall form validation or submission
+            // For now, you can perform form submission if no errors are present
+        }
+    </script>
+    </div>
+    <div class="button-maindiv">
+
+        <button class="btn_1"><a class="left" href="55_JavaScript.HTML">❮ Previous</a></button>
+        <button class="btn_2"><a class="left" href="57_JavaScript.HTML">Next ❯</a></button>
+
+    </div>
+
+    <script>
+        var div_tag = document.getElementById('box');
+        // console.log(body_tag)
+        div_tag.classList.add("css")   
+    </script>
+</body>
+</html>

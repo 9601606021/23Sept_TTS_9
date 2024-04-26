@@ -3,14 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Common.css">
     <title>Document</title>
 </head>
 <body>
+    <div id="box">
     <h2>Q.46 Write a JavaScript program to clone an array?</h2>
+    <p class="Example"><strong>Program :</strong></p>
+
+    <fieldset>
+        <pre>
+
+    &lt;script>
+        const originalArray = [1, 2, 3];
+        const clonedArray = [...originalArray];
+        document.write(clonedArray);
+    &lt;/script>
+</pre>
+</fieldset>
+
+<br>
+
+<p class="Example"><strong>Output :</strong></p>
     <script>
         const originalArray = [1, 2, 3];
         const clonedArray = [...originalArray];
         document.write(clonedArray);
     </script>
+       </div>
+       <div class="button-maindiv">
+   
+           <button class="btn_1"><a class="left" href="45_JavaScript.HTML">❮ Previous</a></button>
+           <button class="btn_2"><a class="left" href="47_JavaScript.HTML">Next ❯</a></button>
+   
+       </div>
+   
+       <script>
+           var div_tag = document.getElementById('box');
+           // console.log(body_tag)
+           div_tag.classList.add("css")   
+       </script>
 </body>
 </html>
