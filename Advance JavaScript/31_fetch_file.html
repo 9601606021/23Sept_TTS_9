@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- fetch :- one type promise data txt,josn,xml. fetch(promise) -->
+    <!--  -->
+
+    <!-- sytax:- 
+    fetch('url',{
+        GET :- defult :- patch,delete,put,post
+        method:"GET",
+        header:"text,json,",
+        accpect:""
+    })
+    .then(function(res){
+        first then object covert 
+        return res.text()
+    })
+    .then((data)=>{.code}) -->
+
+    <button id="btn" onclick="getText()">click</button>
+
+    <div id="op"></div>
+
+
+    <script>
+        btn1 = document.getElementById("btn");
+
+        
+       function getText()
+       {
+        fetch('data.txt',{
+            method:"GET"
+        })
+        // text file object 
+        .then((res)=>{return res.text()})
+        .then((res)=>{
+            console.log(res)
+
+            document.getElementById('op').innerHTML = res
+        })
+        .catch((error)=>{
+            console.error(error)
+        })
+       }
+   
+    </script>
+</body>
+</html
+
+>

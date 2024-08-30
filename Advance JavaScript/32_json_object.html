@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- json :- javascript object noation -->
+    <!-- josn:- store data and trnsfer data  -->
+    <!-- json :- data lightweight easiy convert -->
+
+    <!-- sytax:- 
+    let objet = [
+        {
+            id:"1",
+            name:"priyesh",
+            course:"front"
+        }
+    ]
+
+    let json = `[
+        {
+            key and value
+            "id":"1",
+            "name":"priyesh",
+            "course":"front"
+        }
+    ]` -->
+
+    <script>
+        let jsondata = `[
+            {
+                "id":1,
+                "name":"priyesh",
+                "course":"MERN-stack"
+            },
+            {
+                "id":2,
+                "name":"hardik",
+                "course":"Full-stack"
+            },
+            {
+                "id":3,
+                "name":"manan",
+                "course":"Front-end"
+            }
+        ]`
+
+        console.log(jsondata)
+
+        // parse method javascipt object json.parse(jsondataname)
+        var obj1 =JSON.parse(jsondata)
+
+        console.log(obj1)
+
+        for(let mydata of obj1)
+        {
+            console.log(mydata)
+            document.write(`<p>id=>${mydata.id} name=>${mydata.name} course=>${mydata.course}</p>`)
+        }
+
+
+        let objet1 = [
+            {
+                id:1,
+                name:"priyesh",
+                course:"front-end"
+            },
+            {
+                id:2,
+                name:"dhruv",
+                course:"Full-tack"
+            },
+            {
+                id:3,
+                name:"mayur",
+                course:"back-end"
+            }
+        ]
+
+        console.log(objet1)
+
+        // json convert json string
+        let json1 = JSON.stringify(objet1)
+
+        console.log(json1)
+    </script>
+</body>
+</html>

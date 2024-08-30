@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        fetch('https://dummyjson.com/carts')
+        .then((res)=>{return res.json()})
+        .then((data)=>{
+            console.log(data.carts)
+
+            for(let mydata of data.carts)
+            {
+                console.log(mydata.products)
+                for(let newdata of mydata.products)
+                {
+                    console.log(newdata.price)
+                }
+            }
+        })
+    </script>
+</body>
+</html>

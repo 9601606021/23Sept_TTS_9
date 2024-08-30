@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const students = {
+            fname:"priyesh",
+            lname:"khamar",
+            fullname:function()
+            {
+                return this.fname + " " + this.lname;
+            }
+        }
+
+        // bind method object as object value store display
+        const getname = students.fullname.bind(students)
+
+        console.log(getname())
+
+        
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+[
+    {
+        "id":1,
+        "name":"mayur",
+        "course":"front-end"
+    },
+    {
+        "id":2,
+        "name":"payal",
+        "course":"Java-fulltack"
+    },
+    {
+        "id":3,
+        "name":"saurav",
+        "course":"front-end"
+    }
+]

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Emotion(emotion)
+        {
+            console.log(emotion)
+        }
+
+        const Emotion1 = new Promise(function(call,Jotimemaleto){
+            // promise object value return
+            if(!call)
+            {
+                call("Thank you for calling...!")
+            }
+            else{
+                Jotimemaleto("chal bhag....!")
+            }
+           
+        })
+
+        Emotion1.then(
+            function(happy){Emotion(happy)},
+            function(sad){Emotion(sad)}
+        )   
+        
+    
+
+
+        // example 2
+        function result(a){
+            console.log(a)
+        }
+
+        const Marks = new Promise (function (maths,scince){
+            if (maths){
+                maths("score 90%")
+            }
+            else{
+                scince("score 75%")
+            }
+        })
+        Marks.then(
+            function(rslt){result(rslt)},
+            function(rslt){result(rslt)}
+        )
+    </script>
+    
+</body>
+</html>

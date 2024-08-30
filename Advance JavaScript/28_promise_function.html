@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // reslut
+        // function display(x)
+        // {
+        //     console.log(x)
+        // }
+
+        // const P = new Promise(function(r,e){
+        //     r ="resolve";
+        //     e="reject";
+        //     if(!r)
+        //     {
+        //         console.log(r)
+        //     }
+        //     else{
+        //         console.log(e)
+        //     }
+
+        // })
+
+        // P.then(
+        //     function(resp){display(resp)},
+        //     function(resp){display(resp)}
+        // )
+
+        function display(x)
+        {
+            console.log(x)
+        }
+
+        const P = new Promise(function(r,e){
+            r = "resolve";
+            e = "reject";
+            if(r)
+            {
+                console.log(r)
+            }
+            else{
+                console.log(e)
+            }
+        })
+
+        P.then(
+            function(resp){display(resp)},
+            function(resp){display(resp)}
+        )
+        
+         
+    </script>
+</body>
+</html>

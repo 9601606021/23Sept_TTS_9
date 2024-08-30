@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        const Students = {
+            // "key":"value"
+            fullname : function(city,country)
+            {
+                return this.fname + " " + this.lname + " " + city + " "+ country
+            }
+        }
+
+        const student1 ={
+            fname : "manan",
+            lname : "parekh"
+        }
+
+        const studnet2 ={
+            fname : "dhruv",
+            lname : "soni"
+        }
+
+        // call call method as sprate agrument
+        console.log(Students.fullname.call(student1,"surat","india"))
+
+        // apply method as a arry arugment
+        console.log(Students.fullname.apply(studnet2,["23","india"]))
+
+
+    </script>
+
+
+</body>
+</html>

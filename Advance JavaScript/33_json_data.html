@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="op"></div>
+
+    <script>
+        fetch('data.json',{
+            method:"GET"
+        })
+        .then(function(res){
+            // json data convrt object 
+            return res.json()
+        })
+        .then((data)=>{
+            console.log(data)
+
+            // htmldata = `
+            //     <h2>user</h2>
+            // `
+            data.forEach(element => {
+                console.log(element)
+            });
+        })
+    </script>
+</body>
+</html>

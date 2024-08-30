@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- promise :-  one promise type is object :- type :- fullfield,pending,rject -->
+    <!-- pending: initial state, neither fulfilled nor rejected.
+    fulfilled: meaning that the operation was completed successfully.
+    rejected: meaning that the operation failed. -->
+    <!-- synatx : 
+    const promiseme = new Promise(function(res,err){
+
+        .codition code
+    }) -->
+
+
+    <script>
+        const promiseme = new Promise(function (res, err) {
+            // data memeber
+            res = "success";
+            err = "Error"
+
+            // value return 
+            if (res) {
+                console.log(res)
+            }
+
+            else {
+                console.log(err)
+            }
+        })
+
+       
+    </script>
+</body>
+
+</html>

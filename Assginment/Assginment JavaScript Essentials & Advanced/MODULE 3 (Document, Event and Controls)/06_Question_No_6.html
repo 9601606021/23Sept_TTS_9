@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Question_No_6</title>
+
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+  <!-- Demo styles -->
+  <style>
+    html,
+    body {
+      position: relative;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      margin: 0px;
+      padding: 0;
+      margin-top: 30px;
+      background-color: #000;
+    }
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      /* width: 100%; */
+      /* height: 100%; */
+      object-fit: cover;
+    }
+
+    img {
+      height: 80vh;
+      width: 80vw;
+      border-radius: 10px;
+    }
+
+    .swiper-button-next {
+      background-color: rgba(0, 0, 0, 0.493);
+      color: cyan;
+      padding: 25px;
+      border-radius: 40%;
+    }
+
+    .swiper-button-prev {
+      background-color: rgba(0, 0, 0, 0.493);
+      color: cyan;
+      padding: 25px;
+      border-radius: 40%;
+
+    }
+
+    p {
+      color: yellowgreen;
+      font-size: 30px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <p><b>Question</b> :- Use external js library to show slider</p>
+      </div>
+      <div class="col">
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img
+                src="http://getwallpapers.com/wallpaper/full/c/4/8/1044308-download-full-hd-sports-car-wallpaper-1920x1080-high-resolution.jpg"
+                alt=""></div>
+            <div class="swiper-slide"><img
+                src="http://getwallpapers.com/wallpaper/full/d/9/1/1044404-full-hd-sports-car-wallpaper-1920x1080-htc.jpg"
+                alt=""></div>
+            <div class="swiper-slide"><img
+                src="https://www.awesome11.com/wp-content/uploads/2016/10/Sports-Cars.jpg"
+                alt=""></div>
+            <div class="swiper-slide"><img
+                src="https://getwallpapers.com/wallpaper/full/a/9/e/1044499-download-free-full-hd-sports-car-wallpaper-1920x1080-samsung.jpg"
+                alt=""></div>
+            <div class="swiper-slide"><img
+                src="https://wallpapercave.com/wp/P3ZaxGY.jpg"
+                alt=""></div>
+            <div class="swiper-slide"><img
+                src="http://assets.bwbx.io/images/users/iqjWHBFdfxIU/ibRrkwzgAGLc/v5/-1x-1.jpg"
+                alt=""></div>
+            <div class="swiper-slide"><img
+                src="http://feedinspiration.com/wp-content/uploads/2015/04/download-sports-Car-wallpaper.jpg"
+                alt=""></div>
+            <div class="swiper-slide"><img
+                src="https://wallpapercave.com/wp/wc1773412.jpg"
+                alt=""></div>
+            <div class="swiper-slide"><img
+                src="http://getwallpapers.com/wallpaper/full/a/2/4/990303-large-sports-cars-wallpapers-hd-1920x1200-laptop.jpg"
+                alt=""></div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      pagination: {
+        el: ".swiper-pagination",
+        type: "fraction",
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+</body>
+
+</html>
